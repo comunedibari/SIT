@@ -1,0 +1,247 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIT - AVMTB</title>
+<link rel="icon" href="/custom_static/img/favicon.ico">
+<!-- CSS  -->
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/cookieconsent/build/cookieconsent.min.css' %}" />
+<style>
+	@charset "utf-8";
+	/* CSS Document */
+	body {
+		background-color: #fff;
+		border-top: solid 10px #000;
+		color: #333;
+		font-size: .85em;
+		font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+		margin: 0;
+		padding: 0;
+	}
+
+	.float-left {
+		padding-top: 20px;
+		padding-left: 13px;
+	}
+
+	.site-title {
+		color: #c8c8c8;
+		font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+		font-size: 2.3em;
+		margin: 0;
+	}
+
+	.site-title a, .site-title a:hover, .site-title a:active {
+		background: none;
+		color: #c8c8c8;
+		outline: none;
+		text-decoration: none;
+		padding-left: 19px;
+	}
+
+	.corpo {
+		background-color: #efeeef;
+		clear: both;
+		padding-bottom: 35px;
+	}
+
+	.main-content {
+		background: url("../Images/accent.png") no-repeat;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 30px;
+		max-height: 100%;
+		margin: 0 auto;
+		max-width: 97.4%;
+	}
+
+	.table {
+		background: #fff;
+		margin: 0 0 10px;
+		padding: 3px;
+		text-align: left;
+		box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+	}
+
+	.portlet-topper {
+		background: #e5e5e5;
+	}
+
+	.portlet-title {
+		font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+		font-weight: bold;
+		color: #333;
+		float: none;
+		min-width: 50%;
+		padding: 10px;
+		font-size: 16px;
+		border-left: 3px solid #ee1b22;
+		background: #ebebe0;
+	}
+
+	.portlet-title1 {
+		background: #EE1B22;
+		font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+		float: none;
+		min-width: 50%;
+		padding: 10px;
+		font-size: 14px;
+		border-left: 2px solid #ee1b22;
+	}
+
+	.portlet {
+		background: #fff;
+		margin: 0 0 10px;
+		padding: 3px;
+		text-align: left;
+		box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+	}
+
+	.mainDiv ul.elenco {
+		
+	}
+
+	ul, li {
+	  padding-bottom: 5px;
+	}
+
+	.elenco a {
+		color: #666;
+		text-decoration: none;
+		font-weight: bold;
+		transition: all .2s ease-in-out 0s;
+	}
+
+	.elenco a:hover {
+		color: #EE1B22;
+	}
+</style>
+</head>
+
+<body>
+<div class="float-left">
+	<p class="site-title">
+		<img alt="Logo ente" id="Image1" align="middle"  src="/media/areavasta_0UgMFw5.png" />
+		<a href="/mapguideos/areavastaba/">Area Vasta Metropoli Terra di Bari</a>
+	</p>
+</div>
+<div class="corpo">
+	<div class="main-content">
+		<div class="portlet">
+			<div class="portlet-topper">
+				<h1 class="portlet-title1">
+				<span class="portlet-title-text">Servizi WMS - Area Vasta Metropoli Terra di Bari</span>
+				</h1>
+			</div>
+			<div class="portlet-content">
+				<div class="mainDiv">
+					Si rendono disponibili i servizi WMS attinenti il PRG dei comuni di seguito riportati. Si ricorda che per un corretto utilizzo i link devono essere copiati per intero (evidenziando il link e utilizzando la combinazione di tasti CTRL+C) e riportati nel software gis o utilizzati in applicazioni client web-based. <br />
+
+					Nota: i WMS sono esposti nei due sistemi di riferimento GCS WGS84 (coordinate geografiche) e UTM WGS84 33N (coordinate piane). Solitamente i software GIS caricano i WMS in coordinate geografiche, si suggerisce di cambiare il sistema di riferimento del progetto in coordinate piane (UTM WGS84 33N) per una corretta visualizzazione.
+				</div>
+				<h1 class="portlet-title">
+					<span class="portlet-title-text">Comune di Bari</span>
+				</h1>
+				<div class="mainDiv">
+					<b>P.R.G. comunale </b>
+					<br />
+                    http://sit.egov.ba.it/ows/bari/qdjango/89/
+					<br /><br />
+					Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/bari.qgs">Bari</a>
+					<br />
+
+					<h1 class="portlet-title">
+						<span class="portlet-title-text">Comune di Binetto</span>
+					</h1>
+					<div class="mainDiv">
+						<b>P.R.G. comunale </b>
+						<br />
+						http://sit.egov.ba.it/ows/urbanistica-binetto/qdjango/26/
+						<br /><br />
+						Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/binetto.qgs">Binetto</a>
+						<br />
+						<h1 class="portlet-title">
+							<span class="portlet-title-text">Comune di Bitetto</span>
+						</h1>
+						<div class="mainDiv">
+							<b>P.U.G. </b>
+							<br />
+							http://sit.egov.ba.it/ows/urbanistica-bitetto/qdjango/38/
+							<br /><br />
+							Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/bitetto.qgs">Bitetto</a>
+							<br />
+							<h1 class="portlet-title">
+							<span class="portlet-title-text">Comune di Bitonto</span>
+							</h1>
+							<div class="mainDiv">
+								<b>P.R.G. comunale </b>
+								<br />
+								http://sit.egov.ba.it/ows/urbanistica-bitonto/qdjango/30/
+								<br /><br />
+								Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/bitonto.qgs">Bitonto</a>
+								<br />
+
+								<h1 class="portlet-title">
+								<span class="portlet-title-text">Comune di Cassano delle Murge</span>
+								</h1>
+								<div class="mainDiv">
+									<b>P.R.G. comunale </b>
+									<br />
+									http://sit.egov.ba.it/ows/urbanistica-cassano-delle-murge/qdjango/22/
+									<br /><br />
+									Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/cassanomurge.qgs">Cassano delle Murge</a>
+									<br />
+
+									<h1 class="portlet-title">
+									<span class="portlet-title-text">Comune di Giovinazzo</span>
+									</h1>
+									<div class="mainDiv">
+										<b>P.R.G. comunale </b>
+										<br />
+										c
+										<br /><br />
+										Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/giovinazzo.qgs">Giovinazzo</a>
+										<br />
+
+										<h1 class="portlet-title">
+										<span class="portlet-title-text">Comune di Molfetta</span>
+										</h1>
+										<div class="mainDiv">
+											<b>P.R.G. comunale </b>
+											<br />
+											http://sit.egov.ba.it/ows/urbanistica-molfetta/qdjango/27/
+											<br /><br />
+											Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/molfetta.qgs">Molfetta</a>
+											<br />
+
+											<h1 class="portlet-title">
+											<span class="portlet-title-text">Comune di Terlizzi</span>
+											</h1>
+											<div class="mainDiv">
+												<b>P.R.G. comunale </b>
+												<br />
+												http://sit.egov.ba.it/ows/urbanistica-terlizzi/qdjango/33/
+												<br /><br />
+												Scarica progetto QGIS di <a href="/custom_static/html/wms-qgis/terlizzi.qgs">Terlizzi</a>
+												<br />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="{% static 'bower_components/cookieconsent/build/cookieconsent.min.js' %}"></script>
+{% include 'core/include/coockieconsent.html' %}
+</body>
+</html>

@@ -1,0 +1,4 @@
+pycsw==2.6.0
+django-multiselectfield
+sqlalchemy==1.3.23
+pycountry

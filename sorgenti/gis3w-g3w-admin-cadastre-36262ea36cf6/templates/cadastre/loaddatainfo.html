@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<div>
+    <h4>Dati <b>Catasto (censuario)</b></h4>
+    <p>Per caricare i dati del censuario (<u>aggiornamenti/estratti fabbricati e terreni</u>), i dati devono essere strutturati come segue.</p>
+    <p>Deve essere caricato un file <strong>.zip</strong> al cui interno siano presenti i seguenti file e cartelle:</p>
+    <p> Tutti i file scaricati del portale AGEA (di seguito un esempio di estrazione):</p>
+    <p class="text-center">
+        <img src="{% static 'cadastre/img/info_loaddata_1.png' %}">
+    </p>
+
+</div>
+<div>
+    <h4>Dati <b>DOCFA</b></h4>
+    <p>Per caricare i dati DOCFA deve essere creato un file <strong>.zip</strong> al cui interno siano contenuti i seguenti file <strong>.zip</strong> scaricati dal portale AGEA</p>
+    <p>Solo un tipo di file deve essere modificato:</p>
+    <ul>
+        <li><strong>*_DOC_*.zip</strong>: possono esser anche più di uno e al suo interno deve contenere i file <strong>.DAT</strong> da cui, mediante apposito software fornito da AGEA,
+        è ricavare il corrispondente file .pdf che deve essere anch'esso caricato all'interno del file .zip (di seguito un esempio di file, B455_201609_DOC_1.zip).
+        <p class="text-center"><img src="{% static 'cadastre/img/info_loaddata_2.png' %}"></p>
+        </li>
+        <li><strong>*_DC_*.zip</strong>: cosi come viene scaricato/i dal portale.</li>
+        <li><strong>*_DM_PL_*.zip</strong>: contenente i file delle planimetrie cosi come viene scaricato/i dal portale.</li>
+    </ul>
+</div>
+<div>
+    <h4>Dati <b>CXF</b></h4>
+    <p>Deve essere caricato un file <strong>.zip</strong> al cui interno siano presenti i seguenti file e cartelle:</p>
+    <p> Tutti i file <b>.CXF</b> e <b>.SUP</b> contenuti nei file zip scaricati :</p>
+    <p class="text-center">
+        <img src="{% static 'cadastre/img/info_loaddata_cxf.png' %}">
+    </p>
+</div>
+

@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load guardian_tags %}
+{% load g3wadmin_tags %}
+{% load svg_icon %}
+
+
+
+{% block page_header %}
+<h1>
+{% trans 'Law articles' %}
+    <small>{{ law.slug }}</small>
+</h1>
+{% endblock %}
+
+{% block main_content %}
+{% get_obj_perms user for law as "userObj_perms" %}
+<div class="row">
+    <div class="col-md-12 col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">{% trans 'Law' %} {{ law.name }}
+                {% if "view_laws" in userObj_perms %}
+                <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Show detail' %}" data-widget-type="detailItem" data-detail-url="{% url 'law-detail' law.slug %}"><i class="ion ion-eye"></i></a>
+                {% endif %}
+                {% if "change_laws" in userObj_perms %}
+                <a href="{% url 'law-update' law.slug %}" data-toggle="tooltip" data-placement="top" title="{% trans 'Edit' %}" ><i class="ion ion-edit"></i></a>
+                {% endif %}
+                {% if "delete_laws" in userObj_perms %}
+                <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Delete' %}"  data-widget-type="deleteItem" data-delete-url="{% url 'law-delete' law.slug %}" data-item-selector="#group_{{ group.slug }}"><i class="ion ion-trash-b"></i></a>
+                {% endif %}
+                </h3>
+            </div>
+            <div class="box-body">
+                {{ law.description|safe }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="box">
+    <div class="box-header">
+        {% if "manage_articles" in userObj_perms %}
+        <h3 class="box-title"><a href="{% url 'law-article-add' law.slug %}"><i class="ion ion-plus-circled"></i></a> {% trans 'Article' %}</h3>
+        {% endif %}
+        <span class="description">{% trans 'List articles' %}</span>
+        {% if "manage_articles" in userObj_perms %}
+        <div class="pull-right box-tools">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="glyphicon glyphicon-download"></i> {% trans 'Export' %} <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'law-article-export' law.slug %}">XLS</a></li>
+                <li><a href="{% url 'law-article-export-mode' law.slug 'csv' %}">CSV</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-sm btn-default" data-widget-type="ajaxFiler" data-modal-title="{% trans 'Upload articles file' %}" data-action-url="{% url 'law-article-upload' law.slug %}" data-file-extensions="xls|csv">
+              <i class="glyphicon glyphicon-upload"></i> {% trans 'Upload' %}
+            </button>
+        </div>
+        {% endif %}
+    </div>
+    <div class="box-body">
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 120px">Action</th>
+                    <th>{%  trans 'Number' %}</th>
+                    <th>{%  trans 'Comma' %}</th>
+                    <th>{%  trans 'Title' %}</th>
+                    <th>{%  trans 'To use in data' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in object_list %}
+                <tr id="law_article_{{ object.slug }}">
+                    <td>
+                        <span class="col-xs-2 icon">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Show detail' %}" data-widget-type="detailItem" data-modal-title="{% trans 'Detail article' %}" data-detail-url="{% url 'law-article-detail' law.slug object.slug %}" ><i class="ion ion-eye"></i></a>
+                        </span>
+                        {% if "manage_articles" in userObj_perms %}
+                        <span class="col-xs-2 icon">
+                            <a href="{% url 'law-article-update' law.slug object.slug %}" data-toggle="tooltip" data-placement="top" title="{% trans 'Edit' %}" ><i class="ion ion-edit"></i></a>
+                        </span>
+                        <span class="col-xs-4 icon">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Delete' %}" data-widget-type="deleteItem" data-delete-url="{% url 'law-article-delete' law.slug object.slug %}" data-item-selector="#law_article_{{ object.slug }}" ><i class="ion ion-trash-b"></i></a>
+                        </span>
+                        {% endif %}
+                    </td>
+                    <td>{{ object.number }}</td>
+                    <td>{{ object.comma }}</td>
+                    <td>{{ object.title }}</td>
+                    <td>{{ object.law.slug }},{{ object.number }},{{ object.comma }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

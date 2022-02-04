@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% load g3wadmin_tags %}
+{% block custom_css_links_page %}
+<!-- iCheck -->
+<link rel="stylesheet" href="{% static "bower_components/icheck/skins/square/blue.css" %}">
+{% endblock %}
+
+{% block body_content %}
+
+<div class="login-box">
+    <div class="login-logo">
+        <span class="logo-lg">
+            {% if SETTINGS.G3WSUITE_CUSTOM_STATIC_URL %}
+            <img src="{{ SETTINGS.G3WSUITE_LOGIN_LOGO   }}">
+            {% else %}
+            <img src="{% static SETTINGS.G3WSUITE_LOGIN_LOGO %}">
+            {% endif %}
+        </span>
+    </div><!-- /.login-logo -->
+
+    <div class="login-box-body">
+        {% if user.is_authenticated %}
+        <p>Current user: {{ user.email }}</p>
+        <form action="{% url 'oidc_logout' %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-xs-4">
+                    <input class="btn btn-primary btn-block btn-flat" type="submit" value="{% trans 'Sign Out' %}">
+                </div>
+            </div>
+        </form>
+        {% else %}
+        <a  class="btn btn-primary btn-block btn-flat" href="{% url 'oidc_authentication_init' %}">{% trans 'Sign In' %}</a>
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block custom_js_links_page %}
+<!-- iCheck -->
+<script src="{% static "bower_components/icheck/icheck.min.js" %}"></script>
+<script>
+$(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+});
+</script>
+{% endblock %}

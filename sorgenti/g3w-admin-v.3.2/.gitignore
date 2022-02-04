@@ -1,0 +1,76 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Python bytecode
+*.py[co]
+
+# Editor temp files
+*~
+
+# Local files
+*_local.sh
+
+# Sphinx docs
+docs/_build
+docs/locales/**/*.mo
+
+# PyCharms project file
+/.idea/
+
+# temp_uploads for jqupload
+/temp_uploads/
+
+# Django setting local file
+/g3w-admin/base/settings/local_settings.py
+/g3w-admin/base/settings/local_settings.py.*
+/g3w-admin/base/settings/local_ldap_settings.py
+
+# Node modules
+/node_modules
+
+# Bower components
+/g3w-admin/core/static/bower_components/
+
+# Coverage html test result reports
+/g3w-admin/htmlcov/
+
+# Gulp dist directory
+/dist/
+
+# Media and static
+/media/
+/static/
+
+run_local*.sh
+
+# Coverage
+/g3w-admin/.coverage
+
+# submodule
+/g3w-admin/ogc/
+/g3w-admin/iternet/
+/g3w-admin/cdu/
+/g3w-admin/law/
+/g3w-admin/iternet_capannori/
+/g3w-admin/notes/
+/g3w-admin/cadastre/
+/g3w-admin/cadastre_camaiore/
+/g3w-admin/frontend/
+/g3w-admin/authldap/
+/g3w-admin/globalsearch/
+/g3w-admin/stress/
+/g3w-admin/stress_admin/
+/g3w-admin/preventcurrentlogins/
+/g3w-admin/demo/
+/g3w-admin/egovbari/
+/g3w-admin/progeo/
+/g3w-admin/catalog/
+/g3w-admin/spid_redirect/
+/g3w-admin/archiweb/
+/g3w-admin/portal/
+/g3w-admin/g3wauthtoken/
+/g3w-admin/politowps/
+/g3w-admin/eleprofile/
+.gitmodules
+
+/pymast
+
+/shared-volume

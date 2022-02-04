@@ -1,0 +1,414 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-08 07:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cadastre/forms.py:36 cadastre/forms.py:122 cadastre/forms.py:200
+msgid "Type municipality code"
+msgstr ""
+
+#: cadastre/forms.py:58
+msgid "Data config"
+msgstr ""
+
+#: cadastre/forms.py:98
+msgid "Project not correct: {} layers no in project"
+msgstr ""
+
+#: cadastre/forms.py:123
+#: cadastre/templates/cadastre/user_db_config_list.html:24
+#: cadastre/templates/cadastre/user_db_config_list.html:35
+msgid "User"
+msgstr ""
+
+#: cadastre/forms.py:140
+msgid "Cadastre Editor 1 User"
+msgstr ""
+
+#: cadastre/forms.py:171
+msgid "Only one user and municipality code combination can exist"
+msgstr ""
+
+#: cadastre/forms.py:181
+msgid "User must be Editor Level 1"
+msgstr ""
+
+#: cadastre/forms.py:213
+msgid "CXF DB Connection"
+msgstr ""
+
+#: cadastre/models.py:935 cadastre/models.py:959
+msgid "Municipy code"
+msgstr ""
+
+#: cadastre/models.py:960
+msgid "DB Provider"
+msgstr ""
+
+#: cadastre/models.py:962
+msgid "Ip or host DB"
+msgstr ""
+
+#: cadastre/models.py:963
+msgid "Port DB"
+msgstr ""
+
+#: cadastre/models.py:964
+msgid "DB name"
+msgstr ""
+
+#: cadastre/models.py:965
+msgid "DB schema"
+msgstr ""
+
+#: cadastre/models.py:966
+msgid "DB table"
+msgstr ""
+
+#: cadastre/models.py:967
+msgid "DB user"
+msgstr ""
+
+#: cadastre/models.py:968
+msgid "DB password"
+msgstr ""
+
+#: cadastre/templates/cadastre/config.html:38
+msgid "Configuration application"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:10
+msgid "Cadastre projects"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:21
+msgid ""
+"Add, update or delete cadastre configurations: indicate what projects can "
+"show censuario data"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:31
+msgid "Configs"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:40
+msgid "Group"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:41
+msgid "Qdjango project"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:42
+msgid "Municipality cadastre code"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:43
+msgid "Viewer users"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:44
+msgid "Viewer user groups"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:55
+#: cadastre/templates/cadastre/config_list.html:68
+#: cadastre/templates/cadastre/user_db_config_list.html:50
+#: cadastre/templates/cadastre/user_db_config_list.html:108
+msgid "Edit"
+msgstr ""
+
+#: cadastre/templates/cadastre/config_list.html:60
+#: cadastre/templates/cadastre/include/import_cxf.html:28
+#: cadastre/templates/cadastre/loaddata.html:156
+#: cadastre/templates/cadastre/loaddata.html:232
+#: cadastre/templates/cadastre/user_db_config_list.html:55
+#: cadastre/templates/cadastre/user_db_config_list.html:113
+msgid "Delete"
+msgstr ""
+
+#: cadastre/templates/cadastre/configcxfdbconn.html:8
+msgid "Set CXF DB Connection"
+msgstr ""
+
+#: cadastre/templates/cadastre/configuser.html:8
+msgid "Set editor 1 user to load cadastre data"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:6
+#: cadastre/templates/cadastre/loaddata.html:55
+#: cadastre/templates/cadastre/loaddata.html:114
+#: cadastre/templates/cadastre/widgets/dashboard.html:13
+msgid "Cadastre"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:7
+#: cadastre/templates/cadastre/widgets/dashboard.html:28
+msgid "Report"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:17
+msgid "Real estate units"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:25
+msgid "Parcels"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:34
+msgid "Qdjango Projects"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:51
+msgid "Not yet 'Project' set!"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:52
+msgid "Choose a project"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:52
+msgid "HERE"
+msgstr ""
+
+#: cadastre/templates/cadastre/dashboard.html:61
+msgid "Module widgets"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/action_loadcxf.html:6
+#: cadastre/templates/cadastre/include/action_loaddata.html:6
+msgid "Revoke task"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/action_loadcxf.html:11
+#: cadastre/templates/cadastre/include/action_loaddata.html:11
+msgid "Show problems"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/action_loadcxf.html:15
+#: cadastre/templates/cadastre/include/action_loaddata.html:16
+msgid "Show info"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:9
+#: cadastre/templates/cadastre/loaddata.html:130
+#: cadastre/templates/cadastre/loaddata.html:215
+msgid "STATE"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:10
+#: cadastre/templates/cadastre/loaddata.html:131
+#: cadastre/templates/cadastre/loaddata.html:216
+msgid "Municipality code"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:12
+#: cadastre/templates/cadastre/loaddata.html:133
+#: cadastre/templates/cadastre/loaddata.html:217
+msgid "File"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:14
+#: cadastre/templates/cadastre/loaddata.html:135
+msgid "Task ID"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:17
+msgid "N file"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:18
+#: cadastre/templates/cadastre/loaddata.html:145
+#: cadastre/templates/cadastre/loaddata.html:219
+msgid "Upload date"
+msgstr ""
+
+#: cadastre/templates/cadastre/include/import_cxf.html:34
+#: cadastre/templates/cadastre/loaddata.html:162
+#: cadastre/templates/cadastre/loaddata.html:238
+msgid "Clear Db by Task id"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:56
+msgid "Uploader data"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:64
+#: cadastre/templates/cadastre/loaddata.html:138
+msgid "Supply type"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:77
+msgid "Upload cadastre data file"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:78
+msgid "Load"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:84
+msgid "Clear cadastre database"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:85
+msgid "Clear DB"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:93
+msgid "Attention"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:94
+msgid ""
+"Is not possible upload other files until previous uploading service is active"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:99
+msgid "Data structure for uploading censuario and DOCFA"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:108
+msgid "Uploaded files"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:139
+msgid "Description"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:140
+msgid "Update"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:141
+msgid "Application date"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:142
+msgid "Elaboration date"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:143
+msgid "Selection date"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:144
+msgid "Registration date"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:218
+msgid "Processing date"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:220
+msgid "N DOCFA"
+msgstr ""
+
+#: cadastre/templates/cadastre/loaddata.html:221
+msgid "N planimetries"
+msgstr ""
+
+#: cadastre/templates/cadastre/messages/check_project_delete.html:3
+#: cadastre/templates/cadastre/messages/check_project_update.html:3
+msgid "is project for "
+msgstr ""
+
+#: cadastre/templates/cadastre/messages/check_project_delete.html:3
+#: cadastre/templates/cadastre/messages/check_project_update.html:3
+msgid "Cadastre plugin"
+msgstr ""
+
+#: cadastre/templates/cadastre/messages/check_project_delete.html:3
+msgid "make attention on delete it."
+msgstr ""
+
+#: cadastre/templates/cadastre/messages/check_project_update.html:3
+msgid ""
+"make attention on update it. Update could break right working on cadastre "
+"module"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:11
+msgid "Cadastre user and DB CXF connections"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:26
+msgid "Editor 1 can load cadastre data"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:33
+#: cadastre/templates/cadastre/user_db_config_list.html:89
+msgid "Actions"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:34
+#: cadastre/templates/cadastre/user_db_config_list.html:90
+msgid "Municipality"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:70
+msgid "No users set."
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:80
+msgid "DB CXF Connection"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:82
+msgid "DB CXF table connections for municipality"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:91
+msgid "Host"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:92
+msgid "Database"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:93
+msgid "Table"
+msgstr ""
+
+#: cadastre/templates/cadastre/user_db_config_list.html:126
+msgid "No connections set."
+msgstr ""
+
+#: cadastre/templates/cadastre/widgets/dashboard.html:18
+msgid "Cadastral data module management"
+msgstr ""
+
+#: cadastre/templates/cadastre/widgets/dashboard.html:39
+msgid "Maps"
+msgstr ""
+
+#: cadastre/templates/cadastre/widgets/dashboard.html:60
+msgid "Censual data"
+msgstr ""
+
+#: cadastre/templates/cadastre/widgets/dashboard.html:70
+msgid "Config"
+msgstr ""
+
+#: cadastre/utils/cxfproviders/oracle.py:38
+#: cadastre/utils/cxfproviders/postgresql.py:39
+msgid "DB CONNECTION problem: {}"
+msgstr ""
+
+#: cadastre/utils/cxfproviders/postgresql.py:117
+msgid "SRID problem: Table has a SRID ({}) not equal to set in current form"
+msgstr ""

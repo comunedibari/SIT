@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load g3wadmin_tags %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+
+{% block page_header %}
+    <h1>{% trans 'Gelocation XLS/CSV' %}</h1>
+{% endblock %}
+
+{% block custom_js_links_page %}
+<script>
+// add action file_type select
+$(document).ready(function(){
+    var $file_type_select = $("#id_file_type");
+    var $codice_comune_select = $("#id_comune_code").parent().parent();
+    var $srid_select = $("#id_srid_input_file").parent().parent();
+
+    $codice_comune_select.hide();
+    $srid_select.hide();
+
+    $file_type_select.on('change', function(){
+        if ($(this).val() == 'with_cadastral'){
+            $codice_comune_select.show();
+        } else {
+            $codice_comune_select.hide();
+        }
+
+        if ($(this).val() == 'with_xy'){
+            $srid_select.show();
+        } else {
+            $srid_select.hide();
+        }
+    });
+
+    $file_type_select.trigger('change');
+});
+
+</script>
+{% endblock %}
+
+{% block main_content %}
+
+<form method="post" id="gelocation-form" enctype="multipart/form-data">
+    {% if form.errors or errors %}
+        <div class="row">
+            <div class="col-md-12">
+            <div class="alert alert-danger alert-dismissable">
+                <h4><i class="icon fa fa-ban"></i> {% trans 'Alert' %}!</h4>
+                    {% trans 'Some errors on form. Check it and send again.' %}
+                {% if errors %}
+                <div>{{ errors }}</div>
+                {% endif %}
+            </div>
+            </div>
+        </div>
+    {% endif %}
+    {% crispy form %}
+    {% include "geolocalexls/include/form_buttons.html" %}
+</form>
+
+{% endblock %}

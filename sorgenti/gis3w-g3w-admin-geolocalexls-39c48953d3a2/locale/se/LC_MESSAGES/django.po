@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-02 13:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:46
+msgid "Invalid file extension: only "
+msgstr ""
+
+#: forms.py:51
+msgid "With coordinates (x,y)"
+msgstr ""
+
+#: forms.py:52
+msgid "With addresses"
+msgstr ""
+
+#: forms.py:56
+msgid ", (comma)"
+msgstr ""
+
+#: forms.py:57
+msgid "; (semicolon)"
+msgstr ""
+
+#: forms.py:61
+msgid "With cadastral parcels (sheet, parcels, section)"
+msgstr ""
+
+#: forms.py:82
+msgid "File type you want to geolocate"
+msgstr ""
+
+#: forms.py:83
+msgid "File you wanto to gelocate"
+msgstr ""
+
+#: forms.py:84 templates/geolocalexls/loaddatainfo.html:6
+msgid "File extentions support: .csv, .xls. .xlsx"
+msgstr ""
+
+#: forms.py:85
+msgid "Output file name"
+msgstr ""
+
+#: forms.py:86
+msgid ""
+"(Optional) Specify a output file name, if not set original spreed sheet file "
+"name used"
+msgstr ""
+
+#: forms.py:90
+msgid "CSV separator"
+msgstr ""
+
+#: forms.py:92
+msgid "For CSV file type only, choose column separator"
+msgstr ""
+
+#: forms.py:119
+msgid "Geolocation file"
+msgstr ""
+
+#: forms.py:141
+msgid "With Cadastral file type, comune code doesn't have to be empty"
+msgstr ""
+
+#: forms.py:147
+msgid "With (x,y) file type, SRID of input file doesn't have to be empty"
+msgstr ""
+
+#: geolocation/address.py:38 geolocation/cadastral.py:46
+msgid "Input file has not the follow columns: , "
+msgstr ""
+
+#: geolocation/base.py:127
+msgid "Invalid size: check if headers and rows have same column separator"
+msgstr ""
+
+#: geolocation/base.py:136
+msgid "Input data has not HEADERS column."
+msgstr ""
+
+#: geolocation/xy.py:41
+msgid "Input file has not 'x' and/or 'y' columns!"
+msgstr ""
+
+#: templates/geolocalexls/gelocale_action.html:9
+msgid "Gelocation in action..."
+msgstr ""
+
+#: templates/geolocalexls/gelocale_form.html:9
+msgid "Gelocation XLS/CSV"
+msgstr ""
+
+#: templates/geolocalexls/gelocale_form.html:50
+msgid "Alert"
+msgstr ""
+
+#: templates/geolocalexls/gelocale_form.html:51
+msgid "Some errors on form. Check it and send again."
+msgstr ""
+
+#: templates/geolocalexls/include/form_buttons.html:6
+msgid "Geolocate - Generate ShapeFile"
+msgstr ""
+
+#: templates/geolocalexls/include/form_buttons.html:10
+msgid "Redo/Back"
+msgstr ""
+
+#: templates/geolocalexls/include/form_buttons.html:12
+msgid "Data structure for uploading"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:5
+msgid "General aspects"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:10
+#: templates/geolocalexls/loaddatainfo.html:24
+#: templates/geolocalexls/loaddatainfo.html:36
+msgid "Data"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:10
+msgid "x,y"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:11
+msgid "The file of type (x, y) must contain the following columns:"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:16
+msgid "Important"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:16
+msgid "CSV file must have \"comma (,)\"  as field separator"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:17
+#: templates/geolocalexls/loaddatainfo.html:32
+#: templates/geolocalexls/loaddatainfo.html:44
+msgid "The order and position of columns is not mandatory"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:24
+msgid "Addresses"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:25
+msgid "The \"address\" type file must contain the following columns:"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:27
+msgid "cap (i.e: 56048)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:28
+msgid "citta (i.e: volterra)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:29
+msgid "indirizzo (i.e: via primo maggio)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:30
+msgid "numciv (i.e: 10b)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:36
+msgid "Cadastral"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:37
+msgid "The \"cadastral\" type file must contain the following columns:"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:39
+msgid "foglio (i.e: 10)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:40
+msgid "numero (i.e: 110)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:41
+msgid "sezione (can be empty or a single character i.e. A)"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:42
+msgid "tipo (can be: 'T' or 'F')"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:50
+msgid "Example data"
+msgstr ""
+
+#: templates/geolocalexls/loaddatainfo.html:51
+msgid "Download the follow zip file for example data structure:"
+msgstr ""
