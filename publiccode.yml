@@ -160,6 +160,8 @@ intendedAudience:
   scope:
     - government
 it:
+  riuso:
+    codiceIPA: c_a662
   conforme:
     gdpr: false
     lineeGuidaDesign: false
