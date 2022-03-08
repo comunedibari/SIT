@@ -9,7 +9,7 @@ Il software è rilasciato con licenza aperta ai sensi dell'art. 69 comma 1 del <
 Il SIT per la Città metropolitana di Bari si compone di un modulo di Front Office e di un modulo di Back Office aventi le finalità di seguito riportate:
 
 ### Finalità del modulo di FRONT OFFICE
-Il modulo di front office è una web application che permette ai cittadini ed agli opera-tori dei comuni di:
+Il modulo di front office è una web application che permette ai cittadini ed agli operatori dei comuni di:
 - **consultare gli strati cartografici attraverso la sovrapposizione e l’interrogazione dei diversi layer informativi;**
 - **aggiornare i dati cartografici ed alfanumerici che compongono gli strati carto-grafici;**
 - **stampare stralci di mappe con relativa legenda e cartiglio;**
