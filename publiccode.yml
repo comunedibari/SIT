@@ -9,20 +9,20 @@ categories:
 dependsOn:
   open:
     - name: G3W Suite
-      optional: false
-      version: ''
+      optional: true
+      version: '3.4'
       versionMax: ''
       versionMin: ''
     - name: PostgreSQL
       optional: true
       version: 9.6.11
       versionMax: ''
-      versionMin: '9'
+      versionMin: '9.3'
     - name: QGIS
       optional: true
       version: 3.16.13
       versionMax: ''
-      versionMin: '9.3'
+      versionMin: ''
 description:
   it:
     apiDocumentation: ''
