@@ -13,6 +13,16 @@ dependsOn:
       version: ''
       versionMax: ''
       versionMin: ''
+    - name: PostgreSQL
+      optional: true
+      version: 9.6.11
+      versionMax: ''
+      versionMin: '9'
+    - name: QGIS
+      optional: true
+      version: 3.16.13
+      versionMax: ''
+      versionMin: '9.3'
 description:
   it:
     apiDocumentation: ''
