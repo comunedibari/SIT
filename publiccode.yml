@@ -15,7 +15,7 @@ dependsOn:
       versionMin: ''
 description:
   it:
-    apiDocumentation: 'https://github.com/g3w-suite'
+    apiDocumentation: ''
     features:
       - |-
         Consultare strati cartografici con sovrapposizione e interrogazione di
@@ -92,7 +92,7 @@ it:
     spid: true
 landingURL: 'https://sit.egov.ba.it'
 legal:
-  license: AGPL-3.0-only
+  license: AGPL-3.0-or-later
 localisation:
   availableLanguages:
     - it
@@ -114,7 +114,7 @@ platforms:
   - ios
   - windows
   - mac
-releaseDate: '2021-11-20'
+releaseDate: '2022-02-04'
 softwareType: standalone/web
 url: 'https://github.com/comunedibari/SIT'
 usedBy:
