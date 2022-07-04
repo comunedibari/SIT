@@ -6,52 +6,27 @@ publiccodeYmlVersion: '0.2'
 applicationSuite: G3W Suite
 categories:
   - geographic-information-systems
-dependsOn: 
+dependsOn:
   open:
     - name: G3W Suite
-      optional: true
+      optional: false
       version: '3.4'
       versionMax: ''
       versionMin: ''
     - name: PostgreSQL
       optional: true
-      version: '9.6.11'
+      version: 9.6.11
       versionMax: ''
       versionMin: '9.3'
     - name: QGIS
-      optional: true
-      version: '3.16.13'
+      optional: false
+      version: 3.16.13
       versionMax: ''
       versionMin: ''
-
 description:
   it:
-    apiDocumentation: ''
+    apiDocumentation: 'https://github.com/comunedibari/SIT'
     features:
-      - Consultare strati cartografici con sovrapposizione e interrogazione di
-        diversi layer informativi
-      - Aggiornare i dati cartografici ed alfanumerici che compongono gli strati
-        carto-grafici
-      - Stampare stralci di mappe con relativa legenda e cartiglio
-      - Consultare i dati catastali e le relative normative
-      - Generare il Certificato di Destinazione Urbanistica (CDU) pro-forma
-    genericName: Sistema Informativo Territoriale
-    longDescription: Il SIT Città Metropolitana di Bari è un Sistema Informativo Territoriale (SIT) rappresentato da un insieme di strumenti informatici concepiti per descrivere ed analizzare elementi, eventi e fenomeni inerenti la superficie terrestre. La tecnologia SIT integra in un unico ambiente le più comuni operazioni legate all’uso di database (interrogazioni – query – analisi statistiche, etc.) con i benefici dell’analisi geografica consentita dall’uso di mappe cartografiche. Questa particolarità distingue il SIT dagli altri sistemi di informazione e fa di esso un potente strumento utilizzabile da molteplici operatori privati e pubblici, per panificare gli eventi, predire i risultati e definire strategie. Il SIT consente di creare mappe (tematismi), integrare informazioni, visualizzare scenari e sviluppare effettive soluzioni esprimibili sia in forma cartografica che in forma quali-quantitativa. I servizi evolutivi del SIT sono stati realizzati grazie ai fondi di finanziamento PON METRO 2014-2020 – Asse 1 "Agenda Digitale" con il progetto EGOV-2 "Servizi interattivi per la Città Metropolitana di Bari" – CUP: J91J17000110007 cod. locale ba.1.1.1.a - il cui obiettivo è quello di favorire la piena digitalizzazione dei processi amministrativi ed ampliare l’offerta dei servizi digitali con piattaforme trasversali a supporto dell'area metropolitana. Il SIT per Area Vasta Metropoli Terra di Bari si compone di un modulo di Front Office e di un modulo di Back Office aventi le finalità di seguito riportate: Finalità del modulo di FRONT OFFICE Il modulo di front office è una web application che permette ai cittadini ed agli opera-tori dei comuni di:
-      - consultare gli strati cartografici attraverso la sovrapposizione e l’interrogazione dei diversi layer informativi;
-      - aggiornare i dati cartografici ed alfanumerici che compongono gli strati carto-grafici;
-      - stampare stralci di mappe con relativa legenda e cartiglio;
-      - consultare i dati catastali e le relative normative;
-      - generare il Certificato di Destinazione Urbanistica (CDU) pro-forma. 
-Finalità del modulo di BACK OFFICE
-       Il back office permette la gestione simultanea, di più enti e ne consente una propria personalizzazione.Il modulo di back office è una web application, ad uso esclusivo dell'Ente e permette di gestire:
-      - La banca dati cartografica;
-      - La pubblicazione dei progetti cartografici;
-      - Gestione degli utenti e dei gruppi con i relativi accessi ai progetti ed alle funzionalità;
-      - Personalizzazione dei contenuti del sistema di Front-Office;
-      - Aggiornamento dei dati catastali e delle normative;
-      - Predisposizione dei template per la stampa e produzione del CDU;
-      - Gestione del catalogo e dei metadati.
-Di seguito i sotto moduli di cui si compone il Sistema:
       - GeoDatabase;
       - Modulo Map Server(INSPIRE-RNDT compliant);
       - Portale di accesso;
@@ -61,30 +36,92 @@ Di seguito i sotto moduli di cui si compone il Sistema:
       - Modulo dei widget di ricerca;
       - Modulo di gestione delle normative;
       - Modulo per la gestione del censuario catastale;
-      - Modulo gestione Metadati (INSPIRE-RNDT compliant).'
+      - Modulo gestione Metadati (INSPIRE-RNDT compliant).
+    genericName: Sistema Informativo Territoriale
+    longDescription: |
+      Il SIT Città Metropolitana di Bari è un Sistema Informativo Territoriale
+      (SIT) rappresentato da un insieme di strumenti informatici concepiti per
+      descrivere ed analizzare elementi, eventi e fenomeni inerenti la
+      superficie terrestre. La tecnologia SIT integra in un unico ambiente le
+      più comuni operazioni legate all’uso di database (interrogazioni – query –
+      analisi statistiche, etc.) con i benefici dell’analisi geografica
+      consentita dall’uso di mappe cartografiche. Questa particolarità distingue
+      il SIT dagli altri sistemi di informazione e fa di esso un potente
+      strumento utilizzabile da molteplici operatori privati e pubblici, per
+      panificare gli eventi, predire i risultati e definire strategie. Il SIT
+      consente di creare mappe (tematismi), integrare informazioni, visualizzare
+      scenari e sviluppare effettive soluzioni esprimibili sia in forma
+      cartografica che in forma quali-quantitativa. I servizi evolutivi del SIT
+      sono stati realizzati grazie ai fondi di finanziamento PON METRO 2014-2020
+      – Asse 1 "Agenda Digitale" con il progetto EGOV-2 "Servizi interattivi per
+      la Città Metropolitana di Bari" – CUP: J91J17000110007 cod. locale
+      ba.1.1.1.a - il cui obiettivo è quello di favorire la piena
+      digitalizzazione dei processi amministrativi ed ampliare l’offerta dei
+      servizi digitali con piattaforme trasversali a supporto dell'area
+      metropolitana. Il SIT per Area Vasta Metropoli Terra di Bari si compone di
+      un modulo di Front Office e di un modulo di Back Office aventi le finalità
+      di seguito riportate: Finalità del modulo di FRONT OFFICE Il modulo di
+      front office è una web application che permette ai cittadini ed agli
+      opera-tori dei comuni di:
+
+            - consultare gli strati cartografici attraverso la sovrapposizione e l’interrogazione dei diversi layer informativi;
+
+            - aggiornare i dati cartografici ed alfanumerici che compongono gli strati carto-grafici;
+
+            - stampare stralci di mappe con relativa legenda e cartiglio;
+
+            - consultare i dati catastali e le relative normative;
+
+            - generare il Certificato di Destinazione Urbanistica (CDU) pro-forma. 
+
+      Finalità del modulo di BACK OFFICE
+
+             Il back office permette la gestione simultanea, di più enti e ne consente una propria personalizzazione.Il modulo di back office è una web application, ad uso esclusivo dell'Ente e permette di gestire:
+
+            - La banca dati cartografica;
+
+            - La pubblicazione dei progetti cartografici;
+
+            - Gestione degli utenti e dei gruppi con i relativi accessi ai progetti ed alle funzionalità;
+
+            - Personalizzazione dei contenuti del sistema di Front-Office;
+
+            - Aggiornamento dei dati catastali e delle normative;
+
+            - Predisposizione dei template per la stampa e produzione del CDU;
+
+            - Gestione del catalogo e dei metadati.
     screenshots:
-      - img/Home-comuni.jpg
-      - img/app-verdepubblico.jpg
-      - img/editing.jpg
-      - img/identify.jpg
-      - img/Legenda.jpg
-      - img/streetview.jpg
-      - img/toc.jpg
+      - |-
+        https://raw.githubusercontent.com/comunedibari/SIT/master/img/Home-comuni.jpg
+      - |-
+        https://raw.githubusercontent.com/comunedibari/SIT/master/img/app-verdepubblico.jpg
+      - |-
+        https://raw.githubusercontent.com/comunedibari/SIT/master/img/editing.jpg
+      - |-
+        https://raw.githubusercontent.com/comunedibari/SIT/master/img/identify.jpg
+      - |-
+        https://raw.githubusercontent.com/comunedibari/SIT/master/img/Legenda.jpg
+      - |-
+        https://raw.githubusercontent.com/comunedibari/SIT/master/img/streetview.jpg
+      - 'https://raw.githubusercontent.com/comunedibari/SIT/master/img/toc.jpg'
     shortDescription: |-
-      Kit di riuso a disposizione delle PA per la gestione e la pubblicazione di
-      mappe cartografiche e strumenti urbanistici.
+      Kit di riuso a disposizione delle PA per la gestione e la pubblicazione
+      di       mappe cartografiche e strumenti urbanistici.
 developmentStatus: stable
 intendedAudience:
+  countries:
+    - it
   scope:
     - government
+isBasedOn:
+  - G3W Suite
 it:
-  riuso:
-    codiceIPA: c_a662
   conforme:
     gdpr: false
-    lineeGuidaDesign: false
-    misureMinimeSicurezza: false
-    modelloInteroperabilita: false
+    lineeGuidaDesign: true
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: true
   countryExtensionVersion: '0.2'
   piattaforme:
     anpr: false
@@ -104,51 +141,17 @@ maintenance:
       email: casaburi@planetek.it
       name: Mauro Casaburi
   contractors:
-    - name: Planetek Italia
-      until: '2022-04-30'
+    - name: Area Vasta Metropoli Terra di Bari
+      until: '2024-07-30'
+      website: 'https://egov.ba.it/'
   type: contract
-name: SIT Città Metropolitana di Bari
+name: |-
+  Sistema Informativo Territoriale Città metropolitana di Bari (E-GOV 2 Servizi
+  interattivi)
 platforms:
-  - web
-  - linux
-  - android
-  - ios
   - windows
-  - mac
+  - linux
 releaseDate: '2022-02-04'
 softwareType: standalone/web
+softwareVersion: '3.4'
 url: 'https://github.com/comunedibari/SIT'
-usedBy:
-  - Piano Paesaggistico Regionale Friuli Venezia Giulia
-  - Parco Nazionale Casentino
-  - Città Metropolitana di Roma Capitale
-  - Città Metropolitana di Bari
-  - Comune di Andria
-  - Adelfia
-  - Bari
-  - Binetto
-  - Bitetto
-  - Bitonto
-  - Bitritto
-  - Capurso
-  - Casamassima
-  - Cassano delle Murge
-  - Cellamare
-  - Conversano
-  - Gioia del Colle
-  - Giovinazzo
-  - Modugno
-  - Mola di Bari
-  - Molfetta
-  - Noicattaro
-  - Palo del Colle
-  - Polignano
-  - Rutigliano
-  - Ruvo di Puglia
-  - Sammichele di Bari
-  - Sannicandro di Bari
-  - Terlizzi
-  - Toritto
-  - Triggiano
-  - Turi
-  - Valenzano
