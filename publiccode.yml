@@ -6,7 +6,23 @@ publiccodeYmlVersion: '0.2'
 applicationSuite: G3W Suite
 categories:
   - geographic-information-systems
-dependsOn: ''
+dependsOn: 
+  open:
+    - name: G3W Suite
+      optional: true
+      version: '3.4'
+      versionMax: ''
+      versionMin: ''
+    - name: PostgreSQL
+      optional: true
+      version: '9.6.11'
+      versionMax: ''
+      versionMin: '9.3'
+    - name: QGIS
+      optional: true
+      version: '3.16.13'
+      versionMax: ''
+      versionMin: ''
 
 description:
   it:
