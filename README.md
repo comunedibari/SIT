@@ -40,4 +40,4 @@ Il modulo di back office è una web application, ad uso esclusivo dell'Ente e pe
 - **Modulo per la gestione del censuario catastale;**
 - **Modulo gestione Metadati.**
 
-Si rimanda al paragrafo 3.1 del documento "pkz035-26-2.0_D6.Manuale_Gestione_Applicativa" la descrizione delle dipendenze e le modalità di rilascio dei moduli.
+Si rimanda al paragrafo 3.1 del documento "pkz035-26-2.0_D6. Manuale Gestione Applicativa del sistema.docx" la descrizione delle dipendenze e le modalità di rilascio dei moduli.
