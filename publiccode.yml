@@ -25,7 +25,6 @@ dependsOn:
       versionMin: ''
 description:
   it:
-    apiDocumentation: 'https://github.com/comunedibari/SIT'
     features:
       - GeoDatabase;
       - Modulo Map Server(INSPIRE-RNDT compliant);
