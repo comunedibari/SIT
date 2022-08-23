@@ -91,19 +91,13 @@ description:
 
             - Gestione del catalogo e dei metadati.
     screenshots:
-      - |-
-        https://raw.githubusercontent.com/comunedibari/SIT/master/img/Home-comuni.jpg
-      - |-
-        https://raw.githubusercontent.com/comunedibari/SIT/master/img/app-verdepubblico.jpg
-      - |-
-        https://raw.githubusercontent.com/comunedibari/SIT/master/img/editing.jpg
-      - |-
-        https://raw.githubusercontent.com/comunedibari/SIT/master/img/identify.jpg
-      - |-
-        https://raw.githubusercontent.com/comunedibari/SIT/master/img/Legenda.jpg
-      - |-
-        https://raw.githubusercontent.com/comunedibari/SIT/master/img/streetview.jpg
-      - 'https://raw.githubusercontent.com/comunedibari/SIT/master/img/toc.jpg'
+      - img/Home-comuni.jpg
+      - img/app-verdepubblico.jpg
+      - img/editing.jpg
+      - img/identify.jpg
+      - img/Legenda.jpg
+      - img/streetview.jpg
+      - img/toc.jpg
     shortDescription: |-
       Kit di riuso a disposizione delle PA per la gestione e la pubblicazione
       di       mappe cartografiche e strumenti urbanistici.
