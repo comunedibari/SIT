@@ -61,8 +61,7 @@ description:
       un modulo di Front Office e di un modulo di Back Office aventi le finalità
       di seguito riportate: Finalità del modulo di FRONT OFFICE Il modulo di
       front office è una web application che permette ai cittadini ed agli
-      opera-tori dei comuni di:
-      
+      operatori dei comuni di:
             - consultare gli strati cartografici attraverso la sovrapposizione e l’interrogazione dei diversi layer informativi;
             - aggiornare i dati cartografici ed alfanumerici che compongono gli strati carto-grafici;
             - stampare stralci di mappe con relativa legenda e cartiglio;
@@ -70,7 +69,8 @@ description:
             - generare il Certificato di Destinazione Urbanistica (CDU) pro-forma. 
       
       Finalità del modulo di BACK OFFICE
-             Il back office permette la gestione simultanea, di più enti e ne consente una propria personalizzazione.Il modulo di back office è una web application, ad uso esclusivo dell'Ente e permette di gestire:
+      
+      Il back office permette la gestione simultanea, di più enti e ne consente una propria personalizzazione. Il modulo di back office è una web application, ad uso esclusivo dell'Ente e permette di gestire:
       
             - La banca dati cartografica;
             - La pubblicazione dei progetti cartografici;
@@ -88,8 +88,7 @@ description:
       - img/streetview.jpg
       - img/toc.jpg
     shortDescription: |-
-      Kit di riuso a disposizione delle PA per la gestione e la pubblicazione
-      di       mappe cartografiche e strumenti urbanistici.
+      Kit di riuso a disposizione delle PA per la gestione e la pubblicazione di mappe cartografiche e strumenti urbanistici.
 developmentStatus: stable
 intendedAudience:
   countries:
