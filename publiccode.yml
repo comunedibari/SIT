@@ -63,32 +63,21 @@ description:
       front office è una web application che permette ai cittadini ed agli
       operatori dei comuni di:
             •	 consultare gli strati cartografici attraverso la sovrapposizione e l’interrogazione dei diversi layer informativi;
-            
             •	 aggiornare i dati cartografici ed alfanumerici che compongono gli strati carto-grafici;
-            
             •	 stampare stralci di mappe con relativa legenda e cartiglio;
-            
             •	 consultare i dati catastali e le relative normative;
-            
             •	 generare il Certificato di Destinazione Urbanistica (CDU) pro-forma. 
             
       
       Finalità del modulo di BACK OFFICE
       
       Il back office permette la gestione simultanea, di più enti e ne consente una propria personalizzazione. Il modulo di back office è una web application, ad uso esclusivo dell'Ente e permette di gestire:
-      
             •	 La banca dati cartografica;
-            
             •	 La pubblicazione dei progetti cartografici;
-            
             •	 Gestione degli utenti e dei gruppi con i relativi accessi ai progetti ed alle funzionalità;
-            
             •	 Personalizzazione dei contenuti del sistema di Front-Office;
-            
             •	 Aggiornamento dei dati catastali e delle normative;
-            
             •	 Predisposizione dei template per la stampa e produzione del CDU;
-            
             •	 Gestione del catalogo e dei metadati.
             
     screenshots:
