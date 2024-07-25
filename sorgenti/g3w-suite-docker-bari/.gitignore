@@ -1,7 +1,0 @@
-.env
-*_local.*
-
-projects
-.idea
-
-shared-volume

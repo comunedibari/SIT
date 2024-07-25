@@ -1,5 +1,0 @@
-py3o:
-    image: xcgd/py3o:branch-default
-    restart: unless-stopped
-    ports:
-        - "8765:8765"
