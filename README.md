@@ -42,5 +42,3 @@ Il modulo di back office è una web application, ad uso esclusivo dell'Ente e pe
 
 ### Dipendenza piattaforme esterne
 Il sistema è stato realizzato utilizzando la piattaforma open source G3W-Suite: https://github.com/g3w-suite  
-
-Si rimanda al paragrafo 3.1 del documento "pkz035-26-2.0_D6. Manuale Gestione Applicativa del sistema.docx" la descrizione delle dipendenze e le modalità di rilascio dei moduli.
