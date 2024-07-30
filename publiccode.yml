@@ -2,7 +2,7 @@
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: '0.3'
 applicationSuite: G3W Suite
 categories:
   - geographic-information-systems
@@ -10,7 +10,7 @@ dependsOn:
   open:
     - name: G3W Suite
       optional: false
-      version: '3.4'
+      version: '3.6'
       versionMax: ''
       versionMin: ''
     - name: PostgreSQL
@@ -20,7 +20,7 @@ dependsOn:
       versionMin: '9.3'
     - name: QGIS
       optional: false
-      version: 3.16.13
+      version: 3.28
       versionMax: ''
       versionMin: ''
 description:
@@ -137,5 +137,5 @@ platforms:
   - linux
 releaseDate: '2022-02-04'
 softwareType: standalone/web
-softwareVersion: '3.4'
+softwareVersion: '3.6'
 url: 'https://github.com/comunedibari/SIT'
