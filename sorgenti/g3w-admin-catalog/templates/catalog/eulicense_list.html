@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_header %}
+        <h1>{% trans 'Europe Union Data License' %}
+        </h1>
+{% endblock %}
+
+{% block main_content %}
+
+<div class="row">
+<div class="col-md-12">
+{% for o in object_list %}
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#{{ o.op_code }}">
+                    {{ o.op_code }}
+                </a>
+            </h4>
+        </div>
+        <div id="{{ o.op_code }}" class="panel-collapse collapse in">
+            <div class="box-body">
+                <p>{{ o.definition }}</p>
+                <p><a href="{{ o.url }}" target="_blank">{{ o.url }}</a></p>
+            </div>
+        </div>
+        </div>
+{% endfor %}
+    </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,1415 @@
+[
+{
+ "model": "catalog.eulicense",
+ "pk": 1,
+ "fields": {
+  "op_code": "FRAMEWORX_1_0",
+  "definition": "Frameworx-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ODC_BY"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 2,
+ "fields": {
+  "op_code": "CC_PDM_1_0",
+  "definition": "Published by Creative Commons, Public Domain Mark (CC PDM 1.0) identifies a work as being free of known restrictions under copyright law, including all related and neighboring rights. The user can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_PDM_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 3,
+ "fields": {
+  "op_code": "ECL_2_0",
+  "definition": "ECL-2.0 is a permissive free software licence approved by the Open Source Initiative. It is similar to the Apache 1.2. Nothing in the licence prohibits re-licencing of a larger work under the EUPL.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ECL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 4,
+ "fields": {
+  "op_code": "CC_BYNCND_2_5",
+  "definition": "CC BY-ND-NC 2.5 is the most restrictive of the six main licences of Creative Commons, only allowing others to download the works and share them with others as long as they credit the author, but they can\u2019t change them in any way or use them commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND_2_5"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 5,
+ "fields": {
+  "op_code": "CC_BYND",
+  "definition": "Cette licence autorise la redistribution, \u00e0 des fins commerciales ou non, tant que l\u2019\u0153uvre est diffus\u00e9e sans modification et dans son int\u00e9gralit\u00e9, avec attribution et citation du nom de l\u2019auteur/autrice.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYND"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 6,
+ "fields": {
+  "op_code": "RSCPL",
+  "definition": "The Ricoh Source Code Public License (RSCPL) is a copyleft-style, free software licence approved by the Open Source Initiative with much built-in protection for the author.",
+  "url": "http://publications.europa.eu/resource/authority/licence/RSCPL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 7,
+ "fields": {
+  "op_code": "VSL_1_0",
+  "definition": "The Vovida Software License v. 1.0 is a BSD plus-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/VSL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 8,
+ "fields": {
+  "op_code": "SIMPL_2_0",
+  "definition": "Simple Public License 2.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 9,
+ "fields": {
+  "op_code": "MPL_2_0",
+  "definition": "MPL-2.0 is a weak copyleft licence, characterised as a middle ground between permissive free software licences and the GNU General Public License that seeks to balance the concerns of proprietary and open source developers. As such, it allows re-licencing. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MPL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 10,
+ "fields": {
+  "op_code": "POSTGRE_SQL",
+  "definition": "PostgreSQL is a BSD-style permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/POSTGRE_SQL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 11,
+ "fields": {
+  "op_code": "GNU_FDL",
+  "definition": "GNU Free Documentation License est une forme de copyleft destin\u00e9e aux manuels, aux livres scolaires et autres documents. Son objectif est de garantir \u00e0 tous la possibilit\u00e9 effective de copier et de redistribuer librement le document avec ou sans modification, et que ce soit ou non dans un but commercial.",
+  "url": "http://publications.europa.eu/resource/authority/licence/GNU_FDL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 12,
+ "fields": {
+  "op_code": "NAUMEN",
+  "definition": "Approved by the Open Source Initiative, Naumen is a fairly restrictive free software licence, but provides good protection for the author of the software.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NAUMEN"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 13,
+ "fields": {
+  "op_code": "CC_BYSA",
+  "definition": "Cette licence permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/l\u2019autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/l\u2019autrice en citant son nom et qu\u2019on diffuse les nouvelles cr\u00e9ations selon des conditions identiques. Cette licence est souvent compar\u00e9e aux licences de logiciels libres, \u00abopen source\u00bb ou \u00abcopyleft\u00bb. Toutes les nouvelles \u0153uvres bas\u00e9es sur celles de l\u2019auteur/autrice auront la m\u00eame licence, et toute \u0153uvre d\u00e9riv\u00e9e pourra \u00eatre utilis\u00e9e m\u00eame \u00e0 des fins commerciales. C\u2019est la licence utilis\u00e9e par Wikip\u00e9dia; elle est recommand\u00e9e pour des \u0153uvres qui pourraient b\u00e9n\u00e9ficier de l\u2019incorporation de contenu depuis Wikip\u00e9dia et d\u2019autres projets sous licence similaire.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYSA"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 14,
+ "fields": {
+  "op_code": "CC_BYNCSA_4_0",
+  "definition": "CC BY-NC-SA 4.0 lets others remix, tweak, and build upon the author\u2019s work non-commercially, as long as they credit the author and licence their new creations under the identical terms.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 15,
+ "fields": {
+  "op_code": "NLOD_1_0",
+  "definition": "Published by Norway, NLOD 1.0 grants the user the right to copy, use and distribute information, provided the user acknowledges the contributors and complies with the terms and conditions stipulated in this licence.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NLOD_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 16,
+ "fields": {
+  "op_code": "APL_1_0",
+  "definition": "APL-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. It allows combining the covered code with other components not governed by the APL licence provided the APL requirements are fulfilled for the covered portion of the larger work.",
+  "url": "http://publications.europa.eu/resource/authority/licence/APL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 17,
+ "fields": {
+  "op_code": "BSD_2_CLAUSE",
+  "definition": "BSD-2-Clause permits redistribution and use in source and binary forms, with or without modification, provided that the certain conditions are met: redistributions of source code must retain the copyright notice, the specific list of conditions and the disclaimer.",
+  "url": "http://publications.europa.eu/resource/authority/licence/BSD_2_CLAUSE"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 18,
+ "fields": {
+  "op_code": "QPL_1_0",
+  "definition": "The Q Public License Version 1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. It was designed by the Norwegian firm Trolltech to govern the distribution of its software, the Qt Toolkit.",
+  "url": "http://publications.europa.eu/resource/authority/licence/QPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 19,
+ "fields": {
+  "op_code": "FAIR",
+  "definition": "Fair is a permissive free software licence approved by the Open Source Initiative. It gives complete freedom to use the given works, as long as this licence is included and a warranty is not placed.",
+  "url": "http://publications.europa.eu/resource/authority/licence/FAIR"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 20,
+ "fields": {
+  "op_code": "WATCOM_1_0",
+  "definition": "Watcom-1.0 is a proprietary+patent-style, strong copyleft software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/WATCOM_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 21,
+ "fields": {
+  "op_code": "EUPL_1_1",
+  "definition": "Created as a tool for publishing any copyrighted work as open source on the initiative of the European Commission, EUPL v.1.1 is the first European Free/Open Source Software (F/OSS) licence. The European Commission published the version 1.1 in all the official languages of the European Union by the Decision of 9 January 2009.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EUPL_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 22,
+ "fields": {
+  "op_code": "ZPL_2_0",
+  "definition": "The Zope Public License Version 2.0 is a free software licence approved by the Open Source Initiative, used primarily for the Zope application server software. It is similar to the well-known BSD license, however the ZPL also adds clauses prohibiting trademark use and requiring documentation of all changes.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ZPL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 23,
+ "fields": {
+  "op_code": "CC_BYND_2_5",
+  "definition": "CC BY-ND 2.5 allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the author.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MIT"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 24,
+ "fields": {
+  "op_code": "WXWINDOWS",
+  "definition": "Approved by the Open Source Initiative, wxWindows is a copyleft-style, free software licence created for wxWidgets.",
+  "url": "http://publications.europa.eu/resource/authority/licence/WXWINDOWS"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 25,
+ "fields": {
+  "op_code": "CC_BYNC_4_0",
+  "definition": "CC BY-NC 4.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales et, bien que les nouvelles \u0153uvres doivent cr\u00e9diter l\u2019auteur/autrice en citant son nom et ne pas constituer une utilisation commerciale, elles n\u2019ont pas \u00e0 \u00eatre diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNC_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 26,
+ "fields": {
+  "op_code": "ARTISTIC_1_0",
+  "definition": "Artistic-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. It is superseded by Artistic 2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ARTISTIC_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 27,
+ "fields": {
+  "op_code": "IODL_1_0",
+  "definition": "Published by Italy, IODL 1.0 aims at providing the Italian public sector with a licence facilitating the re-use of public sector information. Even commercial reuse of data is allowed, as long as credit is given to the author and new creations are licenced under the identical terms. All new works based on the original work will carry the same licence, so any derivatives will also allow commercial use.",
+  "url": "http://publications.europa.eu/resource/authority/licence/IODL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 28,
+ "fields": {
+  "op_code": "CECILL_2_1",
+  "definition": "CECILL-2.1 is a moderate copyleft licence initiated in France by CEA, CNRS and Inria and approved by the Open Source Initiative. It has a working value in English/French. It is widely compatible, since only the specific files source code must stay covered, and not the other files or components of a solution. It is therefore designed for components or libraries. Governed by French law.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CECILL_2_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 29,
+ "fields": {
+  "op_code": "PHP_3_0",
+  "definition": "The PHP License 3.0 is a permissive free software licence approved by the Open Source Initiative. It has minimal, clear requirements, and explicitly bars the use of the PHP name to endorse the software.",
+  "url": "http://publications.europa.eu/resource/authority/licence/PHP_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 30,
+ "fields": {
+  "op_code": "CC_BYNCSA_2_0",
+  "definition": "CC BY-NC-SA 2.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales tant qu\u2019on le/la cr\u00e9dite en citant son nom et que les nouvelles \u0153uvres sont diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 31,
+ "fields": {
+  "op_code": "ENTESSA",
+  "definition": "Entessa 1.0 is a BSD-style, permissive free software licence approved by the Open Source Initiative. It imposes copyright acknowledgements that are compatible with the EUPL.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ENTESSA"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 32,
+ "fields": {
+  "op_code": "IPA",
+  "definition": "The IPA licence applies only to font programs and allows for a great deal of freedom in distributing them, both commercially and non-commercially. The name of redistributed versions of the original software cannot be changed and must include a copy of the license.",
+  "url": "http://publications.europa.eu/resource/authority/licence/IPA"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 33,
+ "fields": {
+  "op_code": "GNU_FDL_1_2",
+  "definition": "GNU FDL 1.2 is a form of copyleft intended for use on a manual, textbook or other document to assure everyone the effective freedom to copy and redistribute it, with or without modifications, either commercially or non-commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/GNU_FDL_1_2"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 34,
+ "fields": {
+  "op_code": "ODC_BL",
+  "definition": "ODbL is a licence agreement intended to allow users to freely share, modify, and use the database concerned while maintaining this same freedom for others. Some jurisdictions, mainly in the European Union, have specific rights that cover databases, and so this licence addresses these rights, too. This licence is also an agreement in contract for users of this database to act in certain ways in return for accessing the database concerned.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ODC_BL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 35,
+ "fields": {
+  "op_code": "PSEUL",
+  "definition": "The INSPIRE End User Licence (PSEUL) aims to enable the sharing of environmental spatial information amongst public sector organisations. Licenced data under PSEUL is limited to data created (derived) by the user using Ordnance Survey (OS) licenced data.",
+  "url": "http://publications.europa.eu/resource/authority/licence/PSEUL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 36,
+ "fields": {
+  "op_code": "LPL_1_0",
+  "definition": "LPL-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. It is superseded by LPL-1.02.",
+  "url": "http://publications.europa.eu/resource/authority/licence/LPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 37,
+ "fields": {
+  "op_code": "EUPL_1_0",
+  "definition": "Created as a tool for publishing any copyrighted work as open source on the initiative of the European Commission, EUPL v.1.0 is the first European Free/Open Source Software (F/OSS) licence. The final version (v.1.0) was officially approved on 9 January 2007 in three linguistic versions. By a second Decision of 9 January 2008, the European Commission validated the EUPL in all the official languages of the European Union.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EUPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 38,
+ "fields": {
+  "op_code": "DLDE_BY_1_0",
+  "definition": "Published by Germany, DL-DE BY 1.0 is a data licence permitting any use commercially and non-commercially, as long as credit is given to the author for the original creation. Changes must be marked as such in the source note. The provider mus make available the data, contents and services with the diligence necessary for the discharge of its public tasks.",
+  "url": "http://publications.europa.eu/resource/authority/licence/DLDE_BY_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 39,
+ "fields": {
+  "op_code": "DLDE_BYNC_1_0",
+  "definition": "Published by Germany, DL-DE BY-NC 1.0 is a data licence permitting any non-commercial use, as long as credit is given to the author for the original creation. Changes must be marked as such in the source note. The provider mus make available the data, contents and services with the diligence necessary for the discharge of its public tasks.",
+  "url": "http://publications.europa.eu/resource/authority/licence/DLDE_BYNC_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 40,
+ "fields": {
+  "op_code": "APACHE_2_0",
+  "definition": "Apache-2.0 is a permissive free software licence approved by the Open Source Initiative. It gives complete freedom to use the given works, as long as the required notices are included. Compared with the MIT, recipients receive a patent licence from the contributors of the code.",
+  "url": "http://publications.europa.eu/resource/authority/licence/APACHE_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 41,
+ "fields": {
+  "op_code": "IPL_1_0",
+  "definition": "The IPL-1.0 is the open-source licence IBM uses for some of its software. Supposed to facilitate commercial use of said software, is very clear on the specifics of liability. It also grants explicit patent rights.",
+  "url": "http://publications.europa.eu/resource/authority/licence/IPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 42,
+ "fields": {
+  "op_code": "CC_BYNC_1_0",
+  "definition": "CC BY-NC 1.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales et, bien que les nouvelles \u0153uvres doivent cr\u00e9diter l\u2019auteur/autrice en citant son nom et ne pas constituer une utilisation commerciale, elles n\u2019ont pas \u00e0 \u00eatre diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNC_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 43,
+ "fields": {
+  "op_code": "SLEEPYCAT",
+  "definition": "The Sleepycat License is a BSD plus-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/SLEEPYCAT"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 44,
+ "fields": {
+  "op_code": "UCL_1_0",
+  "definition": "Upstream Compatibility License v1.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/UCL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 45,
+ "fields": {
+  "op_code": "MIT",
+  "definition": "Approved by the Open Source Initiative, MIT is the most recommended permissive licence: short and very popular. Everything is allowed as long as the original copyright and licence notice is included in any copy of the software/source.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MIT"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 46,
+ "fields": {
+  "op_code": "EPL_1_0",
+  "definition": "EPL 1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. Made and mainly used by the Eclipse Foundation, it is similar to GPL but does not submit linking of the covered code to conditions or \u201dviral\u201d extension of licence coverage to the other linked software. It is superseded by EPL 2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 47,
+ "fields": {
+  "op_code": "EU_DATAGRID",
+  "definition": "EUDatagrid is a permissive free software licence approved by the Open Source Initiative. It is a classic 3-clause licence. Nothing in this licence restricts redistribution of larger works under the EUPL.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EU_DATAGRID"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 48,
+ "fields": {
+  "op_code": "CC_BYNC_2_5",
+  "definition": "CC BY-NC 2.5 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales et, bien que les nouvelles \u0153uvres doivent cr\u00e9diter l\u2019auteur/autrice en citant son nom et ne pas constituer une utilisation commerciale, elles n\u2019ont pas \u00e0 \u00eatre diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNC_2_5"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 49,
+ "fields": {
+  "op_code": "CC_BYND_1_0",
+  "definition": "CC BY-ND 1.0 autorise la redistribution, \u00e0 des fins commerciales ou non, tant que l\u2019\u0153uvre est diffus\u00e9e sans modification et dans son int\u00e9gralit\u00e9, avec attribution et citation du nom de l\u2019auteur/autrice.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYND_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 50,
+ "fields": {
+  "op_code": "BSD_3_CLAUSE_LBNL",
+  "definition": "BSD-3-Clause-LBNL is a BSD-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE_LBNL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 51,
+ "fields": {
+  "op_code": "ECOS_2_0",
+  "definition": "Owned by the Free Software Foundation, eCos-2.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ECOS_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 52,
+ "fields": {
+  "op_code": "MS_RL",
+  "definition": "MS-RL is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MS_RL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 53,
+ "fields": {
+  "op_code": "CC_BYNCSA_2_5",
+  "definition": "CC BY-NC-SA 2.5 lets others remix, tweak, and build upon the author\u2019s work non-commercially, as long as they credit the author and licence their new creations under the identical terms.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_2_5"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 54,
+ "fields": {
+  "op_code": "CC_BYNCND_2_0",
+  "definition": "CC BY-ND-NC 2.0 est la plus restrictive des six licences principales de Creative Commons, n\u2019autorisant les autres qu\u2019\u00e0 t\u00e9l\u00e9charger les \u0153uvres de l\u2019auteur/autrice et \u00e0 les partager tant qu\u2019on le/la cr\u00e9dite en citant son nom, mais on ne peut les modifier de quelque fa\u00e7on que ce soit ni les utiliser \u00e0 des fins commerciales.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 55,
+ "fields": {
+  "op_code": "CC_BY_1_0",
+  "definition": "CC BY 1.0 permet aux autres de distribuer, remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/autrice en citant son nom. C\u2019est le contrat le plus souple propos\u00e9. Recommand\u00e9 pour la diffusion et l\u2019utilisation maximales d\u2019\u0153uvres licenci\u00e9es sous CC.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 56,
+ "fields": {
+  "op_code": "OSL_1_0",
+  "definition": "Open Software License 1.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OSL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 57,
+ "fields": {
+  "op_code": "GPL_2_0",
+  "definition": "GPL-2.0 is the \u201dhistorical\u201d free software licence. It is supported by the Free Software Foundation. Copy, modification and distribution are authorised, changes/dates must be traced in source files. Any derivative must also be made available under the GPL along with build and install instructions. Lack of compatibility is a known GPL-2.0 issue when a project combines multiple sources and stakeholders.",
+  "url": "http://publications.europa.eu/resource/authority/licence/GPL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 58,
+ "fields": {
+  "op_code": "CC_BYNC_2_0",
+  "definition": "CC BY-NC 2.0 lets others remix, tweak, and build upon the author\u2019s work non-commercially, and although their new works must also acknowledge the author and be non-commercial, they don\u2019t have to licence their derivative works on the same terms.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNC_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 59,
+ "fields": {
+  "op_code": "OGL_3_0",
+  "definition": "Developed and maintained by the National Archives, OGL-3.0 is a copyright licence for Crown Copyright works published by the UK government consisting of a simple set of terms and conditions facilitating the re-use of a wide range of public sector information free of charge. The OGL terms are compatible with the latest versions of the Creative Commons Attribution Licence and the Open Data Commons Attribution Licence. The OGL is a perpetual licence so any past and continuing use of information authorised under v1.0 or v2.0 may continue.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OGL_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 60,
+ "fields": {
+  "op_code": "CNRI_PYTHON",
+  "definition": "CNRI-Python is a permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CNRI_PYTHON"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 61,
+ "fields": {
+  "op_code": "MPL_1_0",
+  "definition": "MPL-1.0 is a weak copyleft licence, characterised as a middle ground between permissive free software licences and the GNU General Public License that seeks to balance the concerns of proprietary and open source developers. As such, it allows re-licencing. It is approved by the Open Source Initiative. It has been superseded by v2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 62,
+ "fields": {
+  "op_code": "IODL_2_0",
+  "definition": "Published by Italy, IODL 2.0 aims at providing the Italian public sector with a licence facilitating the re-use of public sector information. It allows distribution and building upon the author\u2019s work, even commercially, as long as credit is given to the author for the original creation.",
+  "url": "http://publications.europa.eu/resource/authority/licence/IODL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 63,
+ "fields": {
+  "op_code": "ZLIB",
+  "definition": "Zlib is designed to be a free, general-purpose, legally unencumbered \u2013 not covered by any patents \u2013 lossless data-compression library for use on virtually any computer hardware and operating system. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ZLIB"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 64,
+ "fields": {
+  "op_code": "ECL_1_0",
+  "definition": "ECL-1.0 is a permissive free software licence approved by the Open Source Initiative. It is similar to the Apache 1.2. It is superseded by ECL-2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ECL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 65,
+ "fields": {
+  "op_code": "0BSD",
+  "definition": "The BSD 0-clause licence, 0BSD, goes further than the 2-clause licence by dropping the requirements to include the copyright notice, licence text or disclaimer in either source or binary forms. Doing so forms a public-domain-equivalent licence. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/0BSD"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 66,
+ "fields": {
+  "op_code": "CC_BYNCSA_1_0",
+  "definition": "CC BY-NC-SA 1.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales tant qu\u2019on le/la cr\u00e9dite en citant son nom et que les nouvelles \u0153uvres sont diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 67,
+ "fields": {
+  "op_code": "CC_BYND_4_0",
+  "definition": "CC BY-ND 4.0 allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the author.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYND_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 68,
+ "fields": {
+  "op_code": "XNET",
+  "definition": "Xnet is a MIT-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/XNET"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 69,
+ "fields": {
+  "op_code": "LILIQ_P_1_1",
+  "definition": "Approved by the Open Source Initiative, LiLiQ-P-1.1 is a permissive licence produced by the State of Quebec (Canada).",
+  "url": "http://publications.europa.eu/resource/authority/licence/LILIQ_P_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 70,
+ "fields": {
+  "op_code": "CC0",
+  "definition": "The person who associated a work with CC0 1.0 has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. One can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 71,
+ "fields": {
+  "op_code": "OGL_2_0",
+  "definition": "Developed and maintained by the National Archives, OGL-2.0 is a copyright licence for Crown Copyright works published by the UK government consisting of a simple set of terms and conditions facilitating the re-use of a wide range of public sector information free of charge. The OGL terms are compatible with the latest versions of the Creative Commons Attribution Licence and the Open Data Commons Attribution Licence. The OGL is a perpetual licence so any past and continuing use of information authorised under v1.0 or v2.0 may continue.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OGL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 72,
+ "fields": {
+  "op_code": "MPL_1_1",
+  "definition": "MPL-1.1 is a weak copyleft licence, characterised as a middle ground between permissive free software licences and the GNU General Public License that seeks to balance the concerns of proprietary and open source developers. As such, it allows re-licencing. It is approved by the Open Source Initiative. It has been superseded by v2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MPL_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 73,
+ "fields": {
+  "op_code": "CC_BYSA_4_0",
+  "definition": "CC BY-SA 4.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/autrice en citant son nom et qu\u2019on diffuse les nouvelles cr\u00e9ations selon des conditions identiques. Cette licence est souvent compar\u00e9e aux licences de logiciels libres, \u00abopen source\u00bb ou \u00abcopyleft\u00bb. Toutes les nouvelles \u0153uvres bas\u00e9es sur celles de l\u2019auteur/autrice auront la m\u00eame licence, et toute \u0153uvre d\u00e9riv\u00e9e pourra \u00eatre utilis\u00e9e m\u00eame \u00e0 des fins commerciales. C\u2019est la licence utilis\u00e9e par Wikip\u00e9dia; elle est recommand\u00e9e pour des \u0153uvres qui pourraient b\u00e9n\u00e9ficier de l\u2019incorporation de contenu depuis Wikip\u00e9dia et d\u2019autres projets sous licence similaire.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYSA_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 74,
+ "fields": {
+  "op_code": "CPL_1_0",
+  "definition": "CPL-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. It is superseded by EPL-1.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 75,
+ "fields": {
+  "op_code": "ISA_OML",
+  "definition": "The ISA Open metadata licence 1.1 is a permissive open licence created by the European Commission to support the publication of technical and semantic specifications. Users are allowed to distribute, copy, adapt or modify the licenced work for any commercial and non-commercial purpose with only a limited set of conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ISA_OML"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 76,
+ "fields": {
+  "op_code": "CC_BYNCND_3_0",
+  "definition": "CC BY-ND-NC 3.0 is the most restrictive of the six main licences of Creative Commons, only allowing others to download the works and share them with others as long as they credit the author, but they can\u2019t change them in any way or use them commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 77,
+ "fields": {
+  "op_code": "LGPL_3_0",
+  "definition": "LGPL-3.0 was produced by the Free Software Foundation for libraries. Works made by using the covered software could be distributed under any licence. Distribution of derivatives (code modifications) must be done under LGPL. Reverse engineering must be allowed.",
+  "url": "http://publications.europa.eu/resource/authority/licence/LGPL_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 78,
+ "fields": {
+  "op_code": "CC_BYND_2_0",
+  "definition": "CC BY-ND 2.0 autorise la redistribution, \u00e0 des fins commerciales ou non, tant que l\u2019\u0153uvre est diffus\u00e9e sans modification et dans son int\u00e9gralit\u00e9, avec attribution et citation du nom de l\u2019auteur.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYND_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 79,
+ "fields": {
+  "op_code": "BSD_3_CLAUSE",
+  "definition": "BSD-3-Clause permits redistribution and use in source and binary forms, with or without modification, provided that the certain conditions are met: redistributions of source code and in binary forms must retain the copyright notice, the specific list of conditions and the disclaimer. Neither the name of the copyright holder nor of its contributors may be used to promote derived products without prior written permission.",
+  "url": "http://publications.europa.eu/resource/authority/licence/BSD_3_CLAUSE"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 80,
+ "fields": {
+  "op_code": "CC_BY",
+  "definition": "This licence lets others distribute, remix, tweak, and build upon the author's work, even commercially, as long as they credit the author for the original creation. This is the most accommodating of licences offered. Recommended for maximum dissemination and use of licenced materials.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 81,
+ "fields": {
+  "op_code": "UPL_1_0",
+  "definition": "The Universal Permissive License 1.0 is an attribution+patent-style, permissive free software licence issued by Oracle and approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/UPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 82,
+ "fields": {
+  "op_code": "CC_BYSA_1_0",
+  "definition": "CC BY-SA 1.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/autrice en citant son nom et qu\u2019on diffuse les nouvelles cr\u00e9ations selon des conditions identiques. Cette licence est souvent compar\u00e9e aux licences de logiciels libres, \u00abopen source\u00bb ou \u00abcopyleft\u00bb. Toutes les nouvelles \u0153uvres bas\u00e9es sur celles de l\u2019auteur/autrice auront la m\u00eame licence, et toute \u0153uvre d\u00e9riv\u00e9e pourra \u00eatre utilis\u00e9e m\u00eame \u00e0 des fins commerciales. C\u2019est la licence utilis\u00e9e par Wikip\u00e9dia; elle est recommand\u00e9e pour des \u0153uvres qui pourraient b\u00e9n\u00e9ficier de l\u2019incorporation de contenu depuis Wikip\u00e9dia et d\u2019autres projets sous licence similaire.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYSA_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 83,
+ "fields": {
+  "op_code": "OGL_NC",
+  "definition": "Developed and maintained by the National Archives, the Non-Commercial Government Licence (OGL-NC) may be used by public sector bodies that have a Delegation of Authority to licence Crown copyright material non-commercially. It may also be used by public sector bodies holding non-Crown copyright information in accordance with the PSI Regulations 2015.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OGL_NC"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 84,
+ "fields": {
+  "op_code": "MOTOSOTO",
+  "definition": "Motosoto is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MOTOSOTO"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 85,
+ "fields": {
+  "op_code": "EFL_2",
+  "definition": "EFL-2.0 is a BSD-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EFL_2"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 86,
+ "fields": {
+  "op_code": "ARTISTIC_2_0",
+  "definition": "Artistic-2.0 is a copyleft-style, free software licence approved by the Open Source Initiative. It preserves control of the original copyright holder: recipient can use, modify and distribute the original versions but other modified versions must document how far they are different and be reported to the original author, or be distributed under a different name, or otherwise be available under the Artistic licence or any other licence granting similar rights.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ARTISTIC_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 87,
+ "fields": {
+  "op_code": "MIROS",
+  "definition": "MirOS is a BSD-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MIROS"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 88,
+ "fields": {
+  "op_code": "OP_DATPRO",
+  "definition": "Published by Germany, DL-DE ZERO 2.0 is a data licence permitting any use without restrictions or conditions. The data and meta-data provided may be for commercial and non-commercial use.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OP_DATPRO"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 89,
+ "fields": {
+  "op_code": "W3C",
+  "definition": "The W3C Software Notice and License is a permissive free software licence used by software released by the World Wide Web Consortium. It is a permissive licence, compatible with the GNU General Public License and approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/W3C"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 90,
+ "fields": {
+  "op_code": "CC_BYNC",
+  "definition": "Cette licence permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales et, bien que les nouvelles \u0153uvres doivent cr\u00e9diter l\u2019auteur/autrice en citant son nom et ne pas constituer une utilisation commerciale, elles n\u2019ont pas \u00e0 \u00eatre diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNC"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 91,
+ "fields": {
+  "op_code": "CC_BYNCND_1_0",
+  "definition": "CC BY-ND-NC 1.0 est la plus restrictive des six licences principales de Creative Commons, n\u2019autorisant les autres qu\u2019\u00e0 t\u00e9l\u00e9charger les \u0153uvres de l\u2019auteur/autrice et \u00e0 les partager tant qu\u2019on le/la cr\u00e9dite en citant son nom, mais on ne peut les modifier de quelque fa\u00e7on que ce soit ni les utiliser \u00e0 des fins commerciales.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 92,
+ "fields": {
+  "op_code": "BSL_1_0",
+  "definition": "BSL-1.0 is a simple permissive licence only requiring preservation of copyright and licence notices for source (and not binary) distribution. Licenced works, modifications, and larger works may be distributed under different terms and without source code.",
+  "url": "http://publications.europa.eu/resource/authority/licence/BSL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 93,
+ "fields": {
+  "op_code": "CATOSL_1_1",
+  "definition": "CATOSL-1.1 is a copyleft-style, free software licence approved by the Open Source Initiative. Under this licence, it is possible to create a larger work by combining the program with other software code not governed by the terms of this licence, and distribute the larger work as a single product.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CATOSL_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 94,
+ "fields": {
+  "op_code": "CLARIN_ACA_1_0",
+  "definition": "The copyright holder grants the end-user a free, non-exclusive and perpetual (for the duration of the copyright) right to use and make copies of the resource for educational, teaching or research purposes as such, as modified, or as part of a compilation or derived work.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CLARIN_ACA_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 95,
+ "fields": {
+  "op_code": "LILIQ_RPLUS_1_1",
+  "definition": "LiLiQ-Rplus-1.1 is a reciprocate (copyleft) licence produced by the State of Quebec (Canada). Other reciprocal licences GPL-2.0-or-later and the EUPL are expressly listed as compatible, meaning that the covered code can be reused in other projects covered by these licences. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/LILIQ_RPLUS_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 96,
+ "fields": {
+  "op_code": "RPSL_1_0",
+  "definition": "Published by RealNetworks, RPSL-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/RPSL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 97,
+ "fields": {
+  "op_code": "CC_BY_3_0_AT",
+  "definition": "Published by Creative Commons for Austria, Namensnennung 3.0 \u00d6sterreich (CC BY 3.0 AT) is a licence permitting any commercial and non-commercial use as long as credit is given to the author for the original creation.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_3_0_AT"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 98,
+ "fields": {
+  "op_code": "DLDE_ZERO_2_0",
+  "definition": "Published by Germany, DL-DE ZERO 2.0 is a data licence permitting any use without restrictions or conditions. The data and meta-data provided may be for commercial and non-commercial use.",
+  "url": "http://publications.europa.eu/resource/authority/licence/DLDE_ZERO_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 99,
+ "fields": {
+  "op_code": "PYTHON_2_0",
+  "definition": "Python 2.0 is a permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/PYTHON_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 100,
+ "fields": {
+  "op_code": "CC_BYNCSA_3_0",
+  "definition": "CC BY-NC-SA 3.0 lets others remix, tweak, and build upon the author\u2019s work non-commercially, as long as they credit the author and licence their new creations under the identical terms.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCSA_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 101,
+ "fields": {
+  "op_code": "CC_BY_2_0",
+  "definition": "CC BY 2.0 lets others distribute, remix, tweak, and build upon the author\u2019s work, even commercially, as long as they credit the author for the original creation. This is the most accommodating of licences offered. Recommended for maximum dissemination and use of licenced materials.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 102,
+ "fields": {
+  "op_code": "OGTSL",
+  "definition": "OGTSL was meant to facilitate software testing, without placing severe restrictions on use of the software except in terms of including original versions of the software. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OGTSL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 103,
+ "fields": {
+  "op_code": "RPL_1_5",
+  "definition": "The Reciprocal Public License 1.5 is a copyleft-style, free software licence approved by the Open Source Initiative with detailed liability protection and numerous requirements, created to close a loophole in the GPL which let users sell modified software without \u201dfairly\u201d distributing it.",
+  "url": "http://publications.europa.eu/resource/authority/licence/RPL_1_5"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 104,
+ "fields": {
+  "op_code": "NTP",
+  "definition": "Approved by the Open Source Initiative, NTP is a simple licence, written as a template, that provides protection for the author while giving users full rights to the software.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NTP"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 105,
+ "fields": {
+  "op_code": "MS_PL",
+  "definition": "MS-PL is a BSD-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MS_PL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 106,
+ "fields": {
+  "op_code": "LPL_1_02",
+  "definition": "LPL-1.02 is a copyleft-style, free software licence approved by the Open Source Initiative. Similar to the Common Public License, this licence makes liability rules very clear.",
+  "url": "http://publications.europa.eu/resource/authority/licence/LPL_1_02"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 107,
+ "fields": {
+  "op_code": "CC_BYND_3_0",
+  "definition": "CC BY-ND 3.0 allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the author.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYND_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 108,
+ "fields": {
+  "op_code": "EFL_1_0",
+  "definition": "EFL-1.0 is a BSD-style, permissive free software licence approved by the Open Source Initiative. It is superseded by 2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EFL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 109,
+ "fields": {
+  "op_code": "CC_BY_2_5",
+  "definition": "CC BY 2.5 lets others distribute, remix, tweak, and build upon the author\u2019s work, even commercially, as long as they credit the author for the original creation. This is the most accommodating of licences offered. Recommended for maximum dissemination and use of licenced materials.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_2_5"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 110,
+ "fields": {
+  "op_code": "OCLC_2_0",
+  "definition": "While OCLC Research now uses the Apache 2.0 licence, OCLC-2.0 is a relatively strong copyleft licence with fairly lenient restrictions and built-in protection for the author. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OCLC_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 111,
+ "fields": {
+  "op_code": "AGPL_3_0",
+  "definition": "AGPL-3.0 is a modified GPL-3.0 extended to network or Web services distribution (SaaS). Strong copyleft: copies and derivatives may be distributed under the same AGPL only. Need to document derivatives\u2019 changes and dates. Incompatible with other licences except linking with code covered by the original GPL-3.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/AGPL_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 112,
+ "fields": {
+  "op_code": "CC_BYNCSA",
+  "definition": "This licence lets others remix, tweak, and build upon the author\u2019s work non-commercially, as long as they credit the author and licence their new creations under the identical terms.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCSA"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 113,
+ "fields": {
+  "op_code": "CC_BYNC_3_0",
+  "definition": "CC BY-NC 3.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice \u00e0 des fins non commerciales et, bien que les nouvelles \u0153uvres doivent cr\u00e9diter l\u2019auteur/autrice en citant son nom et ne pas constituer une utilisation commerciale, elles n\u2019ont pas \u00e0 \u00eatre diffus\u00e9es selon les m\u00eames conditions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNC_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 114,
+ "fields": {
+  "op_code": "NPOSL_3_0",
+  "definition": "A variant of the Open Software License 3.0, NPOSL-3.0 requires that the organisation using it is a non-profit and that no revenue is generated from sale of the software, support or services. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NPOSL_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 115,
+ "fields": {
+  "op_code": "NCSA",
+  "definition": "NCSA Open Source License is a BSD-style, permissive free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NCSA"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 116,
+ "fields": {
+  "op_code": "SPL_1_0",
+  "definition": "Sun Public License 1.0 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/SPL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 117,
+ "fields": {
+  "op_code": "CC_BYSA_2_5",
+  "definition": "CC BY-SA 2.5 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/autrice en citant son nom et qu\u2019on diffuse les nouvelles cr\u00e9ations selon des conditions identiques. Cette licence est souvent compar\u00e9e aux licences de logiciels libres, \u00abopen source\u00bb ou \u00abcopyleft\u00bb. Toutes les nouvelles \u0153uvres bas\u00e9es sur celles de l\u2019auteur/autrice auront la m\u00eame licence, et toute \u0153uvre d\u00e9riv\u00e9e pourra \u00eatre utilis\u00e9e m\u00eame \u00e0 des fins commerciales. C\u2019est la licence utilis\u00e9e par Wikip\u00e9dia; elle est recommand\u00e9e pour des \u0153uvres qui pourraient b\u00e9n\u00e9ficier de l\u2019incorporation de contenu depuis Wikip\u00e9dia et d\u2019autres projets sous licence similaire.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYSA_2_5"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 118,
+ "fields": {
+  "op_code": "OFL_1_1",
+  "definition": "The SIL Open Font License 1.1 is one of the major open font licences, which allows embedding of the font in commercially sold products. It is a free and open source licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OFL_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 119,
+ "fields": {
+  "op_code": "CC_BYSA_3_0_NL",
+  "definition": "Published by Creative Commons for Netherlands, Naamsvermelding-GelijkDelen 3.0 Nederland (CC BY-SA 3.0 NL) is a licence permitting any commercial and non-commercial use, as long as credit is given to the author for the original creation and new creations are licenced under the identical terms. All new works based on the original work will carry the same licence, so any derivatives will also allow commercial use.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MS_RL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 120,
+ "fields": {
+  "op_code": "HPND",
+  "definition": "Deprecated by the author, HPND is a template that provides some protection for the author. The work itself is not restricted by the permissive licence.",
+  "url": "http://publications.europa.eu/resource/authority/licence/HPND"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 121,
+ "fields": {
+  "op_code": "CC_BY_3_0",
+  "definition": "CC BY 3.0 lets others distribute, remix, tweak, and build upon the author\u2019s work, even commercially, as long as they credit the author for the original creation. This is the most accommodating of licences offered. Recommended for maximum dissemination and use of licenced materials.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 122,
+ "fields": {
+  "op_code": "CC_BYSA_2_0",
+  "definition": "CC BY-SA 2.0 lets others remix, tweak, and build upon the author\u2019s work even for commercial purposes, as long as they credit the author and licence their new creations under the identical terms. This licence is often compared to \u201ccopyleft\u201d free and open source software licences. All new works based on the original work will carry the same licence, so any derivatives will also allow commercial use. This is the licence used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licenced projects.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYSA_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 123,
+ "fields": {
+  "op_code": "APACHE_1_1",
+  "definition": "Apache-1.1 is a permissive free software licence approved by the Open Source Initiative. It is superseded by Apache-2.0.",
+  "url": "http://publications.europa.eu/resource/authority/licence/APACHE_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 124,
+ "fields": {
+  "op_code": "CPAL_1_0",
+  "definition": "CPAL-1.0 is a copyleft-style, free software licence approved by the Open Source Initiative. Under this licence, it is possible to create a larger work by combining the program with other software code not governed by the terms of this licence, and distribute the larger work as a single product.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CPAL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 125,
+ "fields": {
+  "op_code": "LPPL_1_3C",
+  "definition": "LPPL-1.3c is a very specific, non-copyleft licence. It organises rights of the \u201dmaintainer\u201d of a work V/S other distributors who have to comply with documentation requirements and to communicate the original code (or report where it can be available).",
+  "url": "http://publications.europa.eu/resource/authority/licence/LPPL_1_3C"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 126,
+ "fields": {
+  "op_code": "GPL_3_0",
+  "definition": "GPL-3.0 is supported by the Free Software Foundation. Under this licence, software can be copied, distributed and modified as long as changes/dates are tracked in source files. Any derivative including (i.e. via compiler) GPL-licenced code must also be made available under the GPL-3.0 along with build and install instructions.",
+  "url": "http://publications.europa.eu/resource/authority/licence/GPL_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 127,
+ "fields": {
+  "op_code": "LILIQ_R_1_1",
+  "definition": "LiLiQ-R 1.1 is a moderately reciprocate licence produced by the State of Quebec (Canada). A list of liences with similar level of reciprocity is declared compatible, including GPL, EUPL, MPL, LGPL etc., meaning that the covered code can be reused in other projects covered by these licences. It is approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/LILIQ_R_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 128,
+ "fields": {
+  "op_code": "OGL_ROU_1_0",
+  "definition": "Having a working value in Romanian, the Non-Commercial Government Licence 1.0 (OGL-ROU 1.0) consists of a simple set of terms and conditions facilitating the re-use of a wide range of public sector information free of charge. The OGL terms are compatible with the latest versions of the Creative Commons Attribution Licence and the Open Data Commons Attribution Licence.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OGL_ROU_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 129,
+ "fields": {
+  "op_code": "NASA_1_3",
+  "definition": "Approved by the Open Source Initiative, NASA-1.3 is a licence used by NASA containing an obligation to register with the government when receiving the software and to tell a specified agency how the modifications are used.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NASA_1_3"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 130,
+ "fields": {
+  "op_code": "OPL_2_1",
+  "definition": "OSET Public License 2.1 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OPL_2_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 131,
+ "fields": {
+  "op_code": "MULTICS",
+  "definition": "Multics is a permissive free software licence approved by the Open Source Initiative. The legal text of this licence is only a paragraph long and both protects the authors' trademarks and requires users to include this licence.",
+  "url": "http://publications.europa.eu/resource/authority/licence/MULTICS"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 132,
+ "fields": {
+  "op_code": "CDDL_1_0",
+  "definition": "CDDL-1.0 is a free software licence approved by the Open Source Initiative. A moderated (or weak) copyleft licence used by SUN, including explicit patent grants, it is similar to MPL and EPL. Compiled object code can be distributed under any licence, but the original source code (and modified derivatives) must be made available, under the CDDL.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CDDL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 133,
+ "fields": {
+  "op_code": "RPL_1_1",
+  "definition": "The Reciprocal Public License, version 1.1 is a copyleft-style, free software licence approved by the Open Source Initiative. It contains rules on redistribution.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYND_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 134,
+ "fields": {
+  "op_code": "COM_REUSE",
+  "definition": "According to the European Commission reuse notice, reuse is authorised, provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011. The general principle of reuse can be subject to conditions which may be specified in individual copyright notices. Therefore users are advised to refer to the copyright notices of the individual websites maintained under Europa and of the individual documents. Reuse is not applicable to documents subject to intellectual property rights of third parties.",
+  "url": "http://publications.europa.eu/resource/authority/licence/COM_REUSE"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 135,
+ "fields": {
+  "op_code": "OSL_3_0",
+  "definition": "Open Software License 3.0 is a copyleft-style, free software licence approved by the Open Source Initiative. Similar to the AGPL, the OSL requires the user to disclose the source code when communicating software.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OSL_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 136,
+ "fields": {
+  "op_code": "EUPL_1_2",
+  "definition": "EUPL v.1.2 a \u00e9t\u00e9 cr\u00e9\u00e9e par la Commission en 2007. Elle a pour but de constituer une licence libre valable dans toutes les langues de l\u2019Union, en tenant compte de ses sp\u00e9cificit\u00e9s juridiques et des questions de compatibilit\u00e9 entre licences libres. Il s\u2019agit d\u2019une licence dite \u00abcopyleft\u00bb dont le but est de garantir la nature \u00abopen source\u00bb des d\u00e9riv\u00e9s des logiciels.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EUPL_1_2"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 137,
+ "fields": {
+  "op_code": "NLOD_2_0",
+  "definition": "Published by Norway, NLOD 2.0 grants the user the right to copy, use and distribute information, provided the user acknowledges the contributors and complies with the terms and conditions stipulated in this licence.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OSL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 138,
+ "fields": {
+  "op_code": "CC_BYSA_3_0",
+  "definition": "CC BY-SA 3.0 permet aux autres de remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/autrice en citant son nom et qu\u2019on diffuse les nouvelles cr\u00e9ations selon des conditions identiques. Cette licence est souvent compar\u00e9e aux licences de logiciels libres, \u00abopen source\u00bb ou \u00abcopyleft\u00bb. Toutes les nouvelles \u0153uvres bas\u00e9es sur les \u0153uvres de l\u2019auteur/autrice auront la m\u00eame licence, et toute \u0153uvre d\u00e9riv\u00e9e pourra \u00eatre utilis\u00e9e m\u00eame \u00e0 des fins commerciales. C\u2019est la licence utilis\u00e9e par Wikip\u00e9dia; elle est recommand\u00e9e pour des \u0153uvres qui pourraient b\u00e9n\u00e9ficier de l\u2019incorporation de contenu depuis Wikip\u00e9dia et d\u2019autres projets sous licence similaire.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYSA_3_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 139,
+ "fields": {
+  "op_code": "OSL_2_1",
+  "definition": "Open Software License 2.1 is a copyleft-style, free software licence approved by the Open Source Initiative.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OSL_2_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 140,
+ "fields": {
+  "op_code": "CC_BY_3_0_NL",
+  "definition": "Published by Creative Commons for Netherlands, Naamsvermelding 3.0 Nederland (CC BY 3.0 NL) is a licence permitting any commercial and non-commercial use as long as credit is given to the author for the original creation.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_3_0_NL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 141,
+ "fields": {
+  "op_code": "GNU_FDL_1_3",
+  "definition": "GNU FDL 1.3 is a form of copyleft intended for use on a manual, textbook or other document to assure everyone the effective freedom to copy and redistribute it, with or without modifications, either commercially or non-commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/GNU_FDL_1_3"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 142,
+ "fields": {
+  "op_code": "CC_BYNCND",
+  "definition": "This licence is the most restrictive of the six main licences of Creative Commons, only allowing others to download the works and share them with others as long as they credit the author, but they can\u2019t change them in any way or use them commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 143,
+ "fields": {
+  "op_code": "ODC_PDDL",
+  "definition": "ODC PDDL is a document intended to allow the user to freely share, modify, and use this work for any purpose and without any restrictions. It is intended for use on databases or their contents (\u201cdata\u201d), either together or individually.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ODC_PDDL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 144,
+ "fields": {
+  "op_code": "DLDE_BY_2_0",
+  "definition": "Published by Germany, DL-DE BY 2.0 is a data licence permitting any use commercially and non-commercially, as long as credit is given to the author for the original creation. Changes must be marked as such in the source note.",
+  "url": "http://publications.europa.eu/resource/authority/licence/DLDE_BY_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 145,
+ "fields": {
+  "op_code": "ODC_BY",
+  "definition": "ODC-By-1.0 is a licence agreement intended to allow users to freely share, modify, and use the database concerned subject only to the attribution requirements set out in Section 4 (notices, no sublicensing). Databases can contain a wide variety of types of content, and so this licence only governs the rights over the database, and not the contents of the database individually.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ODC_BY"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 146,
+ "fields": {
+  "op_code": "CC_BYNCND_4_0",
+  "definition": "CC BY-ND-NC 4.0 is the most restrictive of the six main licences of Creative Commons, only allowing others to download the works and share them with others as long as they credit the author, but they can\u2019t change them in any way or use them commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BYNCND_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 147,
+ "fields": {
+  "op_code": "NGPL",
+  "definition": "Approved by the Open Source Initiative, NGPL is a very old licence used for the game NetHack. It allows users to freely share their modifications, in exchange for several restrictions and little protection for the authors.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NGPL"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 148,
+ "fields": {
+  "op_code": "HROD",
+  "definition": "Published by the Republic of Croatia, HR-OD grants the re-user any re-use of the Information subject to the licence, including a spatially and temporally unrestricted, free-of-charge, non-exclusive and personal right to re-use the Information under this licence.",
+  "url": "http://publications.europa.eu/resource/authority/licence/HROD"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 149,
+ "fields": {
+  "op_code": "EPL_2_0",
+  "definition": "EPL 2.0 is a copyleft-style, free software licence approved by the Open Source Initiative. Made and mainly used by the Eclipse Foundation, it is similar to GPL but does not submit linking of the covered code to conditions or \u201dviral\u201d extension of licence coverage to the other linked software.",
+  "url": "http://publications.europa.eu/resource/authority/licence/EPL_2_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 150,
+ "fields": {
+  "op_code": "CC_BY_4_0",
+  "definition": "CC BY 4.0 permet aux autres de distribuer, remixer, arranger, et adapter l\u2019\u0153uvre de l\u2019auteur/autrice, m\u00eame \u00e0 des fins commerciales, tant qu\u2019on accorde le m\u00e9rite de la cr\u00e9ation originale \u00e0 l\u2019auteur/autrice en citant son nom. C\u2019est le contrat le plus souple propos\u00e9. Recommand\u00e9 pour la diffusion et l\u2019utilisation maximales d\u2019\u0153uvres licenci\u00e9es sous CC.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 151,
+ "fields": {
+  "op_code": "OGL_1_0",
+  "definition": "Developed and maintained by the National Archives, OGL-1.0 is a copyright licence for Crown Copyright works published by the UK government consisting of a simple set of terms and conditions facilitating the re-use of a wide range of public sector information free of charge. The OGL terms are compatible with the latest versions of the Creative Commons Attribution Licence and the Open Data Commons Attribution Licence. The OGL is a perpetual licence so any past and continuing use of information authorised under v1.0 or v2.0 may continue.",
+  "url": "http://publications.europa.eu/resource/authority/licence/OGL_1_0"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 152,
+ "fields": {
+  "op_code": "BSD_PLUS_PATENT",
+  "definition": "BSD+Patent is a free software licence approved by the Open Source Initiative. It is a 2-clause license in which nothing restricts redistribution under any other license, but it requests to retain copyright notices and restrict the use of the BSD licensor name to promote derivative products.",
+  "url": "http://publications.europa.eu/resource/authority/licence/BSD_PLUS_PATENT"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 153,
+ "fields": {
+  "op_code": "ISC",
+  "definition": "ISC is a short and permissive software permissive licence (like MIT and BSD). Main obligation is to include the original copyright notice. For reducing licence proliferation, it is advised to use the MIT licence instead.",
+  "url": "http://publications.europa.eu/resource/authority/licence/ISC"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 154,
+ "fields": {
+  "op_code": "GNU_FDL_1_1",
+  "definition": "GNU FDL 1.1 is a form of copyleft intended for use on a manual, textbook or other document to assure everyone the effective freedom to copy and redistribute it, with or without modifications, either commercially or non-commercially.",
+  "url": "http://publications.europa.eu/resource/authority/licence/GNU_FDL_1_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 155,
+ "fields": {
+  "op_code": "LGPL_2_1",
+  "definition": "LGPL 2.1 is supported by the Free Software Foundation for libraries. Works made by using the covered software could be distributed under any licence. Distribution of derivatives (code modifications) must be done under LGPL. Reverse engineering must be allowed.",
+  "url": "http://publications.europa.eu/resource/authority/licence/LGPL_2_1"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 156,
+ "fields": {
+  "op_code": "NOKIA",
+  "definition": "Approved by the Open Source Initiative, NOKIA is a slightly altered variant on the Mozilla Public License specified for Nokia. It requires including a notice in each source file. Disputes must be settled through a Finnish arbitration process.",
+  "url": "http://publications.europa.eu/resource/authority/licence/NOKIA"
+ }
+},
+{
+ "model": "catalog.eulicense",
+ "pk": 157,
+ "fields": {
+  "op_code": "APSL_2_0",
+  "definition": "APSL-2.0 is a copyleft-style, free software licence approved by the Open Source Initiative. Under this licence, it is possible to create a larger work by combining covered code with other code not governed by the terms of this licence and distribute the larger work as a single product. In each such instance, it must be ensured that requirements of this licence are fulfilled for the covered code or any portion thereof.",
+  "url": "http://publications.europa.eu/resource/authority/licence/CATOSL_1_1"
+ }
+}
+]

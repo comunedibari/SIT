@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load g3wadmin_tags %}
+{% load i18n %}
+
+
+{% block custom_js_links_page %}
+<script>
+
+    var cleaned_data = {{ cleaned_data|safe }};
+    ga.$useRoleSelect = $('#id_groups');
+    ga.$useRoleSelect.on('change', function(e){
+
+        var value = $(this).val();
+        var data = {roles: value, user_id: {{ form.instance.pk|default:'null' }}};
+        ga.utils.addCsfrtokenData(data);
+        var $ug_editor_select = $("#id_user_groups_editor");
+        var $ug_viewer_select = $("#id_user_groups_viewer");
+        if (value) {
+            $.ajax({
+                method: 'post',
+                url: '{% url 'user-group-by-user-role' %}',
+                data: data,
+                success:function(res){
+
+                    var viewer_groups = _.filter(res.user_groups, function(item){return item.role == 'viewer'})
+                    for (i in viewer_groups) {
+                        if (!viewer_groups[i]['selected'] && _.indexOf(cleaned_data['user_groups_viewer'], viewer_groups[i]['id']) != -1)
+                            viewer_groups[i]['selected'] = true;
+                    }
+                    var editor_groups = _.filter(res.user_groups, function(item){return item.role == 'editor'})
+                    for (i in editor_groups) {
+                        if (!editor_groups[i]['selected'] && _.indexOf(cleaned_data['user_groups_editor'], editor_groups[i]['id']) != -1)
+                            editor_groups[i]['selected'] = true;
+                    }
+                    $ug_viewer_select.html('');
+                    $ug_viewer_select.select2({data: viewer_groups});
+                    $ug_editor_select.html('');
+                    $ug_editor_select.select2({data: editor_groups});
+                }
+            });
+        } else {
+            //$("#id_viewer_users").select2('val', '');
+        }
+
+    });
+    // to start
+    ga.$useRoleSelect.trigger('change');
+
+    var checking_user_properties = function (){
+        if($('#id_is_superuser').prop('checked') || $('#id_is_staff').prop('checked')){
+            ga.$useRoleSelect.removeAttr('required','');
+        } else {
+            ga.$useRoleSelect.attr('required','');
+        }
+    };
+
+    var admin_activation = function(e){
+        var $this = $(this);
+        if (e.type == 'ifChecked'){
+            ga.$useRoleSelect.removeAttr('required');
+        } else {
+            checking_user_properties();
+        }
+    };
+
+    $(document).on('ifChecked', '#id_is_superuser', admin_activation);
+    $(document).on('ifChecked', '#id_is_staff', admin_activation);
+    $(document).on('ifUnchecked', '#id_is_superuser', admin_activation);
+    $(document).on('ifUnchecked', '#id_is_staff', admin_activation);
+
+    // for load page
+    $(document).ready(checking_user_properties);
+
+    /*initUploadFields(
+      document.getElementById("user-form")
+   );*/
+</script>
+{% endblock %}
+
+
+{% block page_header %}
+<h1>
+    {% trans 'System users' %}
+    <small>Stystem users list and property</small>
+</h1>
+{% endblock %}
+
+{% block main_content %}
+        <form method="post" id="user-form" data-widget-type="ajaxUpload"  enctype="multipart/form-data">
+            {% if form.errors %}
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="alert alert-danger alert-dismissable">
+                        <h4><i class="icon fa fa-ban"></i> {% trans 'Alert' %}!</h4>
+                            {% trans 'Some errors on form. Check it and send again.' %}
+                      </div>
+                    </div>
+                </div>
+            {% endif %}
+            {% crispy form %}
+            {% g3wadmin_add_button_form %}
+        </form>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load i18n %}
+{% load sitetree %}
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+<!-- Tab panes -->
+<div class="content">
+  <!-- Home tab content -->
+  <div class="tab-pane" id="control-sidebar-home-tab">
+    <h3 class="control-sidebar-heading">{% trans 'Configurations' %}</h3>
+    <ul class="control-sidebar-menu">
+      <li>
+        <a href="{% url 'generaldata-update' %}">
+          <i class="menu-icon fa fa-home bg-red"></i>
+          <div class="menu-info">
+            <h4 class="control-sidebar-subheading">{% trans 'Edit general data' %}</h4>
+            <p>{% trans 'Frontend data and other' %}...</p>
+          </div>
+        </a>
+      </li>
+    {% if user.is_staff %}
+        <li>
+        <a href="{% url 'admin:index' %}">
+          <i class="menu-icon fa fa-cogs bg-purple"></i>
+          <div class="menu-info">
+            <h4 class="control-sidebar-subheading">{% trans 'Django administration' %}</h4>
+            <p>{% trans 'Go to staff administration section' %}...</p>
+          </div>
+        </a>
+      </li>
+    {% endif %}
+    </ul>
+    {% for module in SETTINGS.G3WADMIN_LOCAL_MORE_APPS %}
+        {% with sidebar_tree=module|add:"_sidebar_right" %}
+        {% sitetree_menu from sidebar_tree include "trunk" template "sitetree/sidebar_right.html" %}
+        {% endwith %}
+    {% endfor %}
+  </div>
+</div>
+</aside>
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+   immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>

@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load cadastre %}
+<div class="row">
+    <div class="col-md-12">
+        <h3>Dati importazione</h3>
+        <ul class="list-unstyled">
+            <li><strong>Data caricamento</strong>: {{ object.codice_comune|code_to_comune_name }} </li>
+            <li><strong>Data caricamento</strong>: {{ object.created }}</li>
+            <li><strong>Numero file</strong>: {{ object.n_file }}</li>
+            <li><strong>Fogli</strong>: {{ object.fogli }}</li>
+        </ul>
+        {% if user.is_superuser and user.is_staff  %}
+        <h3>Dati admin:</h3>
+        <ul class="list-unstyled">
+            <li><strong>Task ID</strong>: {{ object.task_id }}</li>
+        </ul>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,207 @@
+version: "3"
+services:
+  postgis:
+    image: g3wsuite/postgis:11.0-2.5
+    ports:
+      - "5439:5432"
+    environment:
+      - POSTGRES_DBNAME=${G3WSUITE_POSTGRES_DBNAME},data_testing,data_production,cadastre
+      - POSTGRES_USER=${G3WSUITE_POSTGRES_USER_LOCAL}
+      - POSTGRES_PASS=${G3WSUITE_POSTGRES_PASS}
+      - ALLOW_IP_RANGE=0.0.0.0/0
+    restart: on-failure
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+    volumes:
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}:/var/lib/postgresql
+    healthcheck:
+      interval: 60s
+      timeout: 30s
+      retries: 3
+      test: "pg_isready"
+    networks:
+      g3wsuite:
+        aliases:
+          - ${WEBGIS_PUBLIC_HOSTNAME}
+
+  g3w-suite:
+    image: g3wsuite/g3w-suite:v3.6.x
+    environment:
+      - DISPLAY=:99
+      - G3WSUITE_TILECACHE_PATH
+      - G3WSUITE_QDJANGO_SERVER_URL
+      - G3WSUITE_POSTGRES_DBNAME
+      - G3WSUITE_POSTGRES_USER
+      - G3WSUITE_POSTGRES_USER_LOCAL
+      - G3WSUITE_POSTGRES_PASS
+      - G3WSUITE_POSTGRES_HOST
+      - G3WSUITE_POSTGRES_PORT
+      - CADASTRE_POSTGRES_DBNAME
+      - CADASTRE_POSTGRES_USER
+      - CADASTRE_POSTGRES_USER_LOCAL
+      - CADASTRE_POSTGRES_PASS
+      - CADASTRE_POSTGRES_HOST
+      - CADASTRE_POSTGRES_PORT
+      - G3WSUITE_ORS_API_ENDPOINT
+      - G3WSUITE_ORS_API_KEY
+      - TILESTACHE_CACHE_BUFFER_SIZE
+      - TILESTACHE_CACHE_TOKEN
+      - FRONTEND
+      - QGIS_OPTIONS_PATH=/shared-volume/
+      - QGIS_SERVER_LOG_FILE
+      - QGIS_SERVER_LOG_LEVEL
+      - CDU_TD_BASIC_AUTH
+      - OIDC_RP_CLIENT_ID
+      - OIDC_RP_CLIENT_SECRET
+      - G3WSUITE_GUNICORN_NUM_WORKERS
+      - G3WSUITE_DEBUG
+      - ORS_API_ENDPOINT
+      - ORS_API_KEY
+      - ORS_MAX_RANGES
+      - ORS_MAX_LOCATIONS
+    expose:
+      - "8000"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+    depends_on:
+      - postgis
+    volumes:
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}:/shared-volume
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}/node_modules:/code/node_modules
+      - ./config/g3w-suite/overrides/templates:/code/templates:ro
+      - ./config/g3w-suite/plk_qgis_2_local_settings_ldap.py:/code/g3w-admin/base/settings/local_settings_ldap.py:ro
+      - ./config/g3w-suite/settings_docker.py:/code/g3w-admin/base/settings/local_settings.py
+      - ./config/qgis/QGIS3.ini:/shared-volume/QGIS/QGIS3.ini
+      - ./config/g3w-suite/cadastre/postgresql.py:/code/g3w-admin/cadastre/utils/cxfproviders/postgresql.py
+      - ./config/g3w-suite/tdws.py:/code/g3w-admin/cdu/utils/tdws.py
+      #- ./config/g3w-suite/oidc_auth_backend.py:/code/g3w-admin/iam_bari/overrides/oidc_auth_backend.py
+      - ./config/g3w-suite/client/views.py:/code/g3w-admin/client/views.py
+      - ./config/g3w-suite/base/urls_v36.py:/code/g3w-admin/base/urls.py
+      - ./config/g3w-suite/portal/filters.py:/code/g3w-admin/portal/api/filters.py
+      - ./config/g3w-suite/portal/api.views.py:/code/g3w-admin/portal/api/views.py
+      - ./config/g3w-suite/portal/views.py:/code/g3w-admin/portal/views.py
+      - ./config/g3w-suite/portal/utils.py:/code/g3w-admin/portal/utils.py
+      - ./config/g3w-suite/portal/serializers.py:/code/g3w-admin/portal/api/serializers.py
+      - ./config/g3w-suite/authjwt/apiurls.py:/code/g3w-admin/authjwt/apiurls.py
+      - ./config/g3w-suite/cadastre/serializers.py:/code/g3w-admin/cadastre/api/serializers.py
+      # for debug oidc
+      - ./config/g3w-suite/mozilla_django_oidc/views.py:/usr/local/lib/python3.10/dist-packages/mozilla_django_oidc/views.py
+
+    networks:
+      g3wsuite:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "dbserver-sit.avmtb:10.0.11.4"
+      - "dbserver-sit:10.0.11.4"
+
+  # batch processing
+  g3w-celery:
+    image: g3wsuite/g3w-suite:v3.6.x
+    environment:
+      - DISPLAY=:99
+      - G3WSUITE_TILECACHE_PATH
+      - G3WSUITE_QDJANGO_SERVER_URL
+      - G3WSUITE_POSTGRES_DBNAME
+      - G3WSUITE_POSTGRES_USER
+      - G3WSUITE_POSTGRES_USER_LOCAL
+      - G3WSUITE_POSTGRES_PASS
+      - G3WSUITE_POSTGRES_HOST
+      - G3WSUITE_POSTGRES_PORT
+      - CADASTRE_POSTGRES_DBNAME
+      - CADASTRE_POSTGRES_USER
+      - CADASTRE_POSTGRES_USER_LOCAL
+      - CADASTRE_POSTGRES_PASS
+      - CADASTRE_POSTGRES_HOST
+      - CADASTRE_POSTGRES_PORT
+      - TILESTACHE_CACHE_BUFFER_SIZE
+      - TILESTACHE_CACHE_TOKEN
+      - FRONTEND
+      - CDU_TD_BASIC_AUTH
+      - OIDC_RP_CLIENT_SECRET
+      - OIDC_RP_CLIENT_ID
+      - QGIS_OPTIONS_PATH=/shared-volume/
+      - QGIS_SERVER_LOG_FILE
+      - QGIS_SERVER_LOG_LEVEL
+      - ORS_API_ENDPOINT
+      - ORS_API_KEY
+      - ORS_MAX_RANGES
+      - ORS_MAX_LOCATIONS
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+    entrypoint: /scripts/docker-celery-entrypoint.sh
+    depends_on:
+      - g3w-suite
+      - redis
+    volumes:
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}:/shared-volume
+      - ./config/g3w-suite/plk_qgis_2_local_settings_ldap.py:/code/g3w-admin/base/settings/local_settings_ldap.py:ro
+      - ./config/g3w-suite/settings_docker.py:/code/g3w-admin/base/settings/local_settings.py:ro
+      - ./config/g3w-suite/cadastre/postgresql.py:/code/g3w-admin/cadastre/utils/cxfproviders/postgresql.py
+      - ./scripts/docker-celery-entrypoint.sh:/scripts/docker-celery-entrypoint.sh
+      #- ./config/g3w-suite/cadastre/data.py:/code/g3w-admin/cadastre/utils/data.py
+
+    networks:
+      g3wsuite:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "dbserver-sit.avmtb:10.0.11.4"
+
+  # Message server for celery and cache
+  redis:
+    image: redis
+    expose:
+      - 6379
+    restart: always
+    networks:
+      g3wsuite:
+
+  nginx:
+    image: nginx
+    ports:
+      - "80:8080"
+      - "443:443"
+    expose:
+      - "8080"
+    volumes:
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}:/shared-volume
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}/var/www/.well-known:/var/www/.well-known
+      - ${WEBGIS_DOCKER_SHARED_VOLUME}/certs:/etc/certs:ro
+      - ./config/g3w-suite/overrides/static:/shared-volume/static/overrides:ro
+      - ./config/nginx:/etc/nginx/conf.d:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+    restart: always
+    networks:
+      g3wsuite:
+
+  # CDU
+  py3o:
+    image: xcgd/py3o:1.0.0
+    restart: unless-stopped
+    ports:
+      - "8767:8765"
+    networks:
+      g3wsuite:
+
+volumes:
+  shared-volume:
+
+networks:
+  g3wsuite:
+    external: true
+    name: g3wsuite

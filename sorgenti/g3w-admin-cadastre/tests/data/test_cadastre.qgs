@@ -1,0 +1,453 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="Test cadastre" version="3.4.13-Madeira">
+  <homePath path=""/>
+  <title>Test cadastre</title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs</proj4>
+      <srsid>968</srsid>
+      <srid>3003</srid>
+      <authid>EPSG:3003</authid>
+      <description>Monte Mario / Italy zone 1</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym>intl</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer checked="Qt::Checked" source="/data/catasto.sqlite|layername=catasto" providerKey="ogr" id="catasto_5edcb072_5373_4e15_bd91_14d1d47043f1" name="catasto" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>catasto_5edcb072_5373_4e15_bd91_14d1d47043f1</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings intersection-snapping="0" mode="2" type="1" enabled="0" tolerance="12" unit="1">
+    <individual-layer-settings>
+      <layer-setting units="1" type="1" id="catasto_5edcb072_5373_4e15_bd91_14d1d47043f1" enabled="0" tolerance="12"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>1628031.7618244388140738</xmin>
+      <ymin>4858735.9120181817561388</ymin>
+      <xmax>1628962.37970316177234054</xmax>
+      <ymax>4860201.02225961163640022</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs</proj4>
+        <srsid>968</srsid>
+        <srid>3003</srid>
+        <authid>EPSG:3003</authid>
+        <description>Monte Mario / Italy zone 1</description>
+        <projectionacronym>tmerc</projectionacronym>
+        <ellipsoidacronym>intl</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer checked="Qt::Checked" open="true" drawingOrder="-1" name="catasto" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="catasto_5edcb072_5373_4e15_bd91_14d1d47043f1" isInOverview="0" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <projectlayers>
+    <maplayer maxScale="0" autoRefreshTime="0" simplifyAlgorithm="0" labelsEnabled="0" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" refreshOnNotifyMessage="" type="vector" geometry="Polygon" styleCategories="AllStyleCategories" minScale="1e+08" simplifyLocal="1" simplifyMaxScale="1" readOnly="0" simplifyDrawingHints="1">
+      <extent>
+        <xmin>1626919.27481000008992851</xmin>
+        <ymin>4857464.2666600001975894</ymin>
+        <xmax>1629954.29606000008061528</xmax>
+        <ymax>4861389.7476800000295043</ymax>
+      </extent>
+      <id>catasto_5edcb072_5373_4e15_bd91_14d1d47043f1</id>
+      <datasource>/data/catasto.sqlite|layername=catasto</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>catasto</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs</proj4>
+          <srsid>968</srsid>
+          <srid>3003</srid>
+          <authid>EPSG:3003</authid>
+          <description>Monte Mario / Italy zone 1</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>intl</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" type="fill" name="0">
+            <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="225,89,137,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="ogc_fid">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gid">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="tipo">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="foglio">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="numero">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sezione">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="allegato">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="codice_comune">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="nomefile">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="task_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="ogc_fid" index="0" name=""/>
+        <alias field="gid" index="1" name=""/>
+        <alias field="tipo" index="2" name=""/>
+        <alias field="foglio" index="3" name=""/>
+        <alias field="numero" index="4" name=""/>
+        <alias field="sezione" index="5" name=""/>
+        <alias field="allegato" index="6" name=""/>
+        <alias field="codice_comune" index="7" name=""/>
+        <alias field="nomefile" index="8" name=""/>
+        <alias field="task_id" index="9" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="ogc_fid" expression="" applyOnUpdate="0"/>
+        <default field="gid" expression="" applyOnUpdate="0"/>
+        <default field="tipo" expression="" applyOnUpdate="0"/>
+        <default field="foglio" expression="" applyOnUpdate="0"/>
+        <default field="numero" expression="" applyOnUpdate="0"/>
+        <default field="sezione" expression="" applyOnUpdate="0"/>
+        <default field="allegato" expression="" applyOnUpdate="0"/>
+        <default field="codice_comune" expression="" applyOnUpdate="0"/>
+        <default field="nomefile" expression="" applyOnUpdate="0"/>
+        <default field="task_id" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="ogc_fid" notnull_strength="1" exp_strength="0" constraints="3" unique_strength="1"/>
+        <constraint field="gid" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="tipo" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="foglio" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="numero" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="sezione" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="allegato" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="codice_comune" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="nomefile" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+        <constraint field="task_id" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="ogc_fid" desc="" exp=""/>
+        <constraint field="gid" desc="" exp=""/>
+        <constraint field="tipo" desc="" exp=""/>
+        <constraint field="foglio" desc="" exp=""/>
+        <constraint field="numero" desc="" exp=""/>
+        <constraint field="sezione" desc="" exp=""/>
+        <constraint field="allegato" desc="" exp=""/>
+        <constraint field="codice_comune" desc="" exp=""/>
+        <constraint field="nomefile" desc="" exp=""/>
+        <constraint field="task_id" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="catasto_5edcb072_5373_4e15_bd91_14d1d47043f1"/>
+  </layerorder>
+  <properties>
+    <WMTSLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSLayers>
+    <WFSTLayers>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+      <Insert type="QStringList"/>
+    </WFSTLayers>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMTSJpegLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSJpegLayers>
+    <Measure>
+      <Ellipsoid type="QString">intl</Ellipsoid>
+    </Measure>
+    <PAL>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <TextFormat type="int">0</TextFormat>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMTSPngLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSPngLayers>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Line type="QString"></Line>
+      <Fill type="QString"></Fill>
+      <RandomColors type="bool">true</RandomColors>
+      <ColorRamp type="QString"></ColorRamp>
+      <Marker type="QString"></Marker>
+      <Opacity type="double">1</Opacity>
+    </DefaultStyles>
+    <WCSUrl type="QString"></WCSUrl>
+    <WFSUrl type="QString"></WFSUrl>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <Gui>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <WMSUseLayerIDs type="bool">true</WMSUseLayerIDs>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSUrl type="QString"></WMSUrl>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSExtent type="QStringList">
+      <value>1626618.72430042875930667</value>
+      <value>4858735.9120181817561388</value>
+      <value>1630375.41722717182710767</value>
+      <value>4860201.02225961163640022</value>
+    </WMSExtent>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WFSLayers type="QStringList"/>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WCSLayers type="QStringList"/>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title>Test cadastre</title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author>Walter Lorenzetti</author>
+    <creation>2019-12-04T10:19:58</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>

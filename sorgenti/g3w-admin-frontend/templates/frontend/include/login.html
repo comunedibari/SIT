@@ -1,0 +1,72 @@
+{% load i18n %}
+{% load static %}
+{% load guardian_tags %}
+{% load auth_extras %}
+<div class="login hidden">
+{% if can_login %}
+<div class="page_name tk-museo-sans">{% if user.is_authenticated %}{% trans 'Admin' %}{% else %}{% trans 'Login' %}{% endif %}</div>
+<h1 class="tk-source-sans-pro">
+    {% if user.is_authenticated %}
+    {% trans 'Access as system user.' %}
+    {% else %}
+    {% trans 'Access as system user.' %}
+    {% endif %}
+</h1>
+<div class="paragraphs tk-source-sans-pro">
+<div class="normal-text">{{ generaldata.login_description|safe }}</div>
+    {% if user.is_authenticated %}
+    <div class="paragraphs no-columns tk-source-sans-pro m-top-10">
+    <div class="block row">
+      <div class="col-md-4" style="padding-left: 24px;">
+
+      <div class="login-out-button">
+        {% if not user|has_group:G3W_VIEWER1 and not user|has_group:G3W_VIEWER2 %}
+        <span class="filter">
+            <a class="btn btn-main go-admin" style="display: inline" href="{% url 'home' %}">{% trans 'Backend' %}</a>
+        </span>
+        {% endif %}
+        <span class="action">
+            <a class="btn btn-main btn-logout go-admin" style="display: inline" href="{% url 'logout'%}?next=/">{% trans 'Logout' %}</a>
+        </span>
+      </div>
+    </div>
+    </div>
+    {% endif %}
+
+    {% if not user.is_authenticated %}
+    <div id="admin_login_form" class="paragraphs no-columns tk-source-sans-pro m-top-10">
+    <div class="block row">
+
+      <div class="col-md-4" style="padding-left: 24px;">
+        <form class="contact-form" action="{% url 'frontend-ajax-login' %}">
+            <div class="login-errors hidden"></div>
+            {% csrf_token %}
+            <input type="text" class="form-control" id="user" name="username" placeholder="USERNAME">
+            <input type="password" class="form-control" id="password" name="password" placeholder="PASSWORD">
+            <button class="submit-btn submit-login" type="submit" id="send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."> {% trans 'Login' %}</button>
+        </form>
+        <div id="result-message" role="alert"></div>
+      </div>
+    </div>
+    </div>
+    {% endif %}
+</div>
+{% else %}
+<div class="page_name tk-museo-sans"></div>
+<h1 class="tk-source-sans-pro">
+    SIT-Area vasta Metropoli Terra di Bari
+</h1>
+<div class="paragraphs tk-source-sans-pro">
+<div class="normal-text">
+Il servizio fornisce la possibilità di ottenere informazioni circa la conoscenza del territorio, le sue
+risorse ed il suo utilizzo.
+</div>
+<div id="admin_login_form" class="paragraphs no-columns tk-source-sans-pro m-top-10">
+    <div class="block row">
+    <div class="col-md-12" style="padding-left: 10px;">
+    <h1><u>{% trans 'Page requested is not available!' %}</u></h1>
+    </div>
+    </div>
+</div>
+{% endif %}
+</div>

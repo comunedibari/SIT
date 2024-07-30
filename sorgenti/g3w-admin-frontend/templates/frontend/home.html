@@ -1,0 +1,177 @@
+{% load i18n %}
+{% load auth_extras %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta charset="utf-8" />
+<title>Home Page SIT - AVMTB</title>
+<link href="/custom_static/css/home.css" rel="stylesheet"/>
+{% comment %}<link href="http://localhost:82/g3w_suite_data/static/home.css" rel="stylesheet"/>{% endcomment %}
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /><meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/cookieconsent/build/cookieconsent.min.css' %}" />
+<style>
+.cc-message a:link,
+.cc-message a:visited,
+.cc-message a:active,
+.cc-message a:hover {
+	color: #fff;
+}
+</style>
+</head>
+
+<body>
+	<header>
+		<div class="content-wrapper">
+			<div class="float-left">
+				<p class="site-title">
+					<a href="/"><img id="Image1" src="/custom_static/img/logo.gif" /></a>
+					&nbsp; <a href="/">Area Vasta Metropoli Terra di Bari</a>
+				</p>
+			</div>
+			<div class="float-right">
+				<section id="login">
+				</section>
+				<nav>
+					<br /><br />
+					{% include 'frontend/include/menu_home.html' %}
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div id="body">
+	    <section class="featured">
+			<div class="content-wrapper">
+				<hgroup class="title">
+					<h1>Servizi del Sistema Informativo Territoriale</h1>
+				</hgroup>
+			</div>
+		</section>
+		<section class="content-wrapper main-content clear-fix">
+		<div id="textinfo">
+			<h3>Il Sistema Informativo Territoriale (SIT) dell'Area Vasta Metropoli Terra di Bari dispone di una serie di funzionalità on-line in relazione al tuo profilo di accesso ed al Comune selezionato:
+			</h3>
+			<div id="MainContent_preAutPannel">
+	
+				<ol class="round">
+					<li class="one">
+						<h5>Strumenti urbanistici sovra-comunali</h5>
+						<br />
+						<div align="JUSTIFY" style="font-size: 1.1em;">
+							Accedendo in forma anonima, senza necessità di autenticarti, hai a disposizione la consultazione dei dati a livello regionale relativi a: PPTR (DGR 176/2015), PAI e ai servizi WMS forniti dal SIT regionale e dalla Autorità di Bacino Puglia.
+						</div>
+					</li>
+					<li class="two">
+						<h5>Strumenti urbanistici comunali </h5>
+						<br />
+						<div align="JUSTIFY"  style="font-size: 1.1em;">
+							Accedendo in forma anonima, previa selezione del Comune di interesse, avrai accesso all'intera cartografia dei mappali catastali del Comune selezionato insieme agli strumenti di pianificazione territoriale eventualmente attivati. Seleziona il Comune dall'elenco per visualizzare i tematismi disponibili. 
+						</div>
+					</li>
+					<li class="three">
+						<h5>Servizi WMS - Area Vasta Metropoli Terra di Bari</h5>
+						<br />
+						<div align="JUSTIFY"  style="font-size: 1.1em;">
+							Si rendono disponibili i servizi WMS attinenti il PRG. 
+						</div>
+					</li>
+					<li class="four">
+						<h5><img src="/custom_static/img/spid-logo.png" width="120px">Servizi accessibili tramite SPID</h5>
+						<br />
+						<div align="JUSTIFY"  style="font-size: 1.1em;">
+						   Accedendo previa identificazione con credenziali tramite SPID, avrai in più a disposizione l'insieme normalizzato di tutti gli strumenti urbanistici comunali oltre ai servizi attivi quali la visualizzazione del Certificato di Destinazione Urbanistica pro-forma, privo di validità giuridica. Clicca su ACCEDI in alto a destra e seleziona il tuo gestore dell'identità digitale.
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="selectcommon">
+			<h3 >Seleziona il tuo Comune</h3>
+			<ul>
+				<li>
+					<a id="MainContent_LinkButton1" href="/front/#map=macrogroup-maps-8">Adelfia</a></li>
+				<li>
+					<a id="MainContent_LinkButton1" href="/front/#map=macrogroup-maps-31">Altamura</a></li>
+				<li>
+					<a id="MainContent_LinkButton2" href="/front/#map=macrogroup-maps-2">Bari</a></li>
+				<li>
+					<a id="MainContent_LinkButton3" href="/front/#map=macrogroup-maps-3">Binetto</a></li>
+				<li>
+					<a id="MainContent_LinkButton4" href="/front/#map=macrogroup-maps-4">Bitetto</a></li>
+				<li>
+					<a id="MainContent_LinkButton5" href="/front/#map=macrogroup-maps-17">Bitonto</a></li>
+				<li>
+					<a id="MainContent_LinkButton6" href="/front/#map=macrogroup-maps-27">Bitritto</a></li>
+				<li>
+					<a id="MainContent_LinkButton7" href="/front/#map=macrogroup-maps-9">Capurso</a></li>
+				<li>
+					<a id="MainContent_LinkButton8" href="/front/#map=macrogroup-maps-7">Casamassima</a></li>
+				<li>
+					<a id="MainContent_LinkButton9" href="/front/#map=macrogroup-maps-18">Cassano delle Murge</a></li>
+				<li>
+					<a id="MainContent_LinkButton10" href="/front/#map=macrogroup-maps-19">Cellamare</a></li>
+				<li>
+					<a id="MainContent_LinkButton11" href="/front/#map=macrogroup-maps-28">Conversano</a></li>
+				<li>
+					<a id="MainContent_LinkButton12" href="/front/#map=macrogroup-maps-5">Gioia del Colle</a></li>
+				<li>
+					<a id="MainContent_LinkButton13" href="/front/#map=macrogroup-maps-16">Giovinazzo</a></li>
+				<li>
+					<a id="MainContent_LinkButton14" href="/front/#map=macrogroup-maps-29">Modugno</a></li>
+				<li>
+					<a id="MainContent_LinkButton15" href="/front/#map=macrogroup-maps-20">Mola di Bari</a></li>
+				<li>
+					<a id="MainContent_LinkButton16" href="/front/#map=macrogroup-maps-22">Molfetta</a></li>
+				<li>
+					<a id="MainContent_LinkButton17" href="/front/#map=macrogroup-maps-11">Noicattaro</a></li>
+				<li>
+					<a id="MainContent_LinkButton18" href="/front/#map=macrogroup-maps-30">Palo del Colle</a></li>
+				<li>
+					<a id="MainContent_LinkButton19" href="/front/#map=macrogroup-maps-12">Polignano</a></li>
+				<li>
+					<a id="MainContent_LinkButton20" href="/front/#map=macrogroup-maps-13">Rutigliano</a></li>
+				<li>
+					<a id="MainContent_LinkButton21" href="/front/#map=macrogroup-maps-6">Ruvo di Puglia</a></li>
+				<li>
+					<a id="MainContent_LinkButton22" href="/front/#map=macrogroup-maps-23">Sammichele di Bari</a></li>
+				<li>
+					<a id="MainContent_LinkButton23" href="/front/#map=macrogroup-maps-21">Sannicandro di Bari</a></li>
+				<li>
+					<a id="MainContent_LinkButton24" href="/front/#map=macrogroup-maps-26">Terlizzi</a></li>
+				<li>
+					<a id="MainContent_LinkButton25" href="/front/#map=macrogroup-maps-24">Toritto</a></li>
+				<li>
+					<a id="MainContent_LinkButton26" href="/front/#map=macrogroup-maps-14">Triggiano</a></li>
+				<li>
+					<a id="MainContent_LinkButton27" href="/front/#map=macrogroup-maps-15">Turi</a></li>
+				<li>
+					<a id="MainContent_LinkButton28" href="/front/#map=macrogroup-maps-25">Valenzano</a></li>
+			</ul>
+			<h3><a href="./map/area-vasta/qdjango/40" target="_blank">Vai alla consultazione libera della Mappa</a></h3>
+			<h3><a href="{% url 'frontend-wms' %}" target="_blank">Accedi ai servizi WMS</a></h3>
+            {% comment %}
+            {% if not user.is_authenticated %}
+            <h3><a href="/front/#login" style="font-weight: normal">Accedi come utente di sistema</a></h3>
+            {% endif %}
+            {% endcomment %}
+		</div>
+</div>
+{% comment %}
+<script>
+    tippy('#hlAccedi', {
+        content: '{% include 'frontend/include/tooltiplogin.html' %}',
+        interactive: true,
+        appendTo: 'parent',
+        trigger: 'click',
+        theme: 'light-border',
+        placement: 'bottom'
+    });
+</script>
+{% endcomment %}
+<div class="footer_wrapper" style="background: #fff;"> <img style="height: auto; max-width: 100%;" src="https://egov.ba.it/osapulie-theme/images/footer_small.png" alt="Programma Operativo Regionale Puglia 2007-2013 Plano di Azione e Coesione - Programma Ordinario Convergenza. Asse I - Promozione, valorizzazione e diffusione della ricerca e dell'innovazione per lo competitività. Linea di intervento 1.5 -Interventi per lo sviluppo dei servizi pubblici digitali. Codice Progetto FE1.500025. Progetto cofinanziato con il 'FONDO EUROPEO DI SVILUPPO REGIONALE - FESR' - 'INVESTIAMO NEL VOSTRO FUTURO'"> <div class="reset"></div> </div>
+<script type="text/javascript" src="{% static 'bower_components/cookieconsent/build/cookieconsent.min.js' %}"></script>
+{% include 'frontend/include/coockieconsent.html' %}
+</body>
+</html>
+

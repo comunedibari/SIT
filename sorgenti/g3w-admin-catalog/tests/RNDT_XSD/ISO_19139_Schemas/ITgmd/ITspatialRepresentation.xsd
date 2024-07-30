@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation xml:lang="it">Questo schema è un adattamento al Core Metadata, definito nelle linee guida del Repertorio Nazionale dei Dati Territoriali, dello schema XML definito nello Standard DTS 19139 spatialRepresentation.xsd</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gss" schemaLocation="../gss/gss.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+	<xs:complexType name="MD_ITGridSpatialRepresentation_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Informazioni sugli oggetti territoriali di tipo griglia dei dati</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gmd:AbstractMD_SpatialRepresentation_Type">
+				<xs:sequence>
+					<xs:element name="numberOfDimensions" type="gco:Integer_PropertyType"/>
+					<xs:element name="axisDimensionProperties" type="gmd:MD_Dimension_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="cellGeometry" type="gmd:MD_CellGeometryCode_PropertyType"/>
+					<xs:element name="transformationParameterAvailability" type="gco:Boolean_PropertyType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_GridSpatialRepresentation" type="ITgmd:MD_ITGridSpatialRepresentation_Type" substitutionGroup="gmd:AbstractMD_SpatialRepresentation"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_ITGridSpatialRepresentation_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:MD_GridSpatialRepresentation"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_ITGeorectified_Type">
+		<xs:complexContent>
+			<xs:extension base="ITgmd:MD_ITGridSpatialRepresentation_Type">
+				<xs:sequence>
+					<xs:element name="checkPointAvailability" type="gco:Boolean_PropertyType"/>
+					<xs:element name="checkPointDescription" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="cornerPoints" type="gss:GM_Point_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="pointInPixel" type="gmd:MD_PixelOrientationCode_PropertyType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Georectified" type="ITgmd:MD_ITGeorectified_Type" substitutionGroup="ITgmd:MD_GridSpatialRepresentation"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_ITGeorectified_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:MD_Georectified"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_ITGeoreferenceable_Type">
+		<xs:complexContent>
+			<xs:extension base="ITgmd:MD_ITGridSpatialRepresentation_Type">
+				<xs:sequence>
+					<xs:element name="controlPointAvailability" type="gco:Boolean_PropertyType"/>
+					<xs:element name="orientationParameterAvailability" type="gco:Boolean_PropertyType"/>
+					<xs:element name="georeferencedParameters" type="gco:Record_PropertyType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Georeferenceable" type="ITgmd:MD_ITGeoreferenceable_Type" substitutionGroup="ITgmd:MD_GridSpatialRepresentation"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_ITGeoreferenceable_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ITgmd:MD_Georeferenceable"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<!-- =========================================================================== -->
+</xs:schema>

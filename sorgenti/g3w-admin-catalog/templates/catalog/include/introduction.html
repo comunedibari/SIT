@@ -1,0 +1,26 @@
+{% load static %}
+{% load i18n %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h3 class="box-title">{% trans 'Indroduction' %}</h3>
+            </div>
+            <div class="box-body">
+                {% trans " The specifications in the following form refer to the operating manual for <b>RNDT v.2</b>," %}
+                {% trans 'which can be consulted' %} <a target="_blank" href="{% static "catalog/doc/LG-RNDT_v.2.0.1.pdf" %}">{% trans 'here' %}</a>.
+
+                <div class="alert alert-info">
+                    <h4><i class="icon fa fa-info"></i> Important!</h4>
+                    For the RNDT catalog to make the records public, the following fields must be set as follows:
+                    <ul>
+                        <li><b>{% trans 'Access constraints' %}</b>: 'no limitations to puplic access'</li>
+                        <li><b>{% trans 'Usability constraints - data license' %}</b>: 'CC_BY_4.0'</li>
+                        <li><b>{% trans 'Keywords' %}</b>: Add 'Open Data'</li>
+                    </ul>
+                </div>
+            </div>
+        <div>
+    </div>
+</div>

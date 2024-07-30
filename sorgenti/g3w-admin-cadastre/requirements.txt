@@ -1,0 +1,5 @@
+# apt-get install libffi-devpip inst
+weasyprint==0.42.3
+django-ajax-selects
+SQLAlchemy
+cx_oracle

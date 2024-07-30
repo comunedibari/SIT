@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-08 07:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: simplereporting/forms.py:45
+#: simplereporting/templates/simplereporting/projects_list.html:18
+#: simplereporting/templates/simplereporting/projects_list.html:26
+msgid "Project"
+msgstr ""
+
+#: simplereporting/forms.py:85
+msgid "Reporting vector layer"
+msgstr ""
+
+#: simplereporting/models.py:42
+msgid "This project is just set for a simple reporting"
+msgstr ""
+
+#: simplereporting/models.py:75
+msgid ""
+"Select vector project layer to use for reporting: only follow geometry types "
+"are allowed: , "
+msgstr ""
+
+#: simplereporting/models.py:90
+msgid "Layer geometry type is not in allowed type: , "
+msgstr ""
+
+#: simplereporting/models.py:95
+msgid "Layer is not in editing state (required)"
+msgstr ""
+
+#: simplereporting/models.py:104
+msgid "Only once combination of SimpleReporting adn vector layer reporting!"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/layer_form.html:11
+#: simplereporting/templates/simplereporting/layer_form.html:14
+msgid "Reporting Vector Layer"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/layer_form.html:14
+#: simplereporting/templates/simplereporting/project_form.html:14
+msgid "New"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/layer_form.html:27
+#: simplereporting/templates/simplereporting/project_form.html:27
+msgid "Alert"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/layer_form.html:28
+#: simplereporting/templates/simplereporting/project_form.html:28
+msgid "Some errors on form. Check it and send again."
+msgstr ""
+
+#: simplereporting/templates/simplereporting/project_form.html:11
+#: simplereporting/templates/simplereporting/project_form.html:14
+msgid "Simple Reporting Project"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:8
+msgid "Simple reporting Projects"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:25
+msgid "Actions"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:27
+msgid "Reporting Layer"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:28
+msgid "Note"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:36
+msgid "Edit"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:39
+msgid "Delete"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:42
+msgid "Reporting Vector layer"
+msgstr ""
+
+#: simplereporting/templates/simplereporting/projects_list.html:52
+msgid "No set"
+msgstr ""

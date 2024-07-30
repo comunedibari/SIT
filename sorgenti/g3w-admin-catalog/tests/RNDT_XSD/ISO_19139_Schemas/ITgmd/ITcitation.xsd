@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation xml:lang="it">Questo schema è un adattamento al Core Metadata, definito nelle linee guida del Repertorio Nazionale dei Dati Territoriali, dello schema XML di cui allo Standard ISO TS 19139 citation.xsd</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Includes================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<!-- ================================== Includes================================== -->
+	<xs:include schemaLocation="../ITgmd/ITreferenceSystem.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+	<xs:complexType name="CI_ITResponsibleParty_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Identificazione e modalità di comunicazione con il responsabile dei dati</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="organisationName" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="contactInfo" type="ITgmd:CI_ITContact_PropertyType"/>
+					<xs:element name="role" type="gmd:CI_RoleCode_PropertyType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="CI_ResponsibleParty" type="ITgmd:CI_ITResponsibleParty_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_ITResponsibleParty_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:CI_ResponsibleParty"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_Series_Citation_Type">
+		<xs:complexContent>
+			<xs:annotation>
+				<xs:documentation xml:lang="it">Riferimento standardizzato ad una risorsa</xs:documentation>
+			</xs:annotation>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="title" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="date" type="gmd:CI_Date_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="identifier" type="gmd:MD_Identifier_PropertyType"/>
+					<xs:element name="citedResponsibleParty" type="ITgmd:CI_ITResponsibleParty_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="presentationForm" type="gmd:CI_PresentationFormCode_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="series" type="ITgmd:CI_ITSeries_PropertyType"/>
+					<xs:element name="otherCitationDetails" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+		
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_Series_Citation_PropertyType">
+		<xs:sequence>
+			<xs:element name="CI_Citation" type="ITgmd:CI_Series_Citation_Type"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_Dataset_Citation_Type">
+		<xs:complexContent>
+			<xs:annotation>
+				<xs:documentation xml:lang="it">Riferimento standardizzato ad una risorsa</xs:documentation>
+			</xs:annotation>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="title" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="date" type="gmd:CI_Date_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="identifier" type="gmd:MD_Identifier_PropertyType"/>
+					<xs:element name="citedResponsibleParty" type="ITgmd:CI_ITResponsibleParty_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="presentationForm" type="gmd:CI_PresentationFormCode_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="series" type="ITgmd:CI_ITSeries_PropertyType"/>
+					<xs:element name="otherCitationDetails" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_Dataset_Citation_PropertyType">
+		<xs:sequence>
+			<xs:element name="CI_Citation" type="ITgmd:CI_Dataset_Citation_Type"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_Tile_Citation_Type">
+		<xs:complexContent>
+			<xs:annotation>
+				<xs:documentation xml:lang="it">Riferimento standardizzato ad una risorsa</xs:documentation>
+			</xs:annotation>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="title" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="date" type="gmd:CI_Date_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="identifier" type="gmd:MD_Identifier_PropertyType"/>
+					<xs:element name="citedResponsibleParty" type="ITgmd:CI_ITResponsibleParty_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="presentationForm" type="gmd:CI_PresentationFormCode_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="series" type="ITgmd:CI_ITSeries_PropertyType"/>
+					<xs:element name="otherCitationDetails" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_Tile_Citation_PropertyType">
+		<xs:sequence>
+			<xs:element name="CI_Citation" type="ITgmd:CI_Tile_Citation_Type"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_ITTelephone_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Numero di telefono per contattare il soggetto responsabile dei dati</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="voice" type="gco:CharacterString_PropertyType" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="CI_Telephone" type="ITgmd:CI_ITTelephone_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_ITTelephone_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:CI_Telephone"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_ITSeries_Type">
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="issueIdentification" type="gco:CharacterString_PropertyType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="CI_Series" type="ITgmd:CI_ITSeries_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_ITSeries_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:CI_Series"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_ITAddress_Type">
+		<xs:annotation>
+			<xs:documentation>Location of the responsible individual or organisation</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="electronicMailAddress" type="gco:CharacterString_PropertyType" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="CI_Address" type="ITgmd:CI_ITAddress_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_ITAddress_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ITgmd:CI_Address"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="CI_ITContact_Type">
+		<xs:complexContent>
+			<xs:annotation>
+				<xs:documentation xml:lang="it">Informazioni per contattare l'Ente responsabile dei dati</xs:documentation>
+			</xs:annotation>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="phone" type="ITgmd:CI_ITTelephone_PropertyType" minOccurs="0"/>
+					<xs:element name="address" type="ITgmd:CI_ITAddress_PropertyType"/>
+					<xs:element name="onlineResource" type="gmd:CI_OnlineResource_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="CI_Contact" type="ITgmd:CI_ITContact_Type"/>
+	<xs:annotation>
+		<xs:documentation>
+			*** phone: documented if onlineResource not documented
+			*** onlineResource: documented if phone not documented
+		</xs:documentation>
+	</xs:annotation>
+	<!-- ........................................................................ -->
+	<xs:complexType name="CI_ITContact_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:CI_Contact"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+</xs:schema>

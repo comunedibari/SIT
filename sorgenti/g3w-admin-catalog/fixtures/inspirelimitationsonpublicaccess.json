@@ -1,0 +1,92 @@
+[
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 1,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a",
+  "label": "public access limited according to Article 13(1)(a) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect the confidentiality of the proceedings of public authorities, where such confidentiality is provided for by law.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 2,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1b",
+  "label": "public access limited according to Article 13(1)(b) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect international relations, public security or national defence.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1b"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 3,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1c",
+  "label": "public access limited according to Article 13(1)(c) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1c"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 4,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1d",
+  "label": "public access limited according to Article 13(1)(d) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1d"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 5,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e",
+  "label": "public access limited according to Article 13(1)(e) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect intellectual property rights.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 6,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1f",
+  "label": "public access limited according to Article 13(1)(f) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1f"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 7,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1g",
+  "label": "public access limited according to Article 13(1)(g) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1g"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 8,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1h",
+  "label": "public access limited according to Article 13(1)(h) of the INSPIRE Directive",
+  "definition": "Public access to spatial data sets and services would adversely affect the protection of the environment to which such information relates, such as the location of rare species.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1h"
+ }
+},
+{
+ "model": "catalog.inspirelimitationsonpublicaccess",
+ "pk": 9,
+ "fields": {
+  "inspire_id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations",
+  "label": "no limitations to public access",
+  "definition": "There are no limitations on public access to spatial data sets and services.",
+  "url": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+ }
+}
+]

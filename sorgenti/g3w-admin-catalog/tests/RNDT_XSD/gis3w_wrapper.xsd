@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import
+    namespace="http://www.isotc211.org/2005/gmd"
+    schemaLocation="./ISO_19139_Schemas/ITgmd/ITgmd.xsd"/>
+  <xs:import
+    namespace="http://www.isotc211.org/2005/srv"
+    schemaLocation="./ISO_19139_Schemas/srv/srv.xsd"/>
+</xs:schema>

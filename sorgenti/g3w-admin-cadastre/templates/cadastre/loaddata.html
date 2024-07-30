@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load g3wadmin_tags %}
+{% load cadastre %}
+
+
+
+{% block custom_js_links_page %}
+<script src="{% static "cadastre/js/cadastre.js" %}"></script>
+<script>
+    ga.ui.initRevokeTerminateTaskWidget();
+    ga.ui.initClearDBByTaskIdWidget();
+    ga.ui.initClearDBWidget();
+    ga.ui.initTaskInfoWidget();
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+        var cookieOptions = {path: '/'};
+        // set coockie for current tab
+        $.cookie('g3wadmin_cadastre_fornitura_tab', $(this).attr('data-fornitura'), cookieOptions);
+    });
+
+    $('document').ready(function(){
+        var fornitura = $.cookie('g3wadmin_cadastre_fornitura_tab');
+        if (fornitura)
+            $('a[data-fornitura="'+fornitura+'"]').tab('show');
+    });
+
+
+    // try to onload modal upload
+    var onModalShow = function(e){
+
+        // tab active and set select form
+        var fornitura = $("ul.nav li.active a").attr('data-fornitura');
+        $("select[name='tipo_fornitura']").val(fornitura);
+    };
+
+    {% comment %}
+    {% if not can_upload %}
+    {% comment %}Reload page until can upload{% endcomment %}
+    {% comment %}
+    setTimeout(function(){
+       window.location.reload(1);
+    }, 5000);
+    {% endif %}
+    {% endcomment %}
+
+</script>
+{% endblock %}
+
+{% block page_header %}
+    <h1>{% trans 'Cadastre' %}
+    <small>{% trans 'Uploader data' %}</small>
+    </h1>
+{% endblock %}
+
+{% block main_content %}
+
+<div id="plus_form_inputs" class="hidden">
+<div class="form-group">
+    <label>{% trans 'Supply type' %}</label>
+    <select name="tipo_fornitura" class="form-control">
+        {% for tp_fornitura, tp_data_fornitura in tp_forniture.items %}
+            <option value="{{ tp_data_fornitura.value }}">{{ tp_data_fornitura.name }}</option>
+        {% endfor %}
+    </select>
+</div>
+</div>
+
+<div class="box box-upload">
+    <div class="box-body">
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-lg btn-default {% if not can_upload %}disabled{% endif %}" data-widget-type="ajaxFiler" data-modal-title="{% trans 'Upload cadastre data file' %}" data-action-url="{% url 'cadastre-upload' %}" data-on-modal-show="onModalShow" data-file-extensions="zip" data-item-plus-form="plus_form_inputs">
+                  <i class="glyphicon glyphicon-upload"></i> {% trans 'Load' %}
+                </button>
+            </div>
+
+            <div class="col-md-2">
+            {% if user.is_superuser %}
+                <button type="button" class="btn btn-lg btn-warning {% if not can_upload %}disabled{% endif %}" data-widget-type="clearDB" data-modal-title="{% trans 'Clear cadastre database' %}" data-url="{% url 'cadastre-cleardb'%}">
+                  <i class="fa fa-eraser"></i> {% trans 'Clear DB' %}
+                </button>
+            {% endif %}
+            </div>
+
+            <div class="col-md-7">
+               {% if not can_upload %}
+                    <div class="callout callout-warning">
+                        <h4>{% trans 'Attention' %}!</h4>
+                        <p>{% trans 'Is not possible upload other files until previous uploading service is active' %}</p>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-lg bg-olive" data-widget-type="detailItem" data-modal-title="{% trans 'Data structure for uploading censuario and DOCFA' %}" data-detail-url="{% url 'cadastre-loaddata-info' %}"><i class="fa fa-info-circle"></i></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="box">
+    <div class="box-header">
+        <h3>{% trans 'Uploaded files' %}</h3>
+    </div>
+    <div class="box-body">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              {% if perms.cadastre.add_prm %}
+              <li class="active"><a href="#tab_catasto" data-toggle="tab" data-fornitura="CATASTO"><i class="icon fa fa-list"></i> {% trans 'Cadastre' %}</a></li>
+              {% endif %}
+              {% if perms.cadastre.add_importdocfa %}
+              <li><a href="#tab_docfa" data-toggle="tab" data-fornitura="DOCFA"><i class="icon fa fa-list"></i> DOCFA</a></li>
+              {% endif %}
+              {% if perms.cadastre.add_importcatasto %}
+              <li><a href="#tab_cxf" data-toggle="tab" data-fornitura="CXF"><i class="icon fa fa-list"></i> CXF</a></li>
+              {% endif %}
+            </ul>
+            <div class="tab-content">
+                {% if perms.cadastre.add_prm %}
+                <div class="tab-pane active" id="tab_catasto">
+                    <table class="table table-hover table-striped" data-widget-type="dataTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 120px">Action</th>
+                                <th>{%  trans 'STATE' %}</th>
+                                <th>{%  trans 'Municipality code' %}</th>
+                                <!--
+                                <th>{%  trans 'File' %}</th>
+                                {% if user.is_superuser %}
+                                    <th>{%  trans 'Task ID' %}</th>
+                                {% endif %}
+                                -->
+                                <th>{%  trans 'Supply type' %}</th>
+                                <th>{%  trans 'Description' %}</th>
+                                <th>{%  trans 'Update' %}</th>
+                                <th>{%  trans 'Application date' %}</th>
+                                <th>{%  trans 'Elaboration date' %}</th>
+                                <th>{%  trans 'Selection date' %}</th>
+                                <th>{%  trans 'Registration date' %}</th>
+                                <th>{%  trans 'Upload date' %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for object in catasto_list %}
+                            {% with object.task_id|task_status as status %}
+                            {% with 'PRM' as cadastre_context %}
+                            <tr id="prm_{{ object.id }}">
+                                <td>
+                                    {% if status != 'PENDING' %}
+                                    <span class="col-xs-2 icon">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Delete' %}" data-widget-type="deleteItem" data-delete-url="{% url 'prm-delete' object.id %}" data-item-selector="#prm_{{ object.id }}" ><i class="ion ion-trash-b"></i></a>
+                                    </span>
+                                    {% endif %}
+                                    {% include 'cadastre/include/action_loaddata.html' %}
+                                    {% if status != 'PENDING' and user.is_staff%}
+                                    <span class="col-xs-2 icon">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Clear Db by Task id' %}" data-widget-type="clearDBByTaskId" data-url="{% url 'cadastre-task-cleardb' object.task_id %}" data-task-id="{{ object.task_id }}"><i class="fa fa-eraser"></i></a>
+                                    </span>
+                                    {% endif %}
+                                </td>
+
+                                <td>
+                                    {{ object.task_id|task_status_label }}
+                                    {% if status == 'PENDING' %}
+                                    <div class="progress progress-md active" data-widget-type="taskInfo" data-url="{% url "cadastre-api-task" object.task_id %}">
+                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                          <span class="sr-only">0% Complete</span>
+                                        </div>
+                                      </div>
+                                    {% endif %}
+                                </td>
+                                <td>{{ object.codice_comune|code_to_comune_name }} </td>
+                                <!--
+                                <td>{{ object.file }}</td>
+                                {% if user.is_superuser %}
+                                    <td>{{ object.task_id }}</td>
+                                {% endif %}
+                                -->
+                                <td>
+                                    {% static '' as baseurl %}
+                                    <img src="{{ baseurl }}cadastre/img/{{ icons|lookup:object.tipo_fornitura }}">
+                                    <b>{{ object.tipo_fornitura }}</b>
+                                </td>
+                                <td>{{ object.descrizione }}</td>
+
+                                <td style="text-align: center">
+                                    {% if object.is_aggiornamento %}
+                                    <span class="fa fa-check-circle" style="color: orange"></span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ object.data_richiesta }}</td>
+                                <td>{{ object.data_elaborazione }}</td>
+                                <td>{{ object.data_selezione }}</td>
+                                <td>{% if object.data_registrazione %}{{ object.data_registrazione }}{% endif %}</td>
+                                <td>{{ object.created }}</td>
+                            </tr>
+                            {% endwith %}
+                            {% endwith %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+                {% if perms.cadastre.add_importdocfa %}
+                <div class="tab-pane" id="tab_docfa">
+                    <table class="table table-hover table-striped" data-widget-type="dataTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 120px">Action</th>
+                                <th>{%  trans 'STATE' %}</th>
+                                <th>{%  trans 'Municipality code' %}</th>
+                                <th>{%  trans 'File' %}</th>
+                                <th>{%  trans 'Processing date' %}</th>
+                                <th>{%  trans 'Upload date' %}</th>
+                                <th>{%  trans 'N DOCFA' %}</th>
+                                <th>{%  trans 'N planimetries' %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for object in docfa_list %}
+                            {% with object.task_id|task_status as status %}
+                            {% with 'DOCFA' as cadastre_context %}
+                                <tr id="docfa_{{ object.id }}">
+                                    <td>
+                                        {% if status != 'PENDING' %}
+                                        <span class="col-xs-4 icon">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Delete' %}" data-widget-type="deleteItem" data-delete-url="{% url 'importdocfa-delete' object.id %}" data-item-selector="#docfa_{{ object.id }}" ><i class="ion ion-trash-b"></i></a>
+                                        </span>
+                                        {% endif %}
+                                        {% include 'cadastre/include/action_loaddata.html' %}
+                                        {% if status != 'PENDING' and status != 'IMPORTED BY SCRIPT' and user.is_staff%}
+                                        <span class="col-xs-4 icon">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="{% trans 'Clear Db by Task id' %}" data-widget-type="clearDBByTaskId" data-url="{% url 'cadastre-task-cleardb' object.task_id %}" data-task-id="{{ object.task_id }}"><i class="fa fa-eraser"></i></a>
+                                        </span>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ object.task_id|task_status_label }} </td>
+                                    <td>{{ object.codice_comune|code_to_comune_name }} </td>
+                                    <td>{{ object.file }}</td>
+                                    <td>{{ object.data_elaborazione }}</td>
+                                    <td>{{ object.created }}</td>
+                                    <td>{{ object.n_docfa }}</td>
+                                    <td>{{ object.n_planimetrie }}</td>
+                                </tr>
+                            {% endwith %}
+                            {% endwith %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+                {% if perms.cadastre.add_importcatasto %}
+                <div class="tab-pane" id="tab_cxf">
+                    {% include 'cadastre/include/import_cxf.html' %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

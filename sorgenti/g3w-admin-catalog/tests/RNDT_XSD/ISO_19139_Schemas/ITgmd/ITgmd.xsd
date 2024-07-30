@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<!-- ================================== Imports ================================== -->
+	<xs:include schemaLocation="../ITgmd/ITmetadataApplication.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+</xs:schema>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ITsched="http://www.cnipa.gov.it/RNDT/ITsched" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" targetNamespace="http://www.cnipa.gov.it/RNDT/ITsched" elementFormDefault="qualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation>This file was generated from ISO TC/211 UML class diagrams == 10-13-2006 11:14:04 ====== </xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->	
+	
+	
+	<!-- ===========================================================================SCHEDULE DATASET -->
+	<xs:complexType name="SC_ScheduleDataset_Type">
+		<xs:complexContent>
+			<xs:extension base="gmd:DS_DataSet_Type" />				
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_ScheduleDataset" type="ITsched:SC_ScheduleDataset_Type" substitutionGroup="gmd:DS_DataSet"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_ScheduleDataset_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:SC_ScheduleDataset" minOccurs="1"/>			
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	
+	
+	
+	<!-- ===========================================================================SCHEDULE METADATA-->
+	<xs:complexType name="SC_ScheduleMetadata_Type">
+		<xs:complexContent>
+			<xs:extension base="gmd:MD_Metadata_Type">
+				<xs:sequence>
+					 	<xs:element name="scheduleInformation" type="ITsched:SC_ScheduleInformation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_ScheduleMetadata" type="ITsched:SC_ScheduleMetadata_Type" substitutionGroup="gmd:MD_Metadata"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_ScheduleMetadata_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:SC_ScheduleMetadata" minOccurs="1"/>			
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+		
+	
+	<!-- ===========================================================================SCHEDULE IDENTIFICATION -->
+	
+	<xs:complexType name="SC_ScheduleIdentification_Type">
+		<xs:complexContent>
+			<xs:extension base="gmd:MD_DataIdentification_Type">
+				<xs:sequence>
+					<xs:element name="availabilityDate" type="gco:Date_PropertyType"/>
+					<xs:element name="status" type="ITsched:MD_Stato_PropertyType"/>
+					<xs:element name="servicesProvided" type="ITsched:SC_ServiceProvided_PropertyType"/>
+				<!-- 	<xs:element name="scheduleInformation" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				-->	<xs:element name="administrativeExtent" type="ITsched:SC_AdministrativeExtent_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_ScheduleIdentification" type="ITsched:SC_ScheduleIdentification_Type" substitutionGroup="gmd:AbstractMD_Identification"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_ScheduleIdentification_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:SC_ScheduleIdentification" minOccurs="1"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	
+	
+	<!-- ===========================================================================SERVICE PROVIDED -->
+	<xs:complexType name="SC_ServiceProvided_Type">
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="serviceType" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="availabilityDate" type="gco:Date_PropertyType"/>					
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_ServiceProvided" type="ITsched:SC_ServiceProvided_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_ServiceProvided_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:SC_ServiceProvided" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	
+	
+	<!-- ===========================================================================ADMINISTRATIVE EXTENT -->
+	<xs:complexType name="SC_AdministrativeExtent_Type">
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="istatCode" type="gco:CharacterString_PropertyType"/>					
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_AdministrativeExtent" type="ITsched:SC_AdministrativeExtent_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_AdministrativeExtent_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:SC_AdministrativeExtent" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	
+	
+	<!-- ===========================================================================SCHEDULE INFORMATION -->
+	<xs:complexType name="SC_ScheduleInformation_Type">
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="estimate" type="gco:Integer_PropertyType"/>					
+					<xs:element name="funding" type="ITsched:MD_Finanziamento_PropertyType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="percentageFunding" type="gco:Integer_PropertyType"/>
+					<xs:element name="acquisitionType" type="ITsched:MD_Acquisizione_PropertyType" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_ScheduleInformation" type="ITsched:SC_ScheduleInformation_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_ScheduleInformation_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:SC_ScheduleInformation" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	
+	
+	
+	<!-- =========================================================================== CODELIST  -->
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Finanziamento" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_Finanziamento_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:MD_Finanziamento" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Acquisizione" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_Acquisizione_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:MD_Acquisizione" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Stato" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_Stato_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITsched:MD_Stato" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+		
+	
+</xs:schema>

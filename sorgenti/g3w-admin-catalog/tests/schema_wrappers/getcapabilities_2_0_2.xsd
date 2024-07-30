@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Wrapper for CSW 2.0.2 and INSPIRE 1.0 ds
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import
+    namespace="http://www.opengis.net/cat/csw/2.0.2"
+    schemaLocation="./schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" />
+  <xs:import
+    namespace="http://inspire.ec.europa.eu/schemas/inspire_ds/1.0"
+    schemaLocation="./inspire.ec.europa.eu/schemas/inspire_ds/1.0/inspire_ds.xsd" />
+</xs:schema>

@@ -1,0 +1,37 @@
+{% load crispy_forms_tags %}
+<div class="row">
+    <div class="col-md-12">
+        <form id='widget_form' enctype="multipart/form-data" role="form" action="." method="post">
+          {% crispy form %}
+        </form>
+        <div class="row">
+            <div class="col-md-12 rightCol"></div>
+        </div>
+    </div>
+</div>
+<script>
+    ga.Qdjango.localVars['update'] = false;
+    ga.Qdjango.localVars['layer_type'] = '{{ layer.layer_type }}';
+	ga.Qdjango.localVars['layer_columns'] = {{ layer.database_columns | safe }};
+    ga.Qdjango.localVars['layer_edittypes'] = {{ layer_edittypes | safe }};
+	ga.Qdjango.localVars['layer_name'] = "{{ layer.qgs_layer_id }}";
+	ga.Qdjango.localVars['project_layers'] = {{ project_layers | safe }};
+    ga.Qdjango.localVars['relations'] = {{ relations | safe }};
+    {% if context_data %}
+    ga.Qdjango.localVars['context_data'] = {{ context_data | safe }};
+    {%  endif %}
+
+    {%  if laws_list %}
+    ga.Qdjango.localVars['laws_list'] = {{ laws_list | safe }};
+    {% endif %}
+	{% if object.pk %}
+	ga.Qdjango.localVars['update'] = true;
+	ga.Qdjango.localVars['widget'] = {
+		name : '{{ object.name }}',
+		widget_type : '{{ object.widget_type }}',
+		body : {{ object.body | safe }}
+	}
+	{% endif %}
+
+    ga.Qdjango.widgetEditor.init();
+</script>

@@ -1,0 +1,67 @@
+.main-header .logo {
+	height: 95px;
+}
+
+/* For frontend */
+.home-block .tk-source-sans-pro {
+	margin-top: unset;
+	background-color: rgba(0,0,0,.4);
+	padding: 10px;
+}
+
+.home-block .subtitle {
+	background-color: rgba(0,0,0,.3);
+	padding: 10px;
+}
+
+div[data-page="about_it"] .photo-img,
+div[data-page="about_it"] .info-block {
+	display: none;
+}
+
+@media (min-width: 992px) {
+div.macrogroup-grid-cell {
+	width: 150px;
+	height: 280px;
+	letter-spacing: 0px;
+}
+div.macrogroup-grid-cell h5 {
+        font-size: 94%;
+}
+
+}
+
+h2.groups-section-title {
+	display: none;
+}
+
+/* For map client */
+.metadata-layer-source {
+	display: none;
+}
+
+.home-block .home-content {
+	margin-bottom: 20px;
+}
+
+.home-block .home-content img {
+	background-color: rgba(240,240,240,.7);
+	padding: 10px;
+}
+a[data-target="#credits"] span {
+	display: none;
+}
+
+a[data-target="#credits"] i {
+	display: none;
+}
+
+a[data-target="#credits"]::after {
+	content: 'Aiuto'
+}
+
+
+#main-navbar {
+    background: url('/custom_static/img/banner-pon-metro.png') no-repeat center;
+}
+

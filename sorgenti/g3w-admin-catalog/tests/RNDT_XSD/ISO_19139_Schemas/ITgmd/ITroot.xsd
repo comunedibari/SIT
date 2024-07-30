@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="ITgmd.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<xs:complexType name="Request_Type">
+		<xs:sequence>
+			<xs:element name="Insert_RNDT" type="ITgmd:RNDT_Operation_Type" minOccurs="0" maxOccurs="unbounded"/>
+			<!--<xs:element name="Insert_ISO" type="ITgmd:ISO_Operation_Type" minOccurs="0" maxOccurs="unbounded"/>-->
+			<xs:element name="Update_RNDT" type="ITgmd:RNDT_Operation_Type" minOccurs="0" maxOccurs="unbounded"/>
+			<!--<xs:element name="Update_ISO" type="ITgmd:ISO_Operation_Type" minOccurs="0" maxOccurs="unbounded"/> -->
+			<xs:element name="Delete" type="ITgmd:Delete_Type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RNDT_Operation_Type">
+		<xs:choice>
+			<xs:element ref="ITgmd:DS_Series"/>
+			<xs:element ref="ITgmd:DS_DataSet"/>
+			<xs:element ref="ITgmd:DS_Tile"/>
+			<xs:element ref="gmd:DS_Series"/>
+			<xs:element ref="gmd:DS_DataSet"/>
+			<xs:element ref="gmd:MD_Metadata"/>
+			<xs:element ref="ITgmd:XML_Reference"/>
+		</xs:choice>
+		<xs:attribute name="domain" type="ITgmd:RNDT_DomainCode_Type" use="required"/>
+	</xs:complexType>
+	<!--<xs:complexType name="ISO_Operation_Type">
+		<xs:choice>
+			<xs:element ref="gmd:DS_Series"/>
+			<xs:element ref="gmd:DS_DataSet"/>
+			<xs:element ref="ITgmd:XML_Reference"/>
+		</xs:choice>
+	</xs:complexType>-->
+	<xs:complexType name="Delete_Type">
+		<xs:sequence>
+			<xs:element name="fileIdentifier" type="gco:CharacterString_PropertyType"/>
+			<xs:element name="parentIdentifier" type="gco:CharacterString_PropertyType"/>
+			<xs:element name="citationIdentifier" type="gmd:MD_Identifier_PropertyType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Request" type="ITgmd:Request_Type"/>
+	<xs:element name="XML_Reference" type="gco:CharacterString_PropertyType"/>
+	<xs:simpleType name="RNDT_DomainCode_Type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="inspire"/>
+			<xs:enumeration value="nazionale"/>
+			<xs:enumeration value="regionale"/>
+			<xs:enumeration value="locale"/>
+			<xs:enumeration value="altro"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

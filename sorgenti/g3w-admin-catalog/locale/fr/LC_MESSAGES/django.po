@@ -1,0 +1,1471 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: catalog/forms.py:414
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-02 05:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: catalog/forms.py:46 catalog/models.py:244
+msgid "INSPIRE languages supported"
+msgstr ""
+
+#: catalog/forms.py:47
+msgid "INPIRE gemet keywords"
+msgstr ""
+
+#: catalog/forms.py:48 catalog/models.py:261
+msgid ""
+"a comma-seperated keyword list of GEME INSPIRE theme keywords about the "
+"service (see http://inspire.ec.europa.eu/schemas/common/1.0/enums/enum_eng."
+"xsd, complexType inspireTheme_eng)"
+msgstr ""
+
+#: catalog/forms.py:49 catalog/forms.py:263 catalog/models.py:262
+#: catalog/models.py:877
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#keyword\">"
+"\"<i>keyword</i>\"</a>"
+msgstr ""
+
+#: catalog/forms.py:66
+msgid "General data"
+msgstr ""
+
+#: catalog/forms.py:88
+msgid "Catalog provider"
+msgstr ""
+
+#: catalog/forms.py:105
+msgid "Metadata informations"
+msgstr ""
+
+#: catalog/forms.py:116
+msgid "Charset metadata"
+msgstr ""
+
+#: catalog/forms.py:123
+msgid "Hierarchical level"
+msgstr ""
+
+#: catalog/forms.py:135
+msgid "Standard name"
+msgstr ""
+
+#: catalog/forms.py:142
+msgid "Standard version"
+msgstr ""
+
+#: catalog/forms.py:154
+msgid "INSPIRE"
+msgstr ""
+
+#: catalog/forms.py:171
+msgid "RNDT"
+msgstr ""
+
+#: catalog/forms.py:196
+msgid "Catalog specifications"
+msgstr ""
+
+#: catalog/forms.py:221
+msgid "Catalog contact"
+msgstr ""
+
+#: catalog/forms.py:260
+msgid "Keywords"
+msgstr ""
+
+#: catalog/forms.py:262 catalog/models.py:876
+msgid ""
+"Record keywords - a comma-seperated keyword list of GEMET INSPIRE theme "
+"keywords about the service (see http://inspire.ec.europa.eu/schemas/"
+"common/1.0/enums/enum_eng.xsd, complexType inspireTheme_eng)"
+msgstr ""
+
+#: catalog/forms.py:294
+msgid "Data identification"
+msgstr ""
+
+#: catalog/forms.py:312
+msgid "Presentation format"
+msgstr ""
+
+#: catalog/forms.py:330
+msgid "Charset data"
+msgstr ""
+
+#: catalog/forms.py:358
+msgid "Data constraints"
+msgstr ""
+
+#: catalog/forms.py:377
+msgid "Data extension"
+msgstr ""
+
+#: catalog/forms.py:394
+msgid "Data quality"
+msgstr ""
+
+#: catalog/forms.py:404
+msgid "Quality level"
+msgstr ""
+
+#: catalog/forms.py:413
+msgid "Compliance level"
+msgstr ""
+
+#: catalog/forms.py:425
+msgid "Reference system"
+msgstr ""
+
+#: catalog/forms.py:440
+msgid "Data distribution"
+msgstr ""
+
+#: catalog/forms.py:474
+msgid ""
+"Is not possible set value for 'Usability constraints' and 'Usability "
+"constraints - data license' "
+msgstr ""
+
+#: catalog/models.py:54
+msgid "Global (serves all projects)"
+msgstr ""
+
+#: catalog/models.py:55
+msgid "Group (serves a single group)"
+msgstr ""
+
+#: catalog/models.py:56
+msgid "Macrogroup (serves a macrogroup)"
+msgstr ""
+
+#: catalog/models.py:60
+msgid "conformant"
+msgstr ""
+
+#: catalog/models.py:61
+msgid "notConformant"
+msgstr ""
+
+#: catalog/models.py:62
+msgid "notEvaluated"
+msgstr ""
+
+#: catalog/models.py:66
+msgid "Addresses"
+msgstr ""
+
+#: catalog/models.py:67
+msgid "Administrative units"
+msgstr ""
+
+#: catalog/models.py:69
+msgid "Agricultural and aquaculture facilities"
+msgstr ""
+
+#: catalog/models.py:71
+msgid "Area management/restriction/regulation zones and reporting units"
+msgstr ""
+
+#: catalog/models.py:72
+msgid "Atmospheric conditions"
+msgstr ""
+
+#: catalog/models.py:73
+msgid "Bio-geographical regions"
+msgstr ""
+
+#: catalog/models.py:74
+msgid "Buildings"
+msgstr ""
+
+#: catalog/models.py:75
+msgid "Cadastral parcels"
+msgstr ""
+
+#: catalog/models.py:76
+msgid "Coordinate reference systems"
+msgstr ""
+
+#: catalog/models.py:77
+msgid "Elevation"
+msgstr ""
+
+#: catalog/models.py:78
+msgid "Energy resources"
+msgstr ""
+
+#: catalog/models.py:80
+msgid "Environmental monitoring facilities"
+msgstr ""
+
+#: catalog/models.py:81
+msgid "Geographical grid systems"
+msgstr ""
+
+#: catalog/models.py:82
+msgid "Geographical names"
+msgstr ""
+
+#: catalog/models.py:83
+msgid "Geology"
+msgstr ""
+
+#: catalog/models.py:84
+msgid "Habitats and biotopes"
+msgstr ""
+
+#: catalog/models.py:85
+msgid "Human health and safety"
+msgstr ""
+
+#: catalog/models.py:86
+msgid "Hydrography"
+msgstr ""
+
+#: catalog/models.py:87
+msgid "Land cover"
+msgstr ""
+
+#: catalog/models.py:88
+msgid "Land use"
+msgstr ""
+
+#: catalog/models.py:90
+msgid "Meteorological geographical features"
+msgstr ""
+
+#: catalog/models.py:91
+msgid "Mineral resources"
+msgstr ""
+
+#: catalog/models.py:92
+msgid "Natural risk zones"
+msgstr ""
+
+#: catalog/models.py:94
+msgid "Oceanographic geographical features"
+msgstr ""
+
+#: catalog/models.py:95
+msgid "Orthoimagery"
+msgstr ""
+
+#: catalog/models.py:96
+msgid "Open Data"
+msgstr ""
+
+#: catalog/models.py:98
+msgid "Population distribution — demography"
+msgstr ""
+
+#: catalog/models.py:100
+msgid "Production and industrial facilities"
+msgstr ""
+
+#: catalog/models.py:101
+msgid "Protected sites"
+msgstr ""
+
+#: catalog/models.py:102
+msgid "Sea regions"
+msgstr ""
+
+#: catalog/models.py:103
+msgid "Soil"
+msgstr ""
+
+#: catalog/models.py:104
+msgid "Species distribution"
+msgstr ""
+
+#: catalog/models.py:105
+msgid "Statistical units"
+msgstr ""
+
+#: catalog/models.py:106
+msgid "Transport networks"
+msgstr ""
+
+#: catalog/models.py:108
+msgid "Utility and governmental services"
+msgstr ""
+
+#: catalog/models.py:147
+msgid "Catalog name"
+msgstr ""
+
+#: catalog/models.py:148
+msgid "Name into CSW service URL"
+msgstr ""
+
+#: catalog/models.py:150
+msgid "Slug"
+msgstr ""
+
+#: catalog/models.py:152
+msgid "Is active"
+msgstr ""
+
+#: catalog/models.py:153
+msgid "Is valid"
+msgstr ""
+
+#: catalog/models.py:154
+msgid ""
+"This field is managed by signals, an invalid catalog will be regenerated by "
+"a management command called by CRON"
+msgstr ""
+
+#: catalog/models.py:155
+msgid "Order"
+msgstr ""
+
+#: catalog/models.py:158
+msgid "Catalog application level"
+msgstr ""
+
+#: catalog/models.py:162
+msgid "Catalog application scope-level"
+msgstr ""
+
+#: catalog/models.py:169
+msgid ""
+"Group (serves a single group). This field is ignored unless catalog "
+"application level is \"Group\""
+msgstr ""
+
+#: catalog/models.py:175
+msgid ""
+"Macrogroup (serves a macrogroup). This field is ignored unless scope is "
+"\"MacroGroup\""
+msgstr ""
+
+#: catalog/models.py:180
+msgid "Identification title"
+msgstr ""
+
+#: catalog/models.py:180 catalog/models.py:182
+msgid "Required by Inspire and RNDT"
+msgstr ""
+
+#: catalog/models.py:182
+msgid "Identification abstract"
+msgstr ""
+
+#: catalog/models.py:184
+msgid "Identification keywords"
+msgstr ""
+
+#: catalog/models.py:186
+msgid "Identification keywords type"
+msgstr ""
+
+#: catalog/models.py:187
+msgid ""
+"From keyword type as per the ISO 19115 MD_KeywordTypeCode codelist). Typical "
+"values are: discipline, temporal, place, theme, stratum"
+msgstr ""
+
+#: catalog/models.py:189
+msgid "Identification fees"
+msgstr ""
+
+#: catalog/models.py:193
+msgid "Identification access contraints"
+msgstr ""
+
+#: catalog/models.py:194
+msgid "Text description for other constraints"
+msgstr ""
+
+#: catalog/models.py:198
+msgid "Provider name"
+msgstr ""
+
+#: catalog/models.py:200
+msgid "Provider url"
+msgstr ""
+
+#: catalog/models.py:202
+msgid "Contact name"
+msgstr ""
+
+#: catalog/models.py:204
+msgid "Contact name and surename"
+msgstr ""
+
+#: catalog/models.py:205 catalog/models.py:227
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#contactPoint"
+"\">\"<i>contactPoint</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:208
+msgid "Contact position"
+msgstr ""
+
+#: catalog/models.py:210
+msgid "Contact address"
+msgstr ""
+
+#: catalog/models.py:212
+msgid "Contact city"
+msgstr ""
+
+#: catalog/models.py:214
+msgid "Contact state/province"
+msgstr ""
+
+#: catalog/models.py:216
+msgid "Contact postalcode"
+msgstr ""
+
+#: catalog/models.py:218
+msgid "Contact country"
+msgstr ""
+
+#: catalog/models.py:220
+msgid "Contect phone"
+msgstr ""
+
+#: catalog/models.py:222
+msgid "Contect fax"
+msgstr ""
+
+#: catalog/models.py:224
+msgid "Contact email"
+msgstr ""
+
+#: catalog/models.py:226
+msgid "Contact email address"
+msgstr ""
+
+#: catalog/models.py:229
+msgid "Contact URL"
+msgstr ""
+
+#: catalog/models.py:231
+msgid "Contact hours"
+msgstr ""
+
+#: catalog/models.py:233
+msgid "Contact instructions"
+msgstr ""
+
+#: catalog/models.py:235
+msgid "Contact role"
+msgstr ""
+
+#: catalog/models.py:240
+msgid "Metadata INSPIRE activation"
+msgstr ""
+
+#: catalog/models.py:241
+msgid "whether to enable the INSPIRE extension"
+msgstr ""
+
+#: catalog/models.py:245
+msgid ""
+"list of comma separated 3 letter codes of supported languages (see http://"
+"inspire.ec.europa.eu/schemas/common/1.0/enums/enum_eng.xsd, simpleType "
+"euLanguageISO6392B)"
+msgstr ""
+
+#: catalog/models.py:247
+msgid "Default language"
+msgstr ""
+
+#: catalog/models.py:252
+msgid ""
+"3 letter code of the default language (see http://inspire.ec.europa.eu/"
+"schemas/common/1.0/enums/enum_eng.xsd, simpleType euLanguageISO6392B)"
+msgstr ""
+
+#: catalog/models.py:254
+msgid "INSPIRE date"
+msgstr ""
+
+#: catalog/models.py:255
+msgid ""
+"date of INSPIRE metadata offering (in ISO 8601 format), maps to dateStamp"
+msgstr ""
+
+#: catalog/models.py:257
+msgid "INSPIRE gemet keywords"
+msgstr ""
+
+#: catalog/models.py:265
+msgid "Conformity INSPIRE"
+msgstr ""
+
+#: catalog/models.py:269
+msgid ""
+"the level of INSPIRE conformance for spatial data sets and services "
+"(conformant, notConformant, notEvaluated)"
+msgstr ""
+
+#: catalog/models.py:271
+msgid "Contact point: organization"
+msgstr ""
+
+#: catalog/models.py:272
+msgid "the organization name responsible for the INSPIRE/RNDT metadata"
+msgstr ""
+
+#: catalog/models.py:273 catalog/models.py:1253
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#publisher\">"
+"\"<i>publisher</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:276
+msgid "Contact point: email"
+msgstr ""
+
+#: catalog/models.py:277
+msgid "the email address of entity responsible for the INSPIRE/RNDT metadata"
+msgstr ""
+
+#: catalog/models.py:279
+msgid "Contact point: URL"
+msgstr ""
+
+#: catalog/models.py:280
+msgid "the URL of entity responsible for the INSPIRE/RNDT metadata"
+msgstr ""
+
+#: catalog/models.py:282
+msgid "Contact point: phone"
+msgstr ""
+
+#: catalog/models.py:283
+msgid ""
+"the telephone number of entity responsible for the INSPIRE/RNDT metadata"
+msgstr ""
+
+#: catalog/models.py:286
+msgid "Temporal extent validation"
+msgstr ""
+
+#: catalog/models.py:287
+msgid ""
+"temporal extent of the service (in ISO 8601 format). Either a single date (i."
+"e. yyyy-mm-dd), or an extent (i.e. yyyy-mm-dd/yyyy-mm-dd)"
+msgstr ""
+
+#: catalog/models.py:289
+msgid "Geographical extent"
+msgstr ""
+
+#: catalog/models.py:290
+msgid "Space separated values of lon/lat (west south east north)"
+msgstr ""
+
+#: catalog/models.py:294
+msgid "RNDT metadata activation"
+msgstr ""
+
+#: catalog/models.py:296
+msgid "whether to enable the RNDT extension"
+msgstr ""
+
+#: catalog/models.py:300
+msgid "RNDT iPA administration code"
+msgstr ""
+
+#: catalog/models.py:304
+msgid "RNDT: iPA administration code, a part fo file identifier"
+msgstr ""
+
+#: catalog/models.py:371
+msgid "Catalog endpoint"
+msgstr ""
+
+#: catalog/models.py:372
+msgid "Catalog endpoints"
+msgstr ""
+
+#: catalog/models.py:433
+msgid "You must select a group or set another scope for the catalog."
+msgstr ""
+
+#: catalog/models.py:436
+msgid "You must select a macro group or set another scope for the catalog."
+msgstr ""
+
+#: catalog/models.py:442
+#, python-format
+msgid "RNDT is enabled: you need to fill in \"%s\"."
+msgstr ""
+
+#: catalog/models.py:447
+#, python-format
+msgid "INSPIRE is enabled: you need to fill in \"%s\"."
+msgstr ""
+
+#: catalog/models.py:452
+msgid ""
+"inspire_geographical_extent is not correct, please use format space "
+"separated values of lon/lat (west south east north)"
+msgstr ""
+
+#: catalog/models.py:586
+#, python-format
+msgid ""
+"%s registerCatalogRecordProvider registration must provide a valid Catalog."
+"SCOPE"
+msgstr ""
+
+#: catalog/models.py:649 catalog/models.py:662
+msgid "OP code"
+msgstr ""
+
+#: catalog/models.py:650 catalog/models.py:664
+msgid "Definition"
+msgstr ""
+
+#: catalog/models.py:651
+msgid "License URL"
+msgstr ""
+
+#: catalog/models.py:663
+msgid "label"
+msgstr ""
+
+#: catalog/models.py:665
+msgid "Limitation URL"
+msgstr ""
+
+#: catalog/models.py:732
+msgid "Farming - Rearing of animals and/or cultivation of plants."
+msgstr ""
+
+#: catalog/models.py:733
+msgid "Biota - Flora and/or fauna in natural environment."
+msgstr ""
+
+#: catalog/models.py:734
+msgid "Boundaries - Legal land descriptions."
+msgstr ""
+
+#: catalog/models.py:736
+msgid ""
+"Climatology / Meteorology / Atmosphere - Processes and phenomena of the "
+"atmosphere."
+msgstr ""
+
+#: catalog/models.py:737
+msgid "Economy - Economic activities, conditions and employment."
+msgstr ""
+
+#: catalog/models.py:738
+msgid "Elevation - Height above or below sea level."
+msgstr ""
+
+#: catalog/models.py:740
+msgid "Environment - Environmental resources, protection and conservation."
+msgstr ""
+
+#: catalog/models.py:742
+msgid "Geoscientific Information - Information pertaining to earth sciences."
+msgstr ""
+
+#: catalog/models.py:743
+msgid "Health, health services, human ecology, and safety."
+msgstr ""
+
+#: catalog/models.py:744
+msgid "Imagery / Base Maps / Earth Cover."
+msgstr ""
+
+#: catalog/models.py:746
+msgid "Intelligence / Military - Military bases, structures, activities."
+msgstr ""
+
+#: catalog/models.py:748
+msgid "Inland water features, drainage systems and their characteristics."
+msgstr ""
+
+#: catalog/models.py:749
+msgid "Location - Positional information and services."
+msgstr ""
+
+#: catalog/models.py:750
+msgid ""
+"Oceans - Features and characteristics of salt water bodies (excluding inland "
+"waters)."
+msgstr ""
+
+#: catalog/models.py:752
+msgid ""
+"Planning / Cadastre - Information used for appropriate actions for future "
+"use of the land."
+msgstr ""
+
+#: catalog/models.py:753
+msgid "Society - Characteristics of society and cultures."
+msgstr ""
+
+#: catalog/models.py:754
+msgid "Structure - Man-made construction."
+msgstr ""
+
+#: catalog/models.py:756
+msgid "Transportation - Means and aids for conveying persons and/or goods."
+msgstr ""
+
+#: catalog/models.py:758
+msgid ""
+"Utilities / Communication - Energy, water and waste systems and "
+"communications infrastructure and services."
+msgstr ""
+
+#: catalog/models.py:762
+msgid "data is updated every year"
+msgstr ""
+
+#: catalog/models.py:764
+msgid ""
+"data is updated as deemed necessary, applies to resources with 'completed' "
+"status"
+msgstr ""
+
+#: catalog/models.py:765
+msgid "data is updated twice each year \t"
+msgstr ""
+
+#: catalog/models.py:766
+msgid "resource is updated every 2 years \t"
+msgstr ""
+
+#: catalog/models.py:767
+msgid ""
+"data is repeatedly and frequently updated \tuse for data that is updated at "
+"a greater than daily frequency"
+msgstr ""
+
+#: catalog/models.py:768
+msgid "data is updated each day \t"
+msgstr ""
+
+#: catalog/models.py:769
+msgid "data is updated every two weeks \t"
+msgstr ""
+
+#: catalog/models.py:770
+msgid "data is updated in intervals that are uneven in duration \t"
+msgstr ""
+
+#: catalog/models.py:771
+msgid "data is updated each month \t"
+msgstr ""
+
+#: catalog/models.py:773
+msgid ""
+"there are no plans to update the data, applies to resources with 'completed' "
+"status"
+msgstr ""
+
+#: catalog/models.py:774
+msgid "resource is updated at regular intervals, "
+msgstr ""
+
+#: catalog/models.py:775
+msgid "data is updated every three months"
+msgstr ""
+
+#: catalog/models.py:776
+msgid "resource updated twice a monthly"
+msgstr ""
+
+#: catalog/models.py:777
+msgid "frequency of maintenance for the data is not known"
+msgstr ""
+
+#: catalog/models.py:778
+msgid "data is updated on a weekly basis"
+msgstr ""
+
+#: catalog/models.py:783
+msgid "Maps to pycsw:ParentIdentifier"
+msgstr ""
+
+#: catalog/models.py:786
+msgid "Identifier"
+msgstr ""
+
+#: catalog/models.py:790
+msgid "File identifier - Maps to pycsw:Identifier"
+msgstr ""
+
+#: catalog/models.py:814
+msgid "maps to pycsw:MdSource"
+msgstr ""
+
+#: catalog/models.py:821
+msgid "Maps to pycsw:InsertDate"
+msgstr ""
+
+#: catalog/models.py:828
+msgid "Maps to pycsw:XML"
+msgstr ""
+
+#: catalog/models.py:833
+msgid "Maps to pycsw:AnyText"
+msgstr ""
+
+#: catalog/models.py:843 catalog/models.py:993
+msgid "Language"
+msgstr ""
+
+#: catalog/models.py:850
+msgid "Data Language"
+msgstr ""
+
+#: catalog/models.py:851
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#language\">"
+"\"<i>language</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:855 catalog/templates/catalog/catalog_detail.html:50
+msgid "Title"
+msgstr ""
+
+#: catalog/models.py:859
+msgid "Title data"
+msgstr ""
+
+#: catalog/models.py:860
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#title\">"
+"\"<i>title</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:864
+msgid "Abstract"
+msgstr ""
+
+#: catalog/models.py:869
+msgid "Abstract data description"
+msgstr ""
+
+#: catalog/models.py:870
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#description"
+"\">\"<i>description</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:874
+msgid "2.3.6 Keywords"
+msgstr ""
+
+#: catalog/models.py:886
+msgid "Maps to pycsw:Keywordstype"
+msgstr ""
+
+#: catalog/models.py:889
+msgid "Distribution format"
+msgstr ""
+
+#: catalog/models.py:895
+msgid "Description about data format"
+msgstr ""
+
+#: catalog/models.py:902
+msgid "Maps to pycsw:Source"
+msgstr ""
+
+#: catalog/models.py:908
+msgid "Maps to pycsw:Date"
+msgstr ""
+
+#: catalog/models.py:911 catalog/models.py:914
+msgid "Modified date"
+msgstr ""
+
+#: catalog/models.py:914
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#modified\">"
+"\"<i>modified</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:917
+msgid "Creation date"
+msgstr ""
+
+#: catalog/models.py:920
+msgid "Data creation date"
+msgstr ""
+
+#: catalog/models.py:920
+msgid ""
+"DCAT-US: <a href=\"https://resources.data.gov/resources/dcat-us/#issued\">"
+"\"<i>issued</i>\"</a>"
+msgstr ""
+
+#: catalog/models.py:923
+msgid "Revision date"
+msgstr ""
+
+#: catalog/models.py:926
+msgid "Data revision date"
+msgstr ""
+
+#: catalog/models.py:929
+msgid "Publication date"
+msgstr ""
+
+#: catalog/models.py:933
+msgid "Data publication date"
+msgstr ""
+
+#: catalog/models.py:941
+msgid "Maps to pycsw:Type"
+msgstr ""
+
+#: catalog/models.py:944
+msgid "Bounding box"
+msgstr ""
+
+#: catalog/models.py:949
+msgid "Data bounding box. Automatically calculated from layer"
+msgstr ""
+
+#: catalog/models.py:952
+msgid "Coordinate reference system"
+msgstr ""
+
+#: catalog/models.py:957
+msgid "Data Coordinate reference system"
+msgstr ""
+
+#: catalog/models.py:965
+msgid "Maps to pycsw:AlternateTitle"
+msgstr ""
+
+#: catalog/models.py:973
+msgid "Maps to pycsw:OrganizationName"
+msgstr ""
+
+#: catalog/models.py:977
+msgid "Security constraints"
+msgstr ""
+
+#: catalog/models.py:985
+msgid "Topic category"
+msgstr ""
+
+#: catalog/models.py:990
+msgid "Main topic data"
+msgstr ""
+
+#: catalog/models.py:999
+msgid "Language used for data - inherited from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1007
+msgid "Maps to pycsw:GeographicDescriptionCode"
+msgstr ""
+
+#: catalog/models.py:1010
+msgid "Spatial resolution"
+msgstr ""
+
+#: catalog/models.py:1012
+msgid "General density data factor"
+msgstr ""
+
+#: catalog/models.py:1019
+msgid "Spatial resolution - Maps to pycsw:DistanceValue"
+msgstr ""
+
+#: catalog/models.py:1026
+msgid "Spatial resolution - Maps to pycsw:DistanceUOM"
+msgstr ""
+
+#: catalog/models.py:1030
+msgid "Temporal extension: start"
+msgstr ""
+
+#: catalog/models.py:1036
+msgid "Start of data average time"
+msgstr ""
+
+#: catalog/models.py:1040
+msgid "Temporal extension: end"
+msgstr ""
+
+#: catalog/models.py:1046
+msgid "End of data average time"
+msgstr ""
+
+#: catalog/models.py:1054
+msgid "Maps to pycsw:ServiceType"
+msgstr ""
+
+#: catalog/models.py:1062
+msgid "Maps to pycsw:ServiceTypeVersion"
+msgstr ""
+
+#: catalog/models.py:1070
+msgid "Maps to pycsw:Operation"
+msgstr ""
+
+#: catalog/models.py:1078
+msgid "Maps to pycsw:CouplingType"
+msgstr ""
+
+#: catalog/models.py:1086
+msgid "Maps to pycsw:OperatesOn"
+msgstr ""
+
+#: catalog/models.py:1094
+msgid "Maps to pycsw:OperatesOnIdentifier"
+msgstr ""
+
+#: catalog/models.py:1102
+msgid "Maps to pycsw:OperatesOnName"
+msgstr ""
+
+#: catalog/models.py:1110
+msgid "Maps to pycsw:Degree"
+msgstr ""
+
+#: catalog/models.py:1114 catalog/models.py:1123
+msgid "Access constraints"
+msgstr ""
+
+#: catalog/models.py:1127
+msgid "Select a access contraints from the list"
+msgstr ""
+
+#: catalog/models.py:1134
+msgid "Other constraints"
+msgstr ""
+
+#: catalog/models.py:1142
+msgid "Usability constraints"
+msgstr ""
+
+#: catalog/models.py:1146 catalog/models.py:1326
+msgid ""
+"Conditions applicable to access and use of spatial data sets and to related "
+"services and, where applicable, to the corresponding fees, in accordance "
+"with the law of article 5, paragraph 2, letter b), and of article 11, "
+"paragraph 2, letter f), of Directive 2007/2 / EC. "
+msgstr ""
+
+#: catalog/models.py:1158
+msgid "Maps to pycsw:Classification"
+msgstr ""
+
+#: catalog/models.py:1165
+msgid "Maps to pycsw:ConditionApplyingToAccessAndUse"
+msgstr ""
+
+#: catalog/models.py:1168
+msgid "Lineage"
+msgstr ""
+
+#: catalog/models.py:1173
+msgid "Descriptive text about process history and/or general quality of data"
+msgstr ""
+
+#: catalog/models.py:1180
+msgid "Maps to pycsw:ResponsiblePartyRole"
+msgstr ""
+
+#: catalog/models.py:1187
+msgid "Maps to pycsw:SpecificationTitle"
+msgstr ""
+
+#: catalog/models.py:1193
+msgid "Maps to pycsw:SpecificationDate"
+msgstr ""
+
+#: catalog/models.py:1200
+msgid "Maps to pycsw:SpecificationDateType"
+msgstr ""
+
+#: catalog/models.py:1207
+msgid "Maps to pycsw:Creator"
+msgstr ""
+
+#: catalog/models.py:1214
+msgid "Maps to pycsw:Publisher"
+msgstr ""
+
+#: catalog/models.py:1221
+msgid "Maps to pycsw:Contributor"
+msgstr ""
+
+#: catalog/models.py:1228
+msgid "Maps to pycsw:Relation"
+msgstr ""
+
+#: catalog/models.py:1235
+msgid "Maps to pycsw:Links"
+msgstr ""
+
+#: catalog/models.py:1238
+msgid "Positional accuracy"
+msgstr ""
+
+#: catalog/models.py:1240
+msgid "Positional accuracy in meters"
+msgstr ""
+
+#: catalog/models.py:1246
+msgid "Use limitation"
+msgstr ""
+
+#: catalog/models.py:1247
+msgid ""
+"Use limitation - Restrictions on data usage and access, inherited from "
+"catalog - No conditions apply - if left blank"
+msgstr ""
+
+#: catalog/models.py:1250
+msgid "INSPIRE contactor organization"
+msgstr ""
+
+#: catalog/models.py:1252
+msgid ""
+"Responsabile dei metadati - the organization name responsible for the "
+"INSPIRE/RNDT metadata, inherited from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1257
+msgid "INSPIRE contact email"
+msgstr ""
+
+#: catalog/models.py:1258
+msgid ""
+"Responsabile dei metadati - the email address of entity responsible for the "
+"INSPIRE/RNDT metadata, inherited from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1260
+msgid "INSPIRE contact url"
+msgstr ""
+
+#: catalog/models.py:1261
+msgid ""
+"Responsabile dei metadati - the URL of entity responsible for the INSPIRE/"
+"RNDT metadata, inherited from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1263
+msgid "INSPIRE contact phone"
+msgstr ""
+
+#: catalog/models.py:1264
+msgid ""
+"Responsabile dei metadati - the telephone number of entity responsible for "
+"the INSPIRE/RNDT metadata, inherited from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1268
+msgid "Data distributor: organization"
+msgstr ""
+
+#: catalog/models.py:1271
+msgid ""
+"Data distributor - RNDT the organization name of the distributor, inherited "
+"from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1273
+msgid "Data distributor: email"
+msgstr ""
+
+#: catalog/models.py:1276
+msgid ""
+"Data distributor - the email address of the distributor, inherited from "
+"catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1278
+msgid "Data distributor: URL"
+msgstr ""
+
+#: catalog/models.py:1281
+msgid ""
+"Data distributor - the URL of the distributor, inherited from catalog if "
+"left blank"
+msgstr ""
+
+#: catalog/models.py:1283
+msgid "Data distributor: phone"
+msgstr ""
+
+#: catalog/models.py:1286
+msgid ""
+"Data distributor - the telephone number of the distributor, inherited from "
+"catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1290
+msgid "INSPIRE owner contact organization"
+msgstr ""
+
+#: catalog/models.py:1291
+msgid ""
+"Responsabile - INSPIRE the organization name of the owner, inherited from "
+"catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1293
+msgid "INSPIRE owner contact email"
+msgstr ""
+
+#: catalog/models.py:1294
+msgid ""
+"Responsabile - the email address of the owner, inherited from catalog if "
+"left blank"
+msgstr ""
+
+#: catalog/models.py:1296
+msgid "INSPIRE owner contact url"
+msgstr ""
+
+#: catalog/models.py:1297
+msgid ""
+"Responsabile - the URL of the owner, inherited from catalog if left blank"
+msgstr ""
+
+#: catalog/models.py:1299
+msgid "INSPIRE owner contact phone"
+msgstr ""
+
+#: catalog/models.py:1300
+msgid ""
+"Responsabile - the telephone number of the owner, inherited from catalog if "
+"left blank"
+msgstr ""
+
+#: catalog/models.py:1303
+msgid "Project keywords"
+msgstr ""
+
+#: catalog/models.py:1304
+msgid ""
+"These additional (not-GEMET) keywords are automatically updated form the "
+"getProjectSettings"
+msgstr ""
+
+#: catalog/models.py:1308
+msgid "Frequenza di aggiornamento"
+msgstr ""
+
+#: catalog/models.py:1313
+msgid "Frequenza con la quale sono registrati gli aggiornamenti dei dati."
+msgstr ""
+
+#: catalog/models.py:1317
+msgid "G3W-SUITE project type"
+msgstr ""
+
+#: catalog/models.py:1318
+msgid "G3W-SUITE layer id/pk"
+msgstr ""
+
+#: catalog/models.py:1322
+msgid "Usability constraints - data license"
+msgstr ""
+
+#: catalog/rndt.py:103 catalog/rndt.py:454
+msgid "Service"
+msgstr ""
+
+#: catalog/rndt.py:189 catalog/rndt.py:235 catalog/rndt.py:469
+msgid "Publication"
+msgstr ""
+
+#: catalog/rndt.py:465
+msgid ""
+"Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing "
+"Directive 2007/2/EC of the European Parliament and of the Council as regards "
+"interoperability of spatial data sets and services"
+msgstr ""
+
+#: catalog/rndt.py:473
+msgid "Please refer to the supplied specifications."
+msgstr ""
+
+#: catalog/rndt_profile/rndt/rndt.py:260 catalog/rndt_profile/rndt/rndt.py:321
+msgid "No conditions apply"
+msgstr ""
+
+#: catalog/rndt_profile/rndt/rndt.py:279 catalog/rndt_profile/rndt/rndt.py:310
+msgid "Other restrictions"
+msgstr ""
+
+#: catalog/rndt_profile/rndt/rndt.py:393
+msgid "dataset"
+msgstr ""
+
+#: catalog/rndt_profile/rndt/rndt.py:598
+msgid "Distributor"
+msgstr ""
+
+#: catalog/rndt_profile/rndt/rndt.py:751
+msgid "Unknown"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_confirm_delete.html:8
+#: catalog/templates/catalog/catalog_detail.html:8
+#: catalog/templates/catalog/catalog_form.html:12
+#: catalog/templates/catalog/catalog_list.html:27
+msgid "Catalog"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_confirm_delete.html:10
+msgid "deleting"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_confirm_delete.html:17
+msgid "Are you sure you want to delete"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_confirm_delete.html:18
+msgid "Confirm"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:22
+#: catalog/templates/catalog/catalog_list.html:41
+msgid "Edit"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:23
+#: catalog/templates/catalog/catalog_list.html:44
+msgid "Delete"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:40
+msgid "Catalog records"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:44
+#: catalog/templates/catalog/catalog_detail.html:52
+msgid "Records"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:51
+msgid "Access"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:81
+msgid "Catalog data"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:86
+msgid "Param"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:87
+msgid "Value"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:92
+msgid "Not set"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_detail.html:102
+msgid "Back"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_form.html:14
+msgid "metadata"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_form.html:27
+#: catalog/templates/catalog/record_form.html:25
+msgid "Alert"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_form.html:28
+#: catalog/templates/catalog/record_form.html:26
+msgid "Some errors on form. Check it and send again."
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:8
+msgid "CSW published catalogs"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:19
+msgid "New catalog"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:26
+msgid "Actions"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:28
+msgid "N record"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:29
+msgid "Capabilities"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:37
+msgid "Show records"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:61
+msgid "There are no CSW published catalogs"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:66
+msgid "Important"
+msgstr ""
+
+#: catalog/templates/catalog/catalog_list.html:66
+msgid ""
+"The projects you want to use for metadata have to be public, exposed by "
+"Anonymoususer."
+msgstr ""
+
+#: catalog/templates/catalog/eulicense_list.html:5
+msgid "Europe Union Data License"
+msgstr ""
+
+#: catalog/templates/catalog/include/introduction.html:8
+msgid "Indroduction"
+msgstr ""
+
+#: catalog/templates/catalog/include/introduction.html:11
+msgid ""
+" The specifications in the following form refer to the operating manual for "
+"<b>RNDT v.2</b>,"
+msgstr ""
+
+#: catalog/templates/catalog/include/introduction.html:12
+msgid "which can be consulted"
+msgstr ""
+
+#: catalog/templates/catalog/include/introduction.html:12
+msgid "here"
+msgstr ""
+
+#: catalog/templates/catalog/record_form.html:12
+msgid "layer metadata"
+msgstr ""

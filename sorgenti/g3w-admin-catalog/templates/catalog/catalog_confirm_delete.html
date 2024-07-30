@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% comment %}
+Confirm delete template for CSW catalogs
+{% endcomment %}
+{% load i18n %}
+
+{% block page_header %}
+        <h1>{% trans 'Catalog' %}
+            {{ object.name }}
+        <small>{% trans "deleting" %}</small>
+        </h1>
+{% endblock %}
+
+{% block main_content %}
+
+<form method="post">{% csrf_token %}
+    <p>{% trans 'Are you sure you want to delete' %} <i>"{{ object.name }}"</i>?</p>
+    <input class="btn btn-warning" type="submit" value="{% trans 'Confirm'%}">
+</form>
+
+
+{% endblock %}

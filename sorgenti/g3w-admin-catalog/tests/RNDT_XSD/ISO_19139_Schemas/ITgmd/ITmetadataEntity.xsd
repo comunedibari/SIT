@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation xml:lang="it">Questo  schema è un adattamento al Core Metadata, definito nelle linee guida del Repertorio Nazionale dei Dati Territoriali, dello schema XML definito nello Standard ISO DTS 19139 metadataEntity.xsd</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<!-- ================================== Includes ================================== -->
+	<xs:include schemaLocation="../ITgmd/ITspatialRepresentation.xsd"/>
+	<xs:include schemaLocation="../ITgmd/ITdataQuality.xsd"/>
+	<xs:include schemaLocation="../ITgmd/ITidentification.xsd"/>
+	<xs:include schemaLocation="../ITgmd/ITreferenceSystem.xsd"/>
+	<xs:include schemaLocation="../ITgmd/ITmetadataApplication.xsd"/>
+	<!-- <xs:include schemaLocation="../ITgmd/ITcontent.xsd"/> -->
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+	<xs:complexType name="MD_SeriesMetadata_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Informazioni sui metadati della serie di dataset</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="fileIdentifier" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="language" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="characterSet" type="gmd:MD_CharacterSetCode_PropertyType" minOccurs="0"/>
+					<xs:element name="parentIdentifier" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="hierarchyLevel" type="gmd:MD_ScopeCode_PropertyType"/>
+					<xs:element name="contact" type="ITgmd:CI_ITResponsibleParty_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="dateStamp" type="gco:Date_PropertyType"/>
+					<xs:element name="metadataStandardName" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="metadataStandardVersion" type="gco:CharacterString_PropertyType"/>
+					<xs:element name="spatialRepresentationInfo" type="gmd:MD_SpatialRepresentation_PropertyType" minOccurs="0"/>
+					<xs:element name="referenceSystemInfo" type="ITgmd:MD_ITReferenceSystem_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="identificationInfo" type="ITgmd:MD_SeriesDataIdentification_PropertyType"/>
+					<xs:element name="contentInfo" type="gmd:MD_ContentInformation_PropertyType" minOccurs="0"/>
+					<xs:element name="distributionInfo" type="ITgmd:MD_ITDistribution_PropertyType" minOccurs="0"/>
+					<xs:element name="dataQualityInfo" type="ITgmd:DQ_ITDataQuality_PropertyType" minOccurs="0"/>
+					<xs:element name="series" type="ITgmd:DS_ITAggregate_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_SeriesMetadata_PropertyType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="MD_Metadata" type="ITgmd:MD_SeriesMetadata_Type"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_DatasetMetadata_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Informazioni sui metadati del dataset</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="fileIdentifier" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="language" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="characterSet" type="gmd:MD_CharacterSetCode_PropertyType" minOccurs="0"/>
+					<xs:element name="parentIdentifier" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="hierarchyLevel" type="gmd:MD_ScopeCode_PropertyType"/>
+					<xs:element name="contact" type="ITgmd:CI_ITResponsibleParty_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dateStamp" type="gco:Date_PropertyType" minOccurs="0"/>
+					<xs:element name="metadataStandardName" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="metadataStandardVersion" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="spatialRepresentationInfo" type="gmd:MD_SpatialRepresentation_PropertyType" minOccurs="0"/>
+					<xs:element name="referenceSystemInfo" type="ITgmd:MD_ITReferenceSystem_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="identificationInfo" type="ITgmd:MD_DatasetDataIdentification_PropertyType"/>
+					<xs:element name="contentInfo" type="gmd:MD_ContentInformation_PropertyType" minOccurs="0"/>
+					<xs:element name="distributionInfo" type="ITgmd:MD_DatasetDistribution_PropertyType"/>
+					<xs:element name="dataQualityInfo" type="ITgmd:DQ_ITDataQuality_PropertyType"/>
+					<xs:element name="describes" type="ITgmd:DS_ITDataSet_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_DatasetMetadata_PropertyType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="MD_Metadata" type="ITgmd:MD_DatasetMetadata_Type"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_TileMetadata_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Informazioni sui metadati della sezione</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="fileIdentifier" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="language" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="characterSet" type="gmd:MD_CharacterSetCode_PropertyType" minOccurs="0"/>
+					<xs:element name="parentIdentifier" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="hierarchyLevel" type="gmd:MD_ScopeCode_PropertyType"/>
+					<xs:element name="contact" type="ITgmd:CI_ITResponsibleParty_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dateStamp" type="gco:Date_PropertyType" minOccurs="0"/>
+					<xs:element name="metadataStandardName" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="metadataStandardVersion" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="spatialRepresentationInfo" type="gmd:MD_SpatialRepresentation_PropertyType" minOccurs="0"/>
+					<xs:element name="referenceSystemInfo" type="ITgmd:MD_ITReferenceSystem_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="identificationInfo" type="ITgmd:MD_TileDataIdentification_PropertyType"/>
+					<xs:element name="contentInfo" type="gmd:MD_ContentInformation_PropertyType" minOccurs="0"/>
+					<xs:element name="distributionInfo" type="ITgmd:MD_ITDistribution_PropertyType" minOccurs="0"/>
+					<xs:element name="dataQualityInfo" type="ITgmd:DQ_ITDataQuality_PropertyType" minOccurs="0"/>
+					<xs:element name="tile" type="ITgmd:DS_Tile_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_TileMetadata_PropertyType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="MD_Metadata" type="ITgmd:MD_TileMetadata_Type"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+</xs:schema>

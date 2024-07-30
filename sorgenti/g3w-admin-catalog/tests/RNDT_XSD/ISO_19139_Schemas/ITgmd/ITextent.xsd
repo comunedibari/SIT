@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation xml:lang="it">Questo schema è un adattamento al Core Metadata, definito nelle linee guida del Repertorio Nazionale dei Dati Territoriali, dello schema XML di cui allo Standard ISO TS 19139 extent.xsd</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gts" schemaLocation="../gts/gts.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<!-- ================================== Includes ================================== -->
+	<xs:include schemaLocation="../ITgmd/ITreferenceSystem.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+	<!-- =========================================================================== -->
+	<xs:complexType name="SC_VerticalDatum_Type">
+		<xs:annotation>
+			<xs:documentation>Informazioni sul sistema di riferimento verticale dei dati </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="datumID" type="ITgmd:MD_ReferenceSystemCode_PropertyType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="SC_VerticalDatum" type="ITgmd:SC_VerticalDatum_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="SC_VerticalDatum_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:SC_VerticalDatum"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="EX_ITVerticalExtent_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Informazioni sul sistema di riferimento verticale dei dati</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="minimumValue" type="gco:Real_PropertyType"/>
+					<xs:element name="maximumValue" type="gco:Real_PropertyType"/>
+					<xs:element name="unitOfMeasure" type="gco:UomLength_PropertyType"/>
+					<xs:element name="verticalDatum" type="ITgmd:SC_VerticalDatum_PropertyType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="EX_VerticalExtent" type="ITgmd:EX_ITVerticalExtent_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="EX_ITVerticalExtent_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:EX_VerticalExtent"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="EX_ITExtent_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Informazioni sull’estensione verticale, planimetrica e temporale dei dati</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="geographicElement" type="gmd:EX_GeographicExtent_PropertyType"/>
+					<xs:element name="temporalElement" type="gmd:EX_TemporalExtent_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="verticalElement" type="ITgmd:EX_ITVerticalExtent_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="EX_Extent" type="ITgmd:EX_ITExtent_Type"/>
+	<xs:annotation>
+		<xs:documentation>
+		*** temporalExtent: documented if MD_DataIdentification.spatialRepresentationType="textTable" </xs:documentation>
+	</xs:annotation>
+	<!-- ........................................................................ -->
+	<xs:complexType name="EX_ITExtent_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:EX_Extent"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	
+</xs:schema>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by roat (EMBRACE) -->
+<xs:schema xmlns:ITgmd="http://www.cnipa.gov.it/RNDT/ITgmd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gco="http://www.isotc211.org/2005/gco" targetNamespace="http://www.cnipa.gov.it/RNDT/ITgmd" elementFormDefault="qualified" version="0.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation xml:lang="it">Questo schema è un adattamento al Core Metadata, definito nelle linee guida del Repertorio Nazionale dei Dati Territoriali, dello schema XML di cui allo Standard ISO TS 19139 metadataApplication.xsd</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<!-- ================================== Includes ================================== -->
+	<xs:include schemaLocation="../ITgmd/ITmetadataEntity.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+	<xs:complexType name="AbstractDS_ITAggregate_Type" abstract="true">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Collezione identificabile di dataset</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="composedOf" type="ITgmd:DS_ITDataSet_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="seriesMetadata" type="ITgmd:MD_SeriesMetadata_PropertyType"/>
+					<xs:element name="subset" type="ITgmd:DS_ITAggregate_PropertyType" minOccurs="0"/>
+					<xs:element name="superset" type="ITgmd:DS_ITAggregate_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="AbstractDS_Aggregate" type="ITgmd:AbstractDS_ITAggregate_Type" abstract="true"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="DS_ITAggregate_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:AbstractDS_Aggregate"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="DS_ITDataSet_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="it">Collezione identificabile di dati</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="has" type="ITgmd:MD_DatasetMetadata_PropertyType"/>
+					<xs:element name="partOf" type="ITgmd:DS_ITAggregate_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="DS_DataSet" type="ITgmd:DS_ITDataSet_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="DS_ITDataSet_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ITgmd:DS_DataSet"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="DS_ITSeries_Type">
+		<xs:complexContent>
+			<xs:extension base="ITgmd:AbstractDS_ITAggregate_Type"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="DS_Series" type="ITgmd:DS_ITSeries_Type" substitutionGroup="ITgmd:AbstractDS_Aggregate"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="DS_ITSeries_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ITgmd:DS_Series"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="DS_TiledDataSet_Type">
+		<xs:complexContent>
+			<xs:extension base="ITgmd:DS_ITDataSet_Type">
+				<xs:sequence>
+					<xs:element name="composedOf" type="ITgmd:DS_Tile_PropertyType" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="DS_TiledDataSet" type="ITgmd:DS_TiledDataSet_Type" substitutionGroup="ITgmd:DS_DataSet"/>
+	<!--........................................................................ -->
+	<xs:complexType name="DS_TiledDataSet_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="ITgmd:DS_TiledDataSet"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="DS_Tile_Type">
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="tileMetadata" type="ITgmd:MD_TileMetadata_PropertyType"/>
+					<xs:element name="partOf" type="ITgmd:DS_TiledDataSet_PropertyType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="DS_Tile" type="ITgmd:DS_Tile_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="DS_Tile_PropertyType">
+		<xs:sequence>
+			<xs:element ref="ITgmd:DS_Tile"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+</xs:schema>

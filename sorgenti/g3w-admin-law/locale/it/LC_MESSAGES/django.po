@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-08 07:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: law/forms.py:32 law/forms.py:52 law/forms.py:147
+msgid "General data"
+msgstr "Dati generali"
+
+#: law/forms.py:75
+msgid "Date from from must be less than Date to"
+msgstr "La data di inizio deve essere precedente a quella di fine"
+
+#: law/forms.py:76
+msgid "Date to must be more than Date from"
+msgstr ""
+
+#: law/forms.py:93 law/templates/law/law_list.html:69
+msgid "New variation"
+msgstr "Nuova variante"
+
+#: law/forms.py:94
+msgid "New date from"
+msgstr "Nuova data inizio validità"
+
+#: law/forms.py:95
+msgid "New date to"
+msgstr "Nuova data fine validità"
+
+#: law/forms.py:118
+msgid "New date from from must be less than New date to"
+msgstr ""
+"La nuova data di inizio validità deve essere precedente alla nuova data di "
+"fine validità"
+
+#: law/forms.py:119
+msgid "New date to must be more than New date from"
+msgstr ""
+"La nuova data di fine validità deve essere successiva alla data di inizio "
+"validità"
+
+#: law/models.py:11
+msgid "Law name"
+msgstr "Nome normativa"
+
+#: law/models.py:12
+msgid "Law description"
+msgstr "Descrizione normativa"
+
+#: law/models.py:13 law/templates/law/ajax/law_detail.html:5
+msgid "Variation"
+msgstr "Variante"
+
+#: law/models.py:14
+msgid "Valid from"
+msgstr "Valida dal"
+
+#: law/models.py:15
+msgid "Valid to"
+msgstr "Valida al"
+
+#: law/models.py:16 law/models.py:90
+msgid "Slug"
+msgstr ""
+
+#: law/models.py:85
+msgid "Article number"
+msgstr "Numero articolo"
+
+#: law/models.py:86 law/templates/law/ajax/article_detail.html:6
+#: law/templates/law/article_list.html:72
+msgid "Title"
+msgstr "Titolo"
+
+#: law/models.py:87
+msgid "Article comma number"
+msgstr "Numero di commma articolo"
+
+#: law/models.py:88
+msgid "Article content"
+msgstr "Contenuto articolo"
+
+#: law/models.py:91 law/templates/law/api/article_pdf.html:35
+msgid "Correlate articles"
+msgstr "Articoli correlati"
+
+#: law/models.py:94 law/templates/law/api/article_pdf.html:42
+#: law/templates/law/article_form.html:11
+#: law/templates/law/article_form.html:13
+#: law/templates/law/article_form.html:19
+#: law/templates/law/article_list.html:45
+msgid "Article"
+msgstr "Articolo"
+
+#: law/templates/law/ajax/article_detail.html:5
+#: law/templates/law/article_form.html:15
+#: law/templates/law/article_list.html:71
+msgid "Comma"
+msgstr "Comma"
+
+#: law/templates/law/ajax/law_detail.html:6 law/templates/law/law_list.html:27
+msgid "Valid"
+msgstr "Validità"
+
+#: law/templates/law/ajax/law_detail.html:12
+#, fuzzy
+#| msgid "Law description"
+msgid "Description"
+msgstr "Descrizione articolo"
+
+#: law/templates/law/ajax/law_detail.html:19
+#, fuzzy
+#| msgid "General data"
+msgid "For data"
+msgstr "Dati generali"
+
+#: law/templates/law/ajax/law_detail.html:20
+#: law/templates/law/article_list.html:73
+msgid "To use in data"
+msgstr "Da utilizzare nei dati"
+
+#: law/templates/law/ajax/law_detail.html:26
+msgid "Projects and layers linked"
+msgstr "Progetti e layers collegati"
+
+#: law/templates/law/ajax/law_detail.html:29
+msgid "Layers"
+msgstr ""
+
+#: law/templates/law/ajax/law_new_variation.html:7
+#: law/templates/law/article_form.html:32 law/templates/law/law_form.html:27
+msgid "Alert"
+msgstr "Attezione"
+
+#: law/templates/law/ajax/law_new_variation.html:8
+#: law/templates/law/article_form.html:33 law/templates/law/law_form.html:28
+msgid "Some errors on form. Check it and send again."
+msgstr ""
+"Si sono verificati alcuni errori. Controlla e reiniva i dati nuovamente."
+
+#: law/templates/law/article_form.html:19 law/templates/law/law_form.html:14
+msgid "New"
+msgstr "Nuovo"
+
+#: law/templates/law/article_form.html:19
+msgid " of"
+msgstr "di"
+
+#: law/templates/law/article_list.html:11 law/templates/law/law_list.html:44
+msgid "Law articles"
+msgstr "Articoli"
+
+#: law/templates/law/article_list.html:22 law/templates/law/law_form.html:11
+#: law/templates/law/law_form.html:14
+msgid "Law"
+msgstr "Normativa"
+
+#: law/templates/law/article_list.html:24
+#: law/templates/law/article_list.html:81 law/templates/law/law_list.html:51
+msgid "Show detail"
+msgstr "Mostra i dettagli"
+
+#: law/templates/law/article_list.html:27
+#: law/templates/law/article_list.html:85 law/templates/law/law_list.html:60
+msgid "Edit"
+msgstr "Modifica"
+
+#: law/templates/law/article_list.html:30
+#: law/templates/law/article_list.html:88 law/templates/law/law_list.html:78
+msgid "Delete"
+msgstr "Cancella"
+
+#: law/templates/law/article_list.html:47
+msgid "List articles"
+msgstr "Articoli"
+
+#: law/templates/law/article_list.html:52
+msgid "Export"
+msgstr "Esporta"
+
+#: law/templates/law/article_list.html:59
+msgid "Upload articles file"
+msgstr "Carica il file degli articoli"
+
+#: law/templates/law/article_list.html:60
+msgid "Upload"
+msgstr "Carica"
+
+#: law/templates/law/article_list.html:70
+msgid "Number"
+msgstr "Numero"
+
+#: law/templates/law/article_list.html:81
+msgid "Detail article"
+msgstr "Dettagli articolo"
+
+#: law/templates/law/law_list.html:9
+msgid "Laws list"
+msgstr "Lista normative"
+
+#: law/templates/law/law_list.html:36
+msgid "Add new article"
+msgstr "Aggiungi un nuovo articolo"
+
+#: law/templates/law/law_list.html:44
+msgid "Articles"
+msgstr "Articoli"
+
+#: law/templates/law/law_list.html:51
+msgid "Law detail"
+msgstr "Dettagli normativa"
+
+#: law/templates/law/law_list.html:69
+msgid "New variation for"
+msgstr "Nuova variante per"
+
+#: law/templates/law/widgets/dashboard.html:14
+#: law/templates/law/widgets/dashboard.html:28
+msgid "Laws"
+msgstr "Normative"
+
+#: law/templates/law/widgets/dashboard.html:19
+msgid "Laws management module"
+msgstr "Modulo di gestione delle normative"

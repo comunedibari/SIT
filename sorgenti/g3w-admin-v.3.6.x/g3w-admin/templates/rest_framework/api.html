@@ -1,0 +1,16 @@
+{% extends "rest_framework/base.html" %}
+{% load static %}
+
+{% block bootstrap_theme %}
+    <link rel="stylesheet" href="{% static 'bower_components/bootswatch-dist/css/bootstrap.min.css' %}" type="text/css">
+{% endblock %}
+
+{% block title %}
+    {% if name %}{{ name }} – {% endif %}G3W-Suite
+{% endblock %}
+
+{% block branding %}
+  <a class='navbar-brand' rel="nofollow" href='{% url 'home' %}'>
+      <img src="{% static SETTINGS.G3WSUITE_MAIN_LOGO %}">
+  </a>
+{% endblock %}
