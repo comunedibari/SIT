@@ -52,9 +52,10 @@ description:
       scenari e sviluppare effettive soluzioni esprimibili sia in forma
       cartografica che in forma quali-quantitativa. I servizi evolutivi del SIT
       sono stati realizzati grazie ai fondi di finanziamento PON METRO 2014-2020
-      – Asse 1 "Agenda Digitale" con il progetto EGOV-2 "Servizi interattivi per
-      la Città Metropolitana di Bari" – CUP: J91J17000110007 cod. locale
-      ba.1.1.1.a - il cui obiettivo è quello di favorire la piena
+      – Asse 1 "Agenda Digitale" con i progetti EGOV-2 "Servizi interattivi per
+      la Città Metropolitana di Bari" (CUP: J91J17000110007 cod. locale
+      ba.1.1.1.a) e "Transizione digitale: sistemi informativi territoriali e mappe"
+      (CUP: J91F23001250005 cod. locale ba.1.1.1.l) con l'obiettivo di favorire la piena
       digitalizzazione dei processi amministrativi ed ampliare l’offerta dei
       servizi digitali con piattaforme trasversali a supporto dell'area
       metropolitana. Il SIT per Area Vasta Metropoli Terra di Bari si compone di
@@ -126,7 +127,7 @@ maintenance:
       name: Mauro Casaburi
   contractors:
     - name: Area Vasta Metropoli Terra di Bari
-      until: '2024-07-30'
+      until: '2024-10-14'
       website: 'https://egov.ba.it/'
   type: contract
 name: |-
@@ -135,7 +136,7 @@ name: |-
 platforms:
   - windows
   - linux
-releaseDate: '2022-02-04'
+releaseDate: '2024-05-31'
 softwareType: standalone/web
 softwareVersion: '3.6'
 url: 'https://github.com/comunedibari/SIT'
