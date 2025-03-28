@@ -27,6 +27,7 @@ Il modulo di back office è una web application, ad uso esclusivo dell'Ente e pe
 - **Aggiornamento dei dati catastali e delle normative;**
 - **Predisposizione dei template per la stampa e produzione del CDU;**
 - **Gestione del catalogo e dei metadati.**
+- **Pubblicazione di layer WFS 3.0 su PDND
 
  Di seguito i sotto moduli di cui si compone il Sistema:
 - **GeoDatabase;** 
